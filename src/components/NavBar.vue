@@ -3,7 +3,7 @@
     class="flex items-center justify-between flex-wrap bg-write p-4 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md"
   ></nav> -->
   <nav
-    class="flex items-center justify-between flex-wrap bg-write py-4 px-[30px] dark:bg-gray-900 w-full start-0 border-b border-gray-200 dark:border-gray-600 shadow-md"
+    class="flex items-center justify-between flex-wrap bg-write py-4 lg:px-[30px] sm:px-[20px] dark:bg-gray-900 w-full start-0 border-b border-gray-200 dark:border-gray-600 shadow-md"
   >
     <router-link class="flex items-center flex-shrink-0 mr-6" to="/">
       <img class="fill-current h-8 w-8 mr-4" src="../assets/logo.svg" alt="" />
@@ -26,27 +26,27 @@
       </button>
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
+      <div class="text-sm lg:flex-grow lg:mb-0 sm:mb-4">
         <router-link
           to="/"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold px-5"
+          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
         >
           Home
         </router-link>
         <router-link
           to="/about"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold px-5"
+          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
         >
           About
         </router-link>
         <router-link
           to="/contact"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold px-5"
+          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
         >
           Contact
         </router-link>
       </div>
-      <div class="relative mr-4">
+      <div class="relative mr-4 lg:mb-0 sm:mb-4">
         <div
           class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
         >
