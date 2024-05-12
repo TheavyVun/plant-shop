@@ -1,57 +1,26 @@
 <template>
-  <!-- <nav
-    class="flex items-center justify-between flex-wrap bg-write p-4 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md"
-  ></nav> -->
-  <nav
-    class="flex items-center justify-between flex-wrap bg-write py-4 lg:px-[30px] sm:px-[20px] dark:bg-gray-900 w-full start-0 border-b border-gray-200 dark:border-gray-600 shadow-md"
+  <div
+    class="bg-write flex w-full flex-wrap items-center justify-between py-4 sm:px-[20px] lg:px-[30px]"
   >
-    <router-link class="flex items-center flex-shrink-0 mr-6" to="/">
-      <img class="fill-current h-8 w-8 mr-4" src="../assets/logo.svg" alt="" />
-      <span class="font-semibold text-xl tracking-tight text-white">
+    <div class="mr-6 flex flex-shrink-0 items-center" to="/">
+      <img class="mr-4 h-8 w-8 fill-current" src="../assets/logo.svg" alt="" />
+      <span class="text-xl font-semibold tracking-tight text-black">
         Plant Shop
       </span>
-    </router-link>
-    <div class="block lg:hidden">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-      >
-        <svg
-          class="fill-current h-3 w-3"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow lg:mb-0 sm:mb-4">
-        <router-link
-          to="/"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
-        >
-          Home
-        </router-link>
-        <router-link
-          to="/about"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
-        >
-          About
-        </router-link>
-        <router-link
-          to="/contact"
-          class="block text-white mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-green-900 hover:font-bold lg:px-5 sm:px-0"
-        >
-          Contact
-        </router-link>
-      </div>
-      <div class="relative mr-4 lg:mb-0 sm:mb-4">
+    <div class="block w-full sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center">
+      <div class="relative lg:mb-0">
+        <input
+          type="text"
+          id="search-navbar"
+          class="m-auto rounded-2xl border-none bg-[#e2e2e2] px-4 py-2 text-sm text-[#7F7D7D] outline-none sm:w-full lg:w-[500px]"
+          placeholder="Search..."
+        />
         <div
-          class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+          class="pointer-events-none absolute right-4 top-3 flex items-center"
         >
           <svg
-            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+            class="h-4 w-4 text-gray-500 dark:text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -66,19 +35,80 @@
             />
           </svg>
         </div>
-        <input
-          type="text"
-          id="search-navbar"
-          class="block w-full p-2 ps-10 text-sm text-gray-900 border outline-none border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Search..."
-        />
       </div>
-      <div>
+    </div>
+    <div class="flex-end flex w-full items-center lg:w-auto">
+      <button>
         <img
-          class="w-10 h-10 rounded-full"
-          src="https://i.pinimg.com/564x/8f/10/c4/8f10c443a279d4c75f5b4d035fece5d5.jpg"
-          alt="Rounded avatar"
+          src="../assets/images/icons/heart.svg"
+          class="mx-1"
+          width="25"
+          height="25"
+          alt=""
         />
+      </button>
+      <button>
+        <img
+          src="../assets/images/icons/bag.svg"
+          class="mx-1"
+          width="25"
+          height="25"
+          alt=""
+        />
+      </button>
+      <button>
+        <img
+          src="../assets/images/icons/user.svg"
+          class="mx-1"
+          width="25"
+          height="25"
+          alt=""
+        />
+      </button>
+      <button to="/login" class="ml-1 text-[18px]">Log In</button>
+    </div>
+  </div>
+  <nav
+    class="bg-write flex w-full flex-wrap items-center bg-[#004524] py-4 sm:px-[20px] lg:px-[13px]"
+  >
+    <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
+      <div class="text-sm sm:mb-4 lg:mb-0 lg:flex-grow">
+        <router-link
+          to="/"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          Home
+        </router-link>
+        <router-link
+          to="/plant-type"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          Plant Type
+        </router-link>
+        <router-link
+          to="/plant-by-life-style"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          Plant By Life Style
+        </router-link>
+        <router-link
+          to="/plant-gifts"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          Plant Gifts
+        </router-link>
+        <router-link
+          to="/about"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          About
+        </router-link>
+        <router-link
+          to="/contact"
+          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+        >
+          Contact
+        </router-link>
       </div>
     </div>
   </nav>

@@ -1,7 +1,7 @@
 <template>
-  <div v-if="isRouteMatched" class="w-full h-full flex flex-col">
+  <div v-if="isRouteMatched" class="flex h-full w-full flex-col">
     <NavBar />
-    <div class="container m-auto mt-4">
+    <div class="">
       <router-view></router-view>
     </div>
   </div>
@@ -18,4 +18,5 @@ const isRouteMatched = () => {
   return route.matched.length > 0;
 };
 </script>
+
 <style scoped></style>

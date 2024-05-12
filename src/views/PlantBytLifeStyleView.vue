@@ -5,7 +5,7 @@
 <script setup>
 import { ref } from "vue";
 
-const message = ref("Home");
+const message = ref("Plant By Life Style");
 </script>
 
 <style scoped></style>
