@@ -36,10 +36,12 @@ const routes = [
   },
   {
     path: "/plant/:id",
-    name: "plant-details",
     component: PlantDetailsView,
   },
-  { path: "/login", component: Login },
+  {
+    path: "/login",
+    component: Login,
+  },
   {
     path: "/:pathMatch(.*)*",
     component: PageNotFound,

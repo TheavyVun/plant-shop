@@ -69,43 +69,51 @@
     </div>
   </div>
   <nav
-    class="bg-write flex w-full flex-wrap items-center bg-[#004524] py-4 sm:px-[20px] lg:px-[13px]"
+    class="bg-write z-index-1000 sticky top-0 flex h-[54px] w-full flex-wrap items-center bg-[#004524] sm:px-[20px] lg:px-[13px]"
   >
     <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
-      <div class="text-sm sm:mb-4 lg:mb-0 lg:flex-grow">
+      <div class="h-full text-sm sm:mb-4 lg:mb-0 lg:flex-grow">
         <router-link
           to="/"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'active-nav-link': $route.path === '/' }"
+          class="mt-4 block font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
         <router-link
           to="/plant-type"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'active-nav-link': $route.path === '/plant-type' }"
+          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Type
         </router-link>
         <router-link
           to="/plant-by-life-style"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{
+            'active-nav-link': $route.path === '/plant-by-life-style',
+          }"
+          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant By Life Style
         </router-link>
         <router-link
           to="/plant-gifts"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'active-nav-link': $route.path === '/plant-gifts' }"
+          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Gifts
         </router-link>
         <router-link
           to="/about"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'active-nav-link': $route.path === '/about' }"
+          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
-          class="mt-4 block font-semibold text-white hover:font-bold hover:text-gray-500 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'active-nav-link': $route.path === '/contact' }"
+          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
         </router-link>
@@ -115,4 +123,8 @@
 </template>
 
 <script setup></script>
-<style scoped></style>
+<style scoped>
+.active-nav-link {
+  @apply border-b-2 border-white;
+}
+</style>
