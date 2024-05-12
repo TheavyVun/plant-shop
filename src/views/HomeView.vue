@@ -1,21 +1,9 @@
 <template>
-  <div class="lg:px-[33px]">
-    <div class="my-2">
-      {{ message }}
-    </div>
-    <router-link
-      class="rounded bg-green-500 p-2 text-white hover:bg-green-600"
-      :to="'/plant/' + plantId"
-      >Plant details</router-link
-    >
+  <div>
+    <h1>Home</h1>
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const message = ref("Home");
-const plantId = ref(1);
-</script>
+<script setup></script>
 
 <style scoped></style>

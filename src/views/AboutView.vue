@@ -159,12 +159,13 @@
       allowfullscreen
     >
     </iframe>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
+import Footer from "../components/Footer.vue";
 const message = ref("About");
 </script>
 
