@@ -3,19 +3,24 @@
     <div class="my-2">
       {{ message }}
     </div>
-    <router-link
+    <button
       class="rounded bg-green-500 p-2 text-white hover:bg-green-600"
-      :to="'/plant/' + plantId"
-      >Plant details</router-link
+      @click="goBack"
     >
+      Back
+    </button>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
-const message = ref("Home");
-const plantId = ref(1);
+const message = ref("Plant details");
+const router = useRouter();
+const goBack = () => {
+  router.go(-1);
+};
 </script>
 
 <style scoped></style>

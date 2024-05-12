@@ -5,6 +5,7 @@ import PlantByLifeStyle from "../views/PlantBytLifeStyleView.vue";
 import PlantGifts from "../views/PlantGiftsView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
+import PlantDetailsView from "../views/PlantDetailsView.vue";
 import PageNotFound from "../views/PageNotFound.vue";
 import Login from "../views/Login.vue";
 
@@ -12,7 +13,6 @@ const routes = [
   {
     path: "/",
     component: HomeView,
-    // meta: { requiresAuth: true },
   },
   {
     path: "/plant-type",
@@ -34,6 +34,11 @@ const routes = [
     path: "/contact",
     component: ContactView,
   },
+  {
+    path: "/plant/:id",
+    name: "plant-details",
+    component: PlantDetailsView,
+  },
   { path: "/login", component: Login },
   {
     path: "/:pathMatch(.*)*",
@@ -45,17 +50,5 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-
-// router.beforeEach((to, from, next) => {
-//   if (to.matched.some((record) => record.meta.requiresAuth)) {
-//     if (!auth.isAuthenticated()) {
-//       next("/login");
-//     } else {
-//       next();
-//     }
-//   } else {
-//     next();
-//   }
-// });
 
 export default router;
