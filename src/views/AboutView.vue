@@ -170,5 +170,130 @@ const message = ref("About");
 </script>
 
 <style scoped>
-@import "@/assets/styles/about.css";
+.about-section {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.about-section h1 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+  color: #00a244;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about-section p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-section .p {
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.about-section .title {
+  color: #00a244;
+  font-weight: bold;
+}
+
+.about-section .video {
+  display: flex;
+  justify-content: start;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.about-section .video_youtube iframe {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.review-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+
+.review-card {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-card {
+  display: flex;
+}
+
+.profile-card .profile {
+  margin-right: 10px;
+}
+
+.profile-card .profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profile-card .name {
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.profile-card .name .reviewer-name {
+  font-size: 1.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.profile-card .name .review-time {
+  font-size: 0.7em;
+  color: #666;
+  margin-top: -0.4rem;
+}
+
+.review-rating {
+  color: #ffc107;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.review-text {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.google_icon {
+  margin-top: 1rem;
+  width: 30%;
+}
+
+.map_link iframe {
+  width: 100%;
+}
 </style>
