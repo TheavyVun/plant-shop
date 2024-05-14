@@ -8,6 +8,18 @@
         Plant Shop
       </span>
     </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center rounded border px-3 py-2">
+        <svg
+          class="h-3 w-3 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
     <div class="block w-full sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center">
       <div class="relative lg:mb-0">
         <input
@@ -65,25 +77,27 @@
           alt=""
         />
       </button>
-      <button to="/login" class="ml-1 text-[18px]">Log In</button>
+      <button to="/login" class="ml-1 text-[18px]">
+        {{ isLogin ? "Log out" : "Log In" }}
+      </button>
     </div>
   </div>
   <nav
-    class="bg-write z-index-1000 sticky top-0 flex h-[54px] w-full flex-wrap items-center bg-[#004524] sm:px-[20px] lg:px-[13px]"
+    class="bg-write z-index-1000 sticky top-0 flex w-full flex-wrap items-center bg-[#004524] sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
     <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
       <div class="h-full text-sm sm:mb-4 lg:mb-0 lg:flex-grow">
         <router-link
           to="/"
           :class="{ 'active-nav-link': $route.path === '/' }"
-          class="mt-4 block font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
         <router-link
           to="/plant-type"
           :class="{ 'active-nav-link': $route.path === '/plant-type' }"
-          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Type
         </router-link>
@@ -92,28 +106,28 @@
           :class="{
             'active-nav-link': $route.path === '/plant-by-life-style',
           }"
-          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant By Life Style
         </router-link>
         <router-link
           to="/plant-gifts"
           :class="{ 'active-nav-link': $route.path === '/plant-gifts' }"
-          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Gifts
         </router-link>
         <router-link
           to="/about"
           :class="{ 'active-nav-link': $route.path === '/about' }"
-          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
           :class="{ 'active-nav-link': $route.path === '/contact' }"
-          class="mt-4 block h-full font-semibold text-white hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
         </router-link>
@@ -122,7 +136,9 @@
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+let isLogin = false;
+</script>
 <style scoped>
 .active-nav-link {
   @apply border-b-2 border-white;
