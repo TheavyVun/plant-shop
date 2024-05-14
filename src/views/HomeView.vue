@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4 h-full w-full">
-    <div class="m-auto w-[70%]">
+    <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="container my-[50px]"></div>
-    <div class="m-auto w-[70%]">
+    <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="shop-by-care-box w-full px-5 py-[10px]">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Care</h1>
@@ -141,7 +141,7 @@
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
-    <div class="m-auto w-[70%]">
+    <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="cards">
         <div
           class="card-item"
@@ -186,7 +186,7 @@
         </template>
       </ImagePreview>
     </div>
-    <div class="m-auto w-[70%]">
+    <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="my-[50px]">
         <h1 class="text-center text-[26px]">What our customers say</h1>
       </div>
