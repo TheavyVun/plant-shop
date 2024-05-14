@@ -20,7 +20,6 @@
         </svg>
       </button>
     </div>
-
     <div class="block w-full sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center">
       <div class="relative lg:mb-0">
         <input

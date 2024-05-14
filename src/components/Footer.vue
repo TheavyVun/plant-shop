@@ -25,17 +25,17 @@
                   height="30"
                   alt=""
                 />
-                <div class="ml-4 text-[15px] text-white">412 Street 530,</div>
+                <div class="ml-4 text-[14px] text-white">412 Street 530,</div>
               </div>
               <div class="flex items-center">
                 <div></div>
-                <div class="ml-11 text-[15px] text-white">
+                <div class="ml-11 text-[14px] text-white">
                   Chamkar Samrong 2, Chamkar Samrong commune,
                 </div>
               </div>
               <div class="my-2 flex items-center">
                 <div></div>
-                <div class="ml-11 text-[15px] text-white">
+                <div class="ml-11 text-[14px] text-white">
                   Battambang municipal, Battambang province, Cambodia
                 </div>
               </div>
@@ -46,7 +46,7 @@
                   height="30"
                   alt=""
                 />
-                <div class="ml-4 text-[15px] text-white">+855 16 888 488</div>
+                <div class="ml-4 text-[14px] text-white">+855 16 888 488</div>
               </div>
               <div class="my-2 flex items-center">
                 <img
@@ -55,7 +55,7 @@
                   height="30"
                   alt=""
                 />
-                <div class="ml-4 text-[15px] text-white">
+                <div class="ml-4 text-[14px] text-white">
                   info@greenhousecambodia.com
                 </div>
               </div>
@@ -73,27 +73,27 @@
               <router-link
                 to="/"
                 :class="{ 'active-nav-link': $route.path === '/' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[15px] font-semibold text-white"
+                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 Home
               </router-link>
               <router-link
                 to="/all-plant"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[15px] font-semibold text-white"
+                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 All Plant
               </router-link>
               <router-link
                 to="/about"
                 :class="{ 'active-nav-link': $route.path === '/about' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[15px] font-semibold text-white"
+                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 About
               </router-link>
               <router-link
                 to="/contact"
                 :class="{ 'active-nav-link': $route.path === '/contact' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[15px] font-semibold text-white"
+                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 Contact
               </router-link>

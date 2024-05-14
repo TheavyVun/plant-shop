@@ -61,7 +61,7 @@
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
     </div>
-    <div class="container my-[50px]">cards</div>
+    <div class="container my-[50px]"></div>
     <div class="m-auto w-[70%]">
       <div class="shop-by-care-box w-full px-5 py-[10px]">
         <div class="mb-5 flex flex-col items-center justify-center">
@@ -137,7 +137,7 @@
       <h1 class="text-center text-[32px] font-bold">Latest Plant</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <div class="container my-[50px]">boxes</div>
+    <div class="container my-[50px]"></div>
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
@@ -190,10 +190,10 @@
       <div class="my-[50px]">
         <h1 class="text-center text-[26px]">What our customers say</h1>
       </div>
+      <CustomerReview :customers="customers" />
     </div>
     <iframe
-      class="w-full"
-      height="350"
+      class="h-[350px] w-full"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.691465513618!2d144.96175371525688!3d-37.811466079756175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d7e62f05a5f%3A0x69f14f0e253266!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1589274753731!5m2!1sen!2sin"
       frameborder="0"
       allowfullscreen
@@ -205,6 +205,8 @@
 
 <script setup>
 import { ref } from "vue";
+import CustomerReview from "../components/CustomerReview.vue";
+import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
 
 const gallery = [
@@ -368,6 +370,71 @@ const shopByLight = [
     image:
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.50.89273808.png",
     name: "Direct Light",
+  },
+];
+
+const customers = [
+  {
+    id: 1,
+    name: "Yin Vun",
+    first_name: "Vun",
+    last_name: "Yin",
+    profile: "",
+    date: "2 years ago",
+    rate: 5,
+    comment:
+      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
+  },
+  {
+    id: 2,
+    name: "Orn Sarath",
+    first_name: "Sarath",
+    last_name: "Orn",
+    profile: "",
+    date: "4 months ago",
+    rate: 5,
+    comment: "Highly recommend this large and urban garden center",
+  },
+  {
+    id: 3,
+    name: "Vorn Sreymao",
+    first_name: "Sreymao",
+    last_name: "Vorn",
+    profile: "",
+    date: "1 year ago",
+    rate: 5,
+    comment: "Very good services and a lot of products",
+  },
+  {
+    id: 4,
+    name: "Vun Theavy",
+    first_name: "Theavy",
+    last_name: "Vun",
+    profile: "",
+    date: "6 months ago",
+    rate: 5,
+    comment:
+      "Absolutely beautiful. Good prices and selection. I will definitely go back.",
+  },
+  {
+    id: 5,
+    name: "Chhem Lyheang",
+    first_name: "Lyheang",
+    last_name: "Chhem",
+    profile: "",
+    date: "2 weeks ago",
+    rate: 4,
+    comment: "There are a lot plants. Good price and service.",
+  },
+  {
+    id: 6,
+    name: "Chai Lyden",
+    first_name: "Lyden",
+    last_name: "Chai",
+    profile: "",
+    date: "1 hour ago",
+    rate: 2,
+    comment: "Emm mg",
   },
 ];
 

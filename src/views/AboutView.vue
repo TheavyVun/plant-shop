@@ -56,104 +56,16 @@
       >
       </iframe>
     </div>
-    <h2>What our customers say</h2>
-    <div class="review-cards">
-      <div class="review-card">
-        <div class="profile-card">
-          <div class="profile">
-            <img
-              src="@/assets/images/about/banner.png"
-              alt="Descriptive Text"
-            />
-          </div>
-          <div class="name">
-            <p class="reviewer-name">Orn Sarath</p>
-            <p class="review-time">1 House Ago</p>
-          </div>
-        </div>
-
-        <div class="review-rating">
-          <span v-for="star in 5" :key="star" class="star">&#9733;</span>
-        </div>
-        <p class="review-text">A source of plant supply in town</p>
-        <div class="google_icon">
-          <img src="@/assets/images/about/google.png" alt="Descriptive Text" />
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="profile-card">
-          <div class="profile">
-            <img
-              src="@/assets/images/about/banner.png"
-              alt="Descriptive Text"
-            />
-          </div>
-          <div class="name">
-            <p class="reviewer-name">Orn Sarath</p>
-            <p class="review-time">1 House Ago</p>
-          </div>
-        </div>
-
-        <div class="review-rating">
-          <span v-for="star in 5" :key="star" class="star">&#9733;</span>
-        </div>
-        <p class="review-text">A source of plant supply in town</p>
-        <div class="google_icon">
-          <img src="@/assets/images/about/google.png" alt="Descriptive Text" />
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="profile-card">
-          <div class="profile">
-            <img
-              src="@/assets/images/about/banner.png"
-              alt="Descriptive Text"
-            />
-          </div>
-          <div class="name">
-            <p class="reviewer-name">Orn Sarath</p>
-            <p class="review-time">1 House Ago</p>
-          </div>
-        </div>
-
-        <div class="review-rating">
-          <span v-for="star in 5" :key="star" class="star">&#9733;</span>
-        </div>
-        <p class="review-text">A source of plant supply in town</p>
-        <div class="google_icon">
-          <img src="@/assets/images/about/google.png" alt="Descriptive Text" />
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="profile-card">
-          <div class="profile">
-            <img
-              src="@/assets/images/about/banner.png"
-              alt="Descriptive Text"
-            />
-          </div>
-          <div class="name">
-            <p class="reviewer-name">Orn Sarath</p>
-            <p class="review-time">1 House Ago</p>
-          </div>
-        </div>
-
-        <div class="review-rating">
-          <span v-for="star in 5" :key="star" class="star">&#9733;</span>
-        </div>
-        <p class="review-text">A source of plant supply in town</p>
-        <div class="google_icon">
-          <img src="@/assets/images/about/google.png" alt="Descriptive Text" />
-        </div>
+    <div class="m-auto">
+      <div class="my-[50px]">
+        <div class="text-center text-[26px]">What our customers say</div>
       </div>
     </div>
+    <CustomerReview :customers="customers" />
   </div>
   <div class="map_link">
     <iframe
-      height="350"
+      class="h-[350px] w-full"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.691465513618!2d144.96175371525688!3d-37.811466079756175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d7e62f05a5f%3A0x69f14f0e253266!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1589274753731!5m2!1sen!2sin"
       frameborder="0"
       allowfullscreen
@@ -164,9 +76,72 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
-const message = ref("About");
+const customers = [
+  {
+    id: 1,
+    name: "Yin Vun",
+    first_name: "Vun",
+    last_name: "Yin",
+    profile: "",
+    date: "2 years ago",
+    rate: 5,
+    comment:
+      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
+  },
+  {
+    id: 2,
+    name: "Orn Sarath",
+    first_name: "Sarath",
+    last_name: "Orn",
+    profile: "",
+    date: "4 months ago",
+    rate: 5,
+    comment: "Highly recommend this large and urban garden center",
+  },
+  {
+    id: 3,
+    name: "Vorn Sreymao",
+    first_name: "Sreymao",
+    last_name: "Vorn",
+    profile: "",
+    date: "1 year ago",
+    rate: 5,
+    comment: "Very good services and a lot of products",
+  },
+  {
+    id: 4,
+    name: "Vun Theavy",
+    first_name: "Theavy",
+    last_name: "Vun",
+    profile: "",
+    date: "6 months ago",
+    rate: 5,
+    comment:
+      "Absolutely beautiful. Good prices and selection. I will definitely go back.",
+  },
+  {
+    id: 5,
+    name: "Chhem Lyheang",
+    first_name: "Lyheang",
+    last_name: "Chhem",
+    profile: "",
+    date: "2 weeks ago",
+    rate: 4,
+    comment: "There are a lot plants. Good price and service.",
+  },
+  {
+    id: 6,
+    name: "Chai Lyden",
+    first_name: "Lyden",
+    last_name: "Chai",
+    profile: "",
+    date: "1 hour ago",
+    rate: 2,
+    comment: "Emm mg",
+  },
+];
 </script>
 
 <style scoped>
@@ -174,7 +149,7 @@ const message = ref("About");
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
-  width: 80%;
+  width: 70%;
 }
 
 .about-section h1 {
@@ -223,77 +198,5 @@ const message = ref("About");
 .about-section .video_youtube iframe {
   width: 100%;
   margin-bottom: 2rem;
-}
-
-.review-cards {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  justify-content: center;
-}
-
-.review-card {
-  flex: 0 0 auto;
-  width: 300px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.profile-card {
-  display: flex;
-}
-
-.profile-card .profile {
-  margin-right: 10px;
-}
-
-.profile-card .profile img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-.profile-card .name {
-  font-size: 1.1em;
-  text-align: left;
-}
-
-.profile-card .name .reviewer-name {
-  font-size: 1.1em;
-  text-align: left;
-  font-weight: bold;
-}
-
-.profile-card .name .review-time {
-  font-size: 0.7em;
-  color: #666;
-  margin-top: -0.4rem;
-}
-
-.review-rating {
-  color: #ffc107;
-  font-size: 1.2em;
-  text-align: left;
-}
-
-.review-text {
-  font-size: 1em;
-  color: #555;
-  line-height: 1.4;
-  text-align: left;
-}
-
-.google_icon {
-  margin-top: 1rem;
-  width: 30%;
-}
-
-.map_link iframe {
-  width: 100%;
 }
 </style>
