@@ -25,14 +25,14 @@
         <input
           type="text"
           id="search-navbar"
-          class="m-auto rounded-2xl border-none bg-[#e2e2e2] px-4 py-2 text-sm text-[#7F7D7D] outline-none sm:w-full lg:w-[500px]"
+          class="m-auto rounded-2xl border-none bg-[#ececec] px-4 py-2 text-sm text-[#979797] outline-none sm:w-full lg:w-[500px]"
           placeholder="Search..."
         />
         <div
           class="pointer-events-none absolute right-4 top-3 flex items-center"
         >
           <svg
-            class="h-4 w-4 text-gray-500 dark:text-gray-400"
+            class="h-4 w-4 text-[#979797] dark:text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

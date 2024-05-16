@@ -1,6 +1,9 @@
 <template>
   <div class="about-section">
-    <h1>About</h1>
+    <div class="mb-[30px]">
+      <h1>About</h1>
+      <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
+    </div>
     <h2>Our Vision</h2>
     <p class="p">
       <span class="title">Green House</span> envisions everywhere in Cambodia is
@@ -80,17 +83,6 @@ import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
 const customers = [
   {
-    id: 1,
-    name: "Yin Vun",
-    first_name: "Vun",
-    last_name: "Yin",
-    profile: "",
-    date: "2 years ago",
-    rate: 5,
-    comment:
-      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
-  },
-  {
     id: 2,
     name: "Orn Sarath",
     first_name: "Sarath",
@@ -109,6 +101,17 @@ const customers = [
     date: "1 year ago",
     rate: 5,
     comment: "Very good services and a lot of products",
+  },
+  {
+    id: 1,
+    name: "Yin Vun",
+    first_name: "Vun",
+    last_name: "Yin",
+    profile: "",
+    date: "2 years ago",
+    rate: 5,
+    comment:
+      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
   },
   {
     id: 4,
