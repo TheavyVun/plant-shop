@@ -2,14 +2,14 @@
   <div class="bottom-0 mt-1 w-full">
     <div class="footer-content box-content w-full sm:h-auto lg:h-[500px]">
       <div
-        class="cards dark-2 flex h-full w-full justify-between py-8 sm:px-[5%] lg:px-[10%]"
+        class="cards dark-2 xs:px-3 flex h-full w-full justify-between py-8 sm:flex-col sm:px-[5%] lg:px-[10%]"
       >
         <div class="card-item sm:mb-[20px] lg:mb-0">
           <div class="h-full w-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Follow Us On Facebook
             </h1>
-            <div class="h-[88%] w-[100%] rounded bg-black">hi</div>
+            <div class="w-[100%] lg:h-[88%]"></div>
           </div>
         </div>
         <div class="card-item sm:mb-[20px] lg:mb-0">
@@ -113,7 +113,9 @@
     </div>
   </div>
 </template>
+
 <script></script>
+
 <style scoped lang="scss">
 .footer-content {
   background-image: url("https://gradinabotanica.ubbcluj.ro/wp-content/uploads/2020/09/complexul-de-sere-scaled.jpg");

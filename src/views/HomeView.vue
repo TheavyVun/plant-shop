@@ -13,7 +13,7 @@
         <br />
         <h1 class="text-[40px] text-white">Green House</h1>
       </div>
-      <p class="my-[50px] text-center">
+      <p class="xs:px-3 my-[50px] text-center">
         Trees have been with us throughout our whole lives. They look beautiful,
         and we've probably all enjoyed a lovely walk through a forest. They're
         the background of a favorite memory and that welcome patch of green our
@@ -21,7 +21,7 @@
         days. But their benefits go far beyond that. Trees are like best friends
         or model employees - they give so much and ask little in return.
       </p>
-      <p class="my-[50px] text-center">
+      <p class="xs:px-3 my-[50px] text-center">
         According to nature.org, there are six major benefits of tree; (1) Trees
         eat the greenhouse gases that cause climate change—for breakfast, (2)
         trees boost our mental health while raising our physical health, (3)
@@ -35,7 +35,11 @@
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
       <div class="cards">
-        <div class="card-item" v-for="plant of plants" :key="plant">
+        <div
+          class="xs:w-full p-[0.8em] sm:w-[50%] md:w-[33%] lg:w-[25%]"
+          v-for="plant of plants"
+          :key="plant"
+        >
           <div
             class="my-[10px] flex w-full flex-col items-center justify-center"
           >
@@ -44,33 +48,33 @@
             </a>
             <a
               href=""
-              class="plant-name mt-3 text-center text-[16px] hover:text-[#ffc249]"
+              class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
             >
               {{ plant?.name }}
             </a>
           </div>
         </div>
       </div>
-      <div class="my-[50px] flex flex-col items-center justify-center">
-        <button
-          class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100"
-        >
-          SEE ALL PLANT
-        </button>
-        <h1 class="mt-1 text-center text-[26px]">Top Trending Plants</h1>
-        <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
-      </div>
     </div>
-    <div class="container my-[50px]"></div>
+    <div class="my-[50px] flex flex-col items-center justify-center">
+      <button
+        class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100"
+      >
+        SEE ALL PLANT
+      </button>
+      <h1 class="mt-1 text-center text-[26px]">Top Trending Plants</h1>
+      <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
+    </div>
+    <TopTrendingPlant :latestPlants="latestPlant" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
-      <div class="shop-by-care-box w-full px-5 py-[10px]">
+      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Care</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="shop-by-care-cards">
+        <div class="cards">
           <div
-            class="shop-by-care-card-item"
+            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
             v-for="item of shopByCare"
             :key="item"
           >
@@ -79,21 +83,21 @@
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
               <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
-              <span class="plant-name mt-3 text-center text-[18px]">
+              <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
             </a>
           </div>
         </div>
       </div>
-      <div class="shop-by-care-box w-full px-5 py-[10px]">
+      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Size</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="shop-by-care-cards">
+        <div class="cards">
           <div
-            class="shop-by-care-card-item"
+            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
             v-for="item of shopBySize"
             :key="item"
           >
@@ -102,21 +106,21 @@
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
               <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
-              <span class="plant-name mt-3 text-center text-[18px]">
+              <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
             </a>
           </div>
         </div>
       </div>
-      <div class="shop-by-care-box w-full px-5 py-[10px]">
+      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Light</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="shop-by-care-cards">
+        <div class="cards">
           <div
-            class="shop-by-care-card-item"
+            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
             v-for="item of shopByLight"
             :key="item"
           >
@@ -125,7 +129,7 @@
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90]"
             >
               <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
-              <span class="plant-name mt-3 text-center text-[18px]">
+              <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
             </a>
@@ -137,14 +141,14 @@
       <h1 class="text-center text-[32px] font-bold">Latest Plant</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <div class="container my-[50px]"></div>
+    <LatestPlant :latestPlants="latestPlant" />
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
-    <div class="m-auto sm:w-[90%] lg:w-[70%]">
+    <div class="xs:px-3 m-auto sm:w-[90%] lg:w-[70%]">
       <div class="cards">
         <div
-          class="card-item"
+          class="xs:w-[50%] p-[0.8em] sm:w-[25%] md:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"
           v-for="(item, index) in gallery"
           :key="index"
@@ -172,16 +176,16 @@
           <button
             v-if="selectedIndex !== 0"
             @click="prevImage"
-            class="prev-btn h-[45px] w-[50px] rounded bg-slate-600 p-3"
+            class="prev-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
           >
-            <img src="../assets/images/icons/previous.svg" alt="" />
+            <img src="../assets/images/icons/previous.svg" width="18" alt="" />
           </button>
           <button
             v-if="selectedIndex !== gallery.length - 1"
             @click="nextImage"
-            class="next-btn h-[45px] w-[50px] rounded bg-slate-600 p-3"
+            class="next-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
           >
-            <img src="../assets/images/icons/next.svg" alt="" />
+            <img src="../assets/images/icons/next.svg" width="18" alt="" />
           </button>
         </template>
       </ImagePreview>
@@ -208,6 +212,8 @@ import { ref } from "vue";
 import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
+import LatestPlant from "../components/LatestPlant.vue";
+import TopTrendingPlant from "../components/TopTrendingPlant.vue";
 
 const gallery = [
   {
@@ -383,7 +389,7 @@ const customers = [
     date: "2 years ago",
     rate: 5,
     comment:
-      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
+      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚.",
   },
   {
     id: 2,
@@ -438,6 +444,303 @@ const customers = [
   },
 ];
 
+const latestPlant = [
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+  {
+    name: "Test",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230801%2F20230801085600A084-GG%20(1)?alt=media&token=c7e74c77-8213-49b4-aa71-6393b3aa3ea2",
+    from: "5",
+    to: "10",
+  },
+];
+
 const isPopupVisible = ref(false);
 const selectedImage = ref("");
 const selectedIndex = ref(0);
@@ -465,7 +768,7 @@ const prevImage = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .green-house-image {
   background-image: url("https://storage.googleapis.com/production-globat-v1-0-7/957/201957/9CVAqww6/01a7320b59974592b65e311c3cb2c44d");
   background-position: center;
@@ -473,44 +776,10 @@ const prevImage = () => {
   background-size: cover;
 }
 
-.cards,
-.shop-by-care-cards {
+.cards {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-}
-
-.card-item,
-.shop-by-care-card-item {
-  display: flex;
-  width: 100%;
-  padding: 0.8em;
-}
-
-@media all and (min-width: 37.5em) {
-  .card-item,
-  .shop-by-care-card-item {
-    width: calc(100% / 12 * 6);
-  }
-}
-
-@media all and (min-width: 56.25em) {
-  .card-item {
-    width: calc(100% / 12 * 3);
-  }
-}
-
-@media screen and (max-width: 968px) {
-  .cards,
-  .shop-by-care-cards {
-    width: 100% !important;
-  }
-}
-
-@media all and (min-width: 56.25em) {
-  .shop-by-care-card-item {
-    width: calc(100% / 12 * 4);
-  }
 }
 
 .shop-by-care-box {
