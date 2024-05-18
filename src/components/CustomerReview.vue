@@ -106,7 +106,8 @@ export default {
 };
 </script>
 <style scoped>
-.cards {
+.carousel-container {
+  position: relative;
   width: 100%;
   padding-bottom: 15px;
   display: flex;
