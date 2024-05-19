@@ -175,7 +175,7 @@
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[25%] md:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"
-          v-for="(item, index) in data?.gallery"
+          v-for="(item, index) in gallery"
           :key="index"
         >
           <div
@@ -183,7 +183,7 @@
           >
             <img
               class="gallery h-full w-full cursor-pointer"
-              :src="item.image"
+              :src="item?.image"
               @click="openPopup(index)"
               alt="Not found"
             />
@@ -194,7 +194,7 @@
         :isVisible="isPopupVisible"
         :imageSrc="selectedImage"
         :currentIndex="selectedIndex"
-        :totalImages="data?.gallery.length"
+        :totalImages="gallery.length"
         @close="closePopup"
       >
         <template v-slot:buttons>
@@ -210,7 +210,7 @@
             />
           </button>
           <button
-            v-if="selectedIndex !== data?.gallery?.length - 1"
+            v-if="selectedIndex !== gallery?.length - 1"
             @click="nextImage"
             class="next-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
           >
@@ -253,9 +253,11 @@ const selectedIndex = ref(0);
 const selectedImage = ref("");
 const isPopupVisible = ref(false);
 
+const gallery = ref(data?.gallery || []);
+
 const openPopup = (index) => {
   selectedIndex.value = index;
-  selectedImage.value = gallery.value[selectedIndex.value].image;
+  selectedImage.value = gallery.value[selectedIndex.value]?.image || "";
   isPopupVisible.value = true;
 };
 
@@ -266,13 +268,13 @@ const closePopup = () => {
 
 const nextImage = () => {
   selectedIndex.value = (selectedIndex.value + 1) % gallery.value.length;
-  selectedImage.value = gallery.value[selectedIndex.value].image;
+  selectedImage.value = gallery.value[selectedIndex.value]?.image || "";
 };
 
 const prevImage = () => {
   selectedIndex.value =
     (selectedIndex.value - 1 + gallery.value.length) % gallery.value.length;
-  selectedImage.value = gallery.value[selectedIndex.value].image;
+  selectedImage.value = gallery.value[selectedIndex.value]?.image || "";
 };
 
 const scrollToTop = () => {
