@@ -1,5 +1,7 @@
 <template>
-  <div class="carousel-container mb-[50px] w-full px-[70px]">
+  <div
+    class="carousel-container mb-[50px] w-full px-[70px] xs:px-[30px] sm:px-[50px]"
+  >
     <div class="cards" :style="carouselStyle">
       <div
         class="card rounded-1 h-full w-[200px] flex-col bg-slate-100"
@@ -20,7 +22,7 @@
     <button
       @click="prev"
       :disabled="currentSlide === 0"
-      class="prev-btn flex h-full w-[70px] items-center justify-center bg-white"
+      class="prev-btn flex h-full w-[70px] items-center justify-center bg-white xs:w-[50px] sm:w-[60px]"
     >
       <img
         :src="currentSlide === 0 ? previousDisabled : previous"
@@ -31,7 +33,7 @@
     <button
       @click="next"
       :disabled="currentSlide === latestPlants.length - 1"
-      class="next-btn flex h-full w-[70px] items-center justify-center bg-white"
+      class="next-btn flex h-full w-[70px] items-center justify-center bg-white xs:w-[50px] sm:w-[60px]"
     >
       <img
         :src="

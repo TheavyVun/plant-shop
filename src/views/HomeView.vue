@@ -68,7 +68,7 @@
       <router-link
         to="/all-plants"
         @click.native="scrollToTop()"
-        class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100"
+        class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100 xs:px-[50px] xs:text-[18px] sm:px-[80px] sm:text-[22px]"
       >
         SEE ALL PLANT
       </router-link>
@@ -179,7 +179,7 @@
           :key="index"
         >
           <div
-            class="flex h-[300px] w-full flex-col items-center justify-center"
+            class="flex w-full flex-col items-center justify-center xs:h-[200px] sm:h-[250px] lg:h-[300px]"
           >
             <img
               class="gallery h-full w-full cursor-pointer"
