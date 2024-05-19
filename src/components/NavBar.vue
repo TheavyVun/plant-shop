@@ -24,12 +24,14 @@
         </svg>
       </button>
     </div>
-    <div class="block w-full sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center">
+    <div
+      class="block w-full xs:my-4 sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center"
+    >
       <div class="relative lg:mb-0">
         <input
           type="text"
           id="search-navbar"
-          class="m-auto rounded-2xl border-none bg-[#ececec] px-4 py-2 text-sm text-[#979797] outline-none sm:w-full lg:w-[500px]"
+          class="m-auto rounded-2xl border-none bg-[#ececec] px-4 py-2 text-sm text-[#979797] outline-none xs:w-full sm:w-full lg:w-[500px]"
           placeholder="Search..."
         />
         <div
