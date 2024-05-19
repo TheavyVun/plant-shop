@@ -49,10 +49,10 @@
             >
               <img class="h-[180px] w-[180px]" :src="plant.image" alt="" />
             </router-link>
- 
+
             <router-link
               :to="'/plant/' + plant.id"
-   @click.native="scrollToTop()"
+              @click.native="scrollToTop()"
               class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
             >
               {{ plant?.name }}
@@ -459,9 +459,7 @@ const customers = ref([
   },
 ]);
 
-const latestPlants = [
- 
- 
+const latestPlants = ref([
   {
     id: 1,
     name: "Cacao Tree",
