@@ -1,9 +1,13 @@
 <template>
   <div
-    class="bg-write xs:px-3 flex w-full flex-wrap items-center justify-between py-4 sm:px-[20px] lg:px-[30px]"
+    class="bg-write flex w-full flex-wrap items-center justify-between py-4 xs:px-3 sm:px-[20px] lg:px-[30px]"
   >
     <div class="mr-6 flex flex-shrink-0 items-center" to="/">
-      <img class="mr-4 h-8 w-8 fill-current" src="../assets/logo.svg" alt="" />
+      <img
+        class="mr-4 h-8 w-8 fill-current"
+        src="../assets/logo.svg"
+        alt="Not found"
+      />
       <span class="text-xl font-semibold tracking-tight text-black">
         Plant Shop
       </span>
@@ -56,7 +60,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt=""
+          alt="Not found"
         />
       </button>
       <button>
@@ -65,7 +69,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt=""
+          alt="Not found"
         />
       </button>
       <button>
@@ -74,7 +78,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt=""
+          alt="Not found"
         />
       </button>
       <button to="/login" class="ml-1 text-[18px]">
@@ -83,7 +87,7 @@
     </div>
   </div>
   <nav
-    class="bg-write z-index-1000 xs:px-3 sticky top-0 flex w-full flex-wrap items-center bg-[#004524] sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
+    class="bg-write z-index-1000 sticky top-0 flex w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
     <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
       <div class="h-full text-sm sm:mb-4 lg:mb-0 lg:flex-grow">

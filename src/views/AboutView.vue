@@ -81,70 +81,9 @@
 <script setup>
 import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
-const customers = [
-  {
-    id: 2,
-    name: "Orn Sarath",
-    first_name: "Sarath",
-    last_name: "Orn",
-    profile: "",
-    date: "4 months ago",
-    rate: 5,
-    comment: "Highly recommend this large and urban garden center",
-  },
-  {
-    id: 3,
-    name: "Vorn Sreymao",
-    first_name: "Sreymao",
-    last_name: "Vorn",
-    profile: "",
-    date: "1 year ago",
-    rate: 5,
-    comment: "Very good services and a lot of products",
-  },
-  {
-    id: 1,
-    name: "Yin Vun",
-    first_name: "Vun",
-    last_name: "Yin",
-    profile: "",
-    date: "2 years ago",
-    rate: 5,
-    comment:
-      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚. Disappointing, such a nice place but now..... I go somewhere else, staff not helpful, pots all damaged and the prices......they wanted $14 for a small bag of soil. 😢",
-  },
-  {
-    id: 4,
-    name: "Vun Theavy",
-    first_name: "Theavy",
-    last_name: "Vun",
-    profile: "",
-    date: "6 months ago",
-    rate: 5,
-    comment:
-      "Absolutely beautiful. Good prices and selection. I will definitely go back.",
-  },
-  {
-    id: 5,
-    name: "Chhem Lyheang",
-    first_name: "Lyheang",
-    last_name: "Chhem",
-    profile: "",
-    date: "2 weeks ago",
-    rate: 4,
-    comment: "There are a lot plants. Good price and service.",
-  },
-  {
-    id: 6,
-    name: "Chai Lyden",
-    first_name: "Lyden",
-    last_name: "Chai",
-    profile: "",
-    date: "1 hour ago",
-    rate: 2,
-    comment: "Emm mg",
-  },
-];
+import { data } from "../data";
+
+const customers = data.customers;
 </script>
 
 <style scoped>

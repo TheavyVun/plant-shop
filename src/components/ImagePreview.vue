@@ -2,7 +2,7 @@
   <div v-if="isVisible" class="popup-overlay" @click="closePopup">
     <div class="popup-content" @click.stop>
       <button class="close-btn h-[45px] w-[50px]" @click="$emit('close')">
-        <img src="../assets/images/icons/close.svg" alt="" />
+        <img src="../assets/images/icons/close.svg" alt="Not found" />
       </button>
       <img :src="imageSrc" alt="Popup Image" />
       <slot name="buttons"></slot>

@@ -54,14 +54,18 @@
       @click="prev"
       class="prev-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
     >
-      <img src="../assets/images/icons/previous.svg" width="100" alt="" />
+      <img
+        src="../assets/images/icons/previous.svg"
+        width="100"
+        alt="Not found"
+      />
     </button>
     <button
       v-if="currentSlide != customers.length - 1"
       @click="next"
       class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
     >
-      <img src="../assets/images/icons/next.svg" width="100" alt="" />
+      <img src="../assets/images/icons/next.svg" width="100" alt="Not found" />
     </button>
   </div>
 </template>

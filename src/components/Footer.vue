@@ -1,18 +1,20 @@
 <template>
-  <div class="bottom-0 mt-1 w-full">
-    <div class="footer-content box-content w-full sm:h-auto lg:h-[500px]">
+  <div class="mt-1 w-full">
+    <div class="footer-content box-content w-full md:h-auto lg:h-[450px]">
       <div
-        class="cards dark-2 xs:px-3 flex h-full w-full justify-between py-8 sm:flex-col sm:px-[5%] lg:px-[10%]"
+        class="cards dark-2 flex h-full w-full justify-between py-8 xs:px-3 sm:flex-col sm:px-[5%] lg:px-[10%]"
       >
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Follow Us On Facebook
             </h1>
-            <div class="w-[100%] lg:h-[88%]"></div>
+            <div
+              class="w-[100%] cursor-pointer rounded-xl bg-[#d3d3d35a] lg:h-[88%]"
+            ></div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[50%]">
           <div class="h-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Contact Us
@@ -23,7 +25,7 @@
                   src="../assets/images/icons/address.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">412 Street 530,</div>
               </div>
@@ -44,7 +46,7 @@
                   src="../assets/images/icons/phone.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">+855 16 888 488</div>
               </div>
@@ -53,7 +55,7 @@
                   src="../assets/images/icons/mail.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">
                   info@greenhousecambodia.com
@@ -62,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1
               class="mb-3 text-center text-xl font-semibold tracking-tight text-white"
@@ -79,8 +81,9 @@
                 Home
               </router-link>
               <router-link
-                to="/all-plant"
+                to="/all-plants"
                 @click.native="scrollToTop()"
+                :class="{ 'active-nav-link': $route.path === '/all-plants' }"
                 class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 All Plant

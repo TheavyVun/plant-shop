@@ -5,15 +5,15 @@
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
         <h1
-          class="text-[40px] text-white"
+          class="text-[40px] text-white shadow-lg"
           style="font-family: Khmer OS Muol Light"
         >
-          ផ្ទះបៃតង
+          ហាងលក់រុក្ខជាតិ 🌱
         </h1>
         <br />
-        <h1 class="text-[40px] text-white">Green House</h1>
+        <h1 class="text-[40px] text-white">Plant Shop</h1>
       </div>
-      <p class="xs:px-3 my-[50px] text-center">
+      <p class="my-[50px] text-center xs:px-3">
         Trees have been with us throughout our whole lives. They look beautiful,
         and we've probably all enjoyed a lovely walk through a forest. They're
         the background of a favorite memory and that welcome patch of green our
@@ -21,7 +21,7 @@
         days. But their benefits go far beyond that. Trees are like best friends
         or model employees - they give so much and ask little in return.
       </p>
-      <p class="xs:px-3 my-[50px] text-center">
+      <p class="my-[50px] text-center xs:px-3">
         According to nature.org, there are six major benefits of tree; (1) Trees
         eat the greenhouse gases that cause climate change—for breakfast, (2)
         trees boost our mental health while raising our physical health, (3)
@@ -36,20 +36,23 @@
       </div>
       <div class="cards">
         <div
-          class="xs:w-full p-[0.8em] sm:w-[50%] md:w-[33%] lg:w-[25%]"
-          v-for="plant of plants"
+          class="p-[0.8em] xs:w-full sm:w-[50%] md:w-[33%] lg:w-[25%]"
+          v-for="plant in data?.plants"
           :key="plant"
         >
           <div
             class="my-[10px] flex w-full flex-col items-center justify-center"
           >
             <router-link
-              :to="'/plant-type/' + plant.id"
+              :to="'/plant-by-type/' + plant.id"
               @click.native="scrollToTop()"
             >
-              <img class="h-[180px] w-[180px]" :src="plant.image" alt="" />
+              <img
+                class="h-[180px] w-[180px]"
+                :src="plant.image"
+                alt="Not found"
+              />
             </router-link>
-
             <router-link
               :to="'/plant/' + plant.id"
               @click.native="scrollToTop()"
@@ -63,7 +66,7 @@
     </div>
     <div class="my-[50px] flex flex-col items-center justify-center">
       <router-link
-        to="/all-plant"
+        to="/all-plants"
         @click.native="scrollToTop()"
         class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100"
       >
@@ -72,74 +75,89 @@
       <h1 class="mt-1 text-center text-[26px]">Top Trending Plants</h1>
       <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <TopTrendingPlant :latestPlants="latestPlants" />
+    <TopTrendingPlant :latestPlants="data?.latestPlants" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
-      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
+      <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Care</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="cards">
           <div
-            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
-            v-for="item of shopByCare"
+            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            v-for="item in data?.shopByCare"
             :key="item"
           >
-            <a
-              href=""
+            <router-link
+              to="/"
+              @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
-              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
+              <img
+                class="h-[102px] w-[108px]"
+                :src="item?.image"
+                alt="Not found"
+              />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
-      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
+      <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Size</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="cards">
           <div
-            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
-            v-for="item of shopBySize"
+            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            v-for="item in data?.shopBySize"
             :key="item"
           >
-            <a
-              href=""
+            <router-link
+              to="/"
+              @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
-              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
+              <img
+                class="h-[102px] w-[108px]"
+                :src="item?.image"
+                alt="Not found"
+              />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
-      <div class="shop-by-care-box xs:px-0 w-full px-5 py-[10px]">
+      <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
           <h1 class="text-center text-[22px]">Shop By Light</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="cards">
           <div
-            class="xs:w-full m-auto p-[0.8em] sm:w-[50%] lg:w-[33%]"
-            v-for="item of shopByLight"
+            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            v-for="item in data?.shopByLight"
             :key="item"
           >
-            <a
-              href=""
+            <router-link
+              to="/"
+              @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90]"
             >
-              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
+              <img
+                class="h-[102px] w-[108px]"
+                :src="item?.image"
+                alt="Not found"
+              />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -148,16 +166,16 @@
       <h1 class="text-center text-[32px] font-bold">Latest Plant</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <LatestPlants :latestPlants="latestPlants" />
+    <LatestPlants :latestPlants="data?.latestPlants" />
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
-    <div class="xs:px-3 m-auto sm:w-[90%] lg:w-[70%]">
+    <div class="m-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
       <div class="cards">
         <div
-          class="xs:w-[50%] p-[0.8em] sm:w-[25%] md:w-[33%] lg:w-[25%]"
+          class="p-[0.8em] xs:w-[50%] sm:w-[25%] md:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"
-          v-for="(item, index) in gallery"
+          v-for="(item, index) in data?.gallery"
           :key="index"
         >
           <div
@@ -176,7 +194,7 @@
         :isVisible="isPopupVisible"
         :imageSrc="selectedImage"
         :currentIndex="selectedIndex"
-        :totalImages="gallery.length"
+        :totalImages="data?.gallery.length"
         @close="closePopup"
       >
         <template v-slot:buttons>
@@ -185,14 +203,22 @@
             @click="prevImage"
             class="prev-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
           >
-            <img src="../assets/images/icons/previous.svg" width="18" alt="" />
+            <img
+              src="../assets/images/icons/previous.svg"
+              width="18"
+              alt="Not found"
+            />
           </button>
           <button
-            v-if="selectedIndex !== gallery.length - 1"
+            v-if="selectedIndex !== data?.gallery?.length - 1"
             @click="nextImage"
             class="next-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
           >
-            <img src="../assets/images/icons/next.svg" width="18" alt="" />
+            <img
+              src="../assets/images/icons/next.svg"
+              width="18"
+              alt="Not found"
+            />
           </button>
         </template>
       </ImagePreview>
@@ -201,7 +227,7 @@
       <div class="my-[50px]">
         <h1 class="text-center text-[26px]">What our customers say</h1>
       </div>
-      <CustomerReview :customers="customers" />
+      <CustomerReview :customers="data?.customers" />
     </div>
     <iframe
       class="h-[350px] w-full"
@@ -221,1846 +247,7 @@ import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
 import LatestPlants from "../components/LatestPlants.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
-
-const gallery = ref([
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_18-51-16?alt=media&token=5fcac061-5e7a-4b34-a408-c4ba1a0ca6f7",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_18-51-14?alt=media&token=0559766d-4753-435f-8bb8-2a074ffea526",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-20?alt=media&token=aef2ef83-dd84-4376-aa0e-db62cc19ebcf",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-32?alt=media&token=4dba29ab-426f-40b2-8101-afe0ae875d46",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-15?alt=media&token=5f702d77-876f-47a6-ae08-164bb0282360",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-30?alt=media&token=092fc09e-1f31-4388-9180-07afe9bba80c",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-24?alt=media&token=1daaf93f-cc4c-4305-8e6b-cc2dccb17bbf",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-11?alt=media&token=c989f476-005e-4871-9984-2850539ed255",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-50?alt=media&token=84195b8e-5ae6-4e2e-a845-dfdb37a87553",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-47?alt=media&token=6ab191a2-44d6-4d17-8f6d-91f222d252d2",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_11-37-22%20(2)?alt=media&token=c0a7fe6f-daf6-4cfc-8d9c-d8e09bda8fef",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_11-37-18?alt=media&token=44b07538-306c-44f8-b9df-2ba25c5ce607",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-14?alt=media&token=185e5c33-a870-4295-b15b-7035ab69a57e",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_11-37-19?alt=media&token=fdfe278e-d302-4549-8213-5eda884712a0",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-10-29_14-33-14?alt=media&token=ea69d1a8-312f-4192-a421-71ab31984372",
-  },
-  {
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-33?alt=media&token=773747df-49c6-4d2c-9f63-634c9939a570",
-  },
-]);
-
-const plants = ref([
-  {
-    id: 1,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-    name: "Succulents Plants",
-  },
-  {
-    id: 2,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113812Flowering%20Plants?alt=media&token=bf816531-06d6-4d57-9565-120df818f71d",
-    name: "Flowering Plants",
-  },
-  {
-    id: 3,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113954House%20Plants?alt=media&token=feccc8ed-825a-4d3c-a85e-684d39257462",
-    name: "House Plants",
-  },
-  {
-    id: 4,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114032Bonsai%20Plants?alt=media&token=94f083ae-868e-4b63-b87e-1b195723b774",
-    name: "Bonsai Plants",
-  },
-  {
-    id: 5,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114116Rare%20Plants?alt=media&token=ad3da504-befb-439d-ba4b-2617fe571b66",
-    name: "Rare Plants",
-  },
-  {
-    id: 6,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114128Hanging%20Plants?alt=media&token=7a6585d7-1ec0-438a-9df5-98707ee0c44d",
-    name: "Hanging Plants",
-  },
-  {
-    id: 7,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010115648Fruit%20Plants?alt=media&token=46efe0f5-dc88-4855-ada6-fd82e463a18f",
-    name: "Fruit Plants",
-  },
-  {
-    id: 8,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
-    name: "Air Purifying Plants",
-  },
-]);
-
-const shopByCare = ref([
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.52.164b9baf.png",
-    name: "Easy",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.20.48a4e192.png",
-    name: "Moderate",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.39.b2eaf922.png",
-    name: "Advanced",
-  },
-]);
-
-const shopBySize = ref([
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.00.ce36db42.png",
-    name: "Small",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.21.f1d1989f.png",
-    name: "Medium",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.43.13.f01ce746.png",
-    name: "Large",
-  },
-]);
-
-const shopByLight = ref([
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.36.4e04be72.png",
-    name: "Low Light",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.04.cfbaee60.png",
-    name: "Indirect Light",
-  },
-  {
-    image:
-      "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.50.89273808.png",
-    name: "Direct Light",
-  },
-]);
-
-const customers = ref([
-  {
-    id: 1,
-    name: "Yin Vun",
-    first_name: "Vun",
-    last_name: "Yin",
-    profile: "",
-    date: "2 years ago",
-    rate: 5,
-    comment:
-      "I love this place. Nice staff and they are happy to give you some advice. Plenty of choice, flowers, plants, trees, pots, soil etc etc. Most important, they think green 💚.",
-  },
-  {
-    id: 2,
-    name: "Orn Sarath",
-    first_name: "Sarath",
-    last_name: "Orn",
-    profile: "",
-    date: "4 months ago",
-    rate: 5,
-    comment: "Highly recommend this large and urban garden center",
-  },
-  {
-    id: 3,
-    name: "Vorn Sreymao",
-    first_name: "Sreymao",
-    last_name: "Vorn",
-    profile: "",
-    date: "1 year ago",
-    rate: 5,
-    comment: "Very good services and a lot of products",
-  },
-  {
-    id: 4,
-    name: "Vun Theavy",
-    first_name: "Theavy",
-    last_name: "Vun",
-    profile: "",
-    date: "6 months ago",
-    rate: 5,
-    comment:
-      "Absolutely beautiful. Good prices and selection. I will definitely go back.",
-  },
-  {
-    id: 5,
-    name: "Chhem Lyheang",
-    first_name: "Lyheang",
-    last_name: "Chhem",
-    profile: "",
-    date: "2 weeks ago",
-    rate: 4,
-    comment: "There are a lot plants. Good price and service.",
-  },
-  {
-    id: 6,
-    name: "Chai Lyden",
-    first_name: "Lyden",
-    last_name: "Chai",
-    profile: "",
-    date: "1 hour ago",
-    rate: 2,
-    comment: "Emm mg",
-  },
-]);
-
-const latestPlants = ref([
-  {
-    id: 1,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 7,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 8,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 9,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 10,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 11,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 12,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 13,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 14,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 15,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 16,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 17,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 18,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 19,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 20,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 21,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 22,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 23,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 24,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 25,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 26,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 27,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 28,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 29,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 30,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 31,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 32,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 33,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 34,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 35,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 36,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 37,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 38,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 39,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-  {
-    id: 40,
-    name: "Cacao Tree",
-    code: "A109",
-    images: [
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
-      },
-    ],
-    from: "5",
-    to: "10",
-    care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
-    size: [{ name: "Small" }, { name: "Medium" }],
-    light: [
-      { name: "Direct" },
-      { name: "Direct Light" },
-      { name: "Indirect Light" },
-    ],
-  },
-]);
+import { data } from "../data";
 
 const selectedIndex = ref(0);
 const selectedImage = ref("");

@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      scale: {
+        112: "1.12",
+      },
+    },
     screens: {
       xs: "320px", // Extra small devices (phones)
       sm: "640px", // Small devices (phones)
@@ -20,4 +24,10 @@ export default {
       90: "90",
     },
   },
+  variants: {
+    extend: {
+      scale: ["hover"],
+    },
+  },
+  plugins: [],
 };
