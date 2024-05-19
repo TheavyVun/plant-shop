@@ -5,7 +5,9 @@ import PlantByLifeStyle from "../views/PlantBytLifeStyleView.vue";
 import PlantGifts from "../views/PlantGiftsView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
+import PlantTypeView from "../views/PlantTypeView.vue";
 import PlantDetailsView from "../views/PlantDetailsView.vue";
+import AllPlantView from "../views/AllPlantView.vue";
 import PageNotFound from "../views/PageNotFound.vue";
 import Login from "../views/Login.vue";
 
@@ -35,8 +37,16 @@ const routes = [
     component: ContactView,
   },
   {
+    path: "/plant-type/:id",
+    component: PlantTypeView,
+  },
+  {
     path: "/plant/:id",
     component: PlantDetailsView,
+  },
+  {
+    path: "/all-plant",
+    component: AllPlantView,
   },
   {
     path: "/login",

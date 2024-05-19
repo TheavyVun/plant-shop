@@ -72,6 +72,7 @@
             <div class="flex h-full w-full flex-col">
               <router-link
                 to="/"
+                @click.native="scrollToTop()"
                 :class="{ 'active-nav-link': $route.path === '/' }"
                 class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
@@ -79,12 +80,14 @@
               </router-link>
               <router-link
                 to="/all-plant"
+                @click.native="scrollToTop()"
                 class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
                 All Plant
               </router-link>
               <router-link
                 to="/about"
+                @click.native="scrollToTop()"
                 :class="{ 'active-nav-link': $route.path === '/about' }"
                 class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
@@ -92,6 +95,7 @@
               </router-link>
               <router-link
                 to="/contact"
+                @click.native="scrollToTop()"
                 :class="{ 'active-nav-link': $route.path === '/contact' }"
                 class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
               >
@@ -114,7 +118,11 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+</script>
 
 <style scoped lang="scss">
 .footer-content {
