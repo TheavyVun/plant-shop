@@ -6,13 +6,15 @@
         v-for="item in latestPlants"
         :key="item.id"
       >
-        <img class="h-[70%]" :src="item?.image" alt="" />
-        <div class="my-3 flex-col text-center text-[18px]">
-          <div class="text-green-500">
-            {{ "$" + item.from + " - " + "$" + item.to }}
+        <router-link :to="'/plant/' + item.id" @click.native="scrollToTop()">
+          <img class="h-[70%]" :src="item?.images[0]?.image" alt="" />
+          <div class="my-3 flex-col text-center text-[18px]">
+            <div class="text-green-500">
+              {{ "$" + item.from + " - " + "$" + item.to }}
+            </div>
+            <div class="w-full text-wrap">{{ item?.name }}</div>
           </div>
-          <div class="w-full text-wrap">{{ item?.name }}</div>
-        </div>
+        </router-link>
       </div>
     </div>
     <button
@@ -72,11 +74,16 @@ export default {
     },
   },
   methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+
     next() {
       if (this.currentSlide < this.latestPlants.length - 1) {
         this.currentSlide++;
       }
     },
+
     prev() {
       if (this.currentSlide > 0) {
         this.currentSlide--;

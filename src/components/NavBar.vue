@@ -89,6 +89,7 @@
       <div class="h-full text-sm sm:mb-4 lg:mb-0 lg:flex-grow">
         <router-link
           to="/"
+          @click.native="scrollToTop()"
           :class="{ 'active-nav-link': $route.path === '/' }"
           class="mt-4 block font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -96,6 +97,7 @@
         </router-link>
         <router-link
           to="/plant-type"
+          @click.native="scrollToTop()"
           :class="{ 'active-nav-link': $route.path === '/plant-type' }"
           class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -103,6 +105,7 @@
         </router-link>
         <router-link
           to="/plant-by-life-style"
+          @click.native="scrollToTop()"
           :class="{
             'active-nav-link': $route.path === '/plant-by-life-style',
           }"
@@ -112,6 +115,7 @@
         </router-link>
         <router-link
           to="/plant-gifts"
+          @click.native="scrollToTop()"
           :class="{ 'active-nav-link': $route.path === '/plant-gifts' }"
           class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -119,6 +123,7 @@
         </router-link>
         <router-link
           to="/about"
+          @click.native="scrollToTop()"
           :class="{ 'active-nav-link': $route.path === '/about' }"
           class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -126,6 +131,7 @@
         </router-link>
         <router-link
           to="/contact"
+          @click.native="scrollToTop()"
           :class="{ 'active-nav-link': $route.path === '/contact' }"
           class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -138,6 +144,9 @@
 
 <script setup>
 let isLogin = false;
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 </script>
 <style scoped>
 .active-nav-link {
