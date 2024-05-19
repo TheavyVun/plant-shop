@@ -32,7 +32,9 @@
       class="next-btn flex h-full w-[70px] items-center justify-center bg-white"
     >
       <img
-        :src="currentSlide === latestPlants.length - 1 ? nextDisabled : next"
+        :src="
+          currentSlide === latestPlants.length - 1 ? nextDisabled : nextBlack
+        "
         width="18"
         alt=""
       />
@@ -43,7 +45,7 @@
 <script>
 import previous from "@/assets/images/icons/previous-black.svg";
 import previousDisabled from "@/assets/images/icons/previous-disabled.svg";
-import next from "@/assets/images/icons/next-black.svg";
+import nextBlack from "@/assets/images/icons/next-black.svg";
 import nextDisabled from "@/assets/images/icons/next-disabled.svg";
 
 export default {
@@ -59,7 +61,7 @@ export default {
       colorMap: {},
       currentSlide: 0,
       previous,
-      next,
+      nextBlack,
       previousDisabled,
       nextDisabled,
     };
