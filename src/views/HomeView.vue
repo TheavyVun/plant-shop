@@ -49,9 +49,10 @@
             >
               <img class="h-[180px] w-[180px]" :src="plant.image" alt="" />
             </router-link>
+ 
             <router-link
-              :to="'/plant-type/' + plant.id"
-              @click.native="scrollToTop()"
+              :to="'/plant/' + plant.id"
+   @click.native="scrollToTop()"
               class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
             >
               {{ plant?.name }}
@@ -221,7 +222,7 @@ import ImagePreview from "../components/ImagePreview.vue";
 import LatestPlants from "../components/LatestPlants.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
 
-const gallery = [
+const gallery = ref([
   {
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_18-51-16?alt=media&token=5fcac061-5e7a-4b34-a408-c4ba1a0ca6f7",
@@ -286,52 +287,60 @@ const gallery = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/home%2F20221003%2F20221003194331photo_2021-09-10_10-11-33?alt=media&token=773747df-49c6-4d2c-9f63-634c9939a570",
   },
-];
+]);
 
-const plants = [
+const plants = ref([
   {
+    id: 1,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
     name: "Succulents Plants",
   },
   {
+    id: 2,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113812Flowering%20Plants?alt=media&token=bf816531-06d6-4d57-9565-120df818f71d",
     name: "Flowering Plants",
   },
   {
+    id: 3,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113954House%20Plants?alt=media&token=feccc8ed-825a-4d3c-a85e-684d39257462",
     name: "House Plants",
   },
   {
+    id: 4,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114032Bonsai%20Plants?alt=media&token=94f083ae-868e-4b63-b87e-1b195723b774",
     name: "Bonsai Plants",
   },
   {
+    id: 5,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114116Rare%20Plants?alt=media&token=ad3da504-befb-439d-ba4b-2617fe571b66",
     name: "Rare Plants",
   },
   {
+    id: 6,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114128Hanging%20Plants?alt=media&token=7a6585d7-1ec0-438a-9df5-98707ee0c44d",
     name: "Hanging Plants",
   },
   {
+    id: 7,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010115648Fruit%20Plants?alt=media&token=46efe0f5-dc88-4855-ada6-fd82e463a18f",
     name: "Fruit Plants",
   },
   {
+    id: 8,
     image:
       "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
     name: "Air Purifying Plants",
   },
-];
+]);
 
-const shopByCare = [
+const shopByCare = ref([
   {
     image:
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.52.164b9baf.png",
@@ -347,9 +356,9 @@ const shopByCare = [
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.46.39.b2eaf922.png",
     name: "Advanced",
   },
-];
+]);
 
-const shopBySize = [
+const shopBySize = ref([
   {
     image:
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.00.ce36db42.png",
@@ -365,9 +374,9 @@ const shopBySize = [
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.43.13.f01ce746.png",
     name: "Large",
   },
-];
+]);
 
-const shopByLight = [
+const shopByLight = ref([
   {
     image:
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.36.4e04be72.png",
@@ -383,9 +392,9 @@ const shopByLight = [
       "https://greenhousecambodia.com/img/photo_2022-10-06%2020.45.50.89273808.png",
     name: "Direct Light",
   },
-];
+]);
 
-const customers = [
+const customers = ref([
   {
     id: 1,
     name: "Yin Vun",
@@ -448,9 +457,11 @@ const customers = [
     rate: 2,
     comment: "Emm mg",
   },
-];
+]);
 
 const latestPlants = [
+ 
+ 
   {
     id: 1,
     name: "Cacao Tree",
@@ -2051,15 +2062,15 @@ const latestPlants = [
       { name: "Indirect Light" },
     ],
   },
-];
+]);
 
-const isPopupVisible = ref(false);
-const selectedImage = ref("");
 const selectedIndex = ref(0);
+const selectedImage = ref("");
+const isPopupVisible = ref(false);
 
 const openPopup = (index) => {
   selectedIndex.value = index;
-  selectedImage.value = gallery[selectedIndex.value].image;
+  selectedImage.value = gallery.value[selectedIndex.value].image;
   isPopupVisible.value = true;
 };
 
@@ -2069,14 +2080,14 @@ const closePopup = () => {
 };
 
 const nextImage = () => {
-  selectedIndex.value = (selectedIndex.value + 1) % gallery.length;
-  selectedImage.value = gallery[selectedIndex.value].image;
+  selectedIndex.value = (selectedIndex.value + 1) % gallery.value.length;
+  selectedImage.value = gallery.value[selectedIndex.value].image;
 };
 
 const prevImage = () => {
   selectedIndex.value =
-    (selectedIndex.value - 1 + gallery.length) % gallery.length;
-  selectedImage.value = gallery[selectedIndex.value].image;
+    (selectedIndex.value - 1 + gallery.value.length) % gallery.value.length;
+  selectedImage.value = gallery.value[selectedIndex.value].image;
 };
 
 const scrollToTop = () => {
