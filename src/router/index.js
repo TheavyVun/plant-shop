@@ -42,10 +42,10 @@ const routes = [
     path: "/login",
     component: Login,
   },
-  // {
-  //   path: "/:pathMatch(.*)*",
-  //   component: PageNotFound,
-  // },
+  {
+    path: "/:pathMatch(.*)*",
+    component: PageNotFound,
+  },
 ];
 
 const router = createRouter({
