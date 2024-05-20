@@ -18,10 +18,7 @@ export default {
       "4xl": "2560px", // 4x extra large devices
     },
     zIndex: {
-      60: "60",
-      70: "70",
-      80: "80",
-      90: "90",
+      1: "1",
     },
   },
   variants: {

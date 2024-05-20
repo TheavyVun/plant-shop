@@ -201,22 +201,22 @@
           <button
             v-if="selectedIndex !== 0"
             @click="prevImage"
-            class="prev-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
+            class="prev-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
             <img
               src="../assets/images/icons/previous.svg"
-              width="18"
+              width="100"
               alt="Not found"
             />
           </button>
           <button
             v-if="selectedIndex !== gallery?.length - 1"
             @click="nextImage"
-            class="next-btn h-[45px] w-[50px] rounded-md bg-slate-600 p-3"
+            class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
             <img
               src="../assets/images/icons/next.svg"
-              width="18"
+              width="100"
               alt="Not found"
             />
           </button>

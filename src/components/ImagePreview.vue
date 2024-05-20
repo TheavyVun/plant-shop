@@ -1,7 +1,10 @@
 <template>
   <div v-if="isVisible" class="popup-overlay" @click="closePopup">
     <div class="popup-content" @click.stop>
-      <button class="close-btn h-[45px] w-[50px]" @click="$emit('close')">
+      <button
+        class="close-btn h-[50px] w-[50px] rounded-full p-2"
+        @click="$emit('close')"
+      >
         <img src="../assets/images/icons/close.svg" alt="Not found" />
       </button>
       <img :src="imageSrc" alt="Popup Image" />
@@ -57,8 +60,8 @@ export default {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 50%;
-  height: 50%;
+  width: 68.5%;
+  height: 68.5%;
   overflow: none;
 }
 
@@ -75,7 +78,7 @@ button {
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 5px;
 }
 
 .prev-btn {

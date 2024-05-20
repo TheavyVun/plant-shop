@@ -89,7 +89,7 @@
     </div>
   </div>
   <nav
-    class="bg-write z-index-1000 sticky top-0 flex w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
+    class="bg-write sticky top-0 z-[1] flex w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
     <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
       <div class="h-full text-sm xs:mb-4 sm:mb-4 lg:mb-0 lg:flex-grow">
