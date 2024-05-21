@@ -263,8 +263,8 @@ import Footer from "../components/Footer.vue";
 import LatestPlants from "../components/LatestPlants.vue";
 import { data } from "../data";
 
-const latestPlants = data.latestPlants;
 const route = useRoute();
+const latestPlants = data?.latestPlants;
 const id = route.params.id - 1;
 const mainImage = ref(latestPlants[id]?.images[0]?.image);
 const changeMainImage = (image) => {

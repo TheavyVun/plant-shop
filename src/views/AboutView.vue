@@ -1,5 +1,5 @@
 <template>
-  <div class="about-section">
+  <div class="about-section m-auto text-center sm:w-[90%] lg:w-[70%]">
     <div class="mb-[30px]">
       <h1>About</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
@@ -87,13 +87,6 @@ const customers = data.customers;
 </script>
 
 <style scoped>
-.about-section {
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-  width: 70%;
-}
-
 .about-section h1 {
   margin-bottom: 0.5rem;
   color: #333;

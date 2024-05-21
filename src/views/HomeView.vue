@@ -5,10 +5,10 @@
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
         <h1
-          class="text-[40px] text-white shadow-lg"
+          class="text-[40px] text-white"
           style="font-family: Khmer OS Muol Light"
         >
-          ហាងលក់រុក្ខជាតិ 🌱
+          ហាងលក់រុក្ខជាតិ
         </h1>
         <br />
         <h1 class="text-[40px] text-white">Plant Shop</h1>
