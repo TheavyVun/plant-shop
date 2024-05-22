@@ -278,6 +278,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 2,
@@ -317,6 +388,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -358,6 +500,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 4,
@@ -397,6 +610,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -438,6 +722,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 6,
@@ -477,6 +832,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -518,6 +944,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 8,
@@ -557,6 +1054,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -598,6 +1166,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 10,
@@ -637,6 +1276,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -678,6 +1388,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 12,
@@ -717,6 +1498,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -758,6 +1610,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 14,
@@ -797,6 +1720,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -838,6 +1832,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 16,
@@ -877,6 +1942,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -918,6 +2054,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 18,
@@ -957,6 +2164,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -998,6 +2276,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 20,
@@ -1037,6 +2386,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1078,6 +2498,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 22,
@@ -1117,6 +2608,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1158,6 +2720,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 24,
@@ -1197,6 +2830,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1238,6 +2942,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 26,
@@ -1277,6 +3052,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1318,6 +3164,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 28,
@@ -1357,6 +3274,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1398,6 +3386,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 30,
@@ -1437,6 +3496,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1478,6 +3608,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 32,
@@ -1517,6 +3718,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1558,6 +3830,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 34,
@@ -1597,6 +3940,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1638,6 +4052,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 36,
@@ -1677,6 +4162,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1718,6 +4274,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 38,
@@ -1757,6 +4384,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
     {
@@ -1798,6 +4496,77 @@ export const data = {
         { name: "Direct Light" },
         { name: "Indirect Light" },
       ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
+      ],
     },
     {
       id: 40,
@@ -1837,6 +4606,77 @@ export const data = {
         { name: "Direct" },
         { name: "Direct Light" },
         { name: "Indirect Light" },
+      ],
+      description:
+        "Cocoa is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+      benefit: [
+        {
+          title: "Antioxidant properties",
+          description:
+            "Cocoa contains flavonoids, which are natural ingredients in plant products. These flavonoids help fight the formation of 'free radicals that are harmful to health. High levels of free radicals can lead to cell damage and subsequent inflammation. Sources of free radicals include normal metabolic processes in the body as well as external stressors such as pollution, poor diet and smoking. ",
+        },
+        {
+          title: "Anti-inflammatory properties",
+          description:
+            "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
+        },
+        {
+          title: "Reduce 'bad' cholesterol",
+          description:
+            "The flavonoid theobromine (found in cocoa) has been shown to reduce bad LDL cholesterol levels while increasing good HDL cholesterol. Elevated levels of LDL cholesterol are associated with an increase in heart disease. In addition, people of native origin in high-cocoa production and export countries usually have lower levels of heart disease. This is thought to be due to their high consumption of cocoa.",
+        },
+        {
+          title: "May prevent cognitive decline",
+          description:
+            "Cocoa powder as well as cocoa beans (and chocolate) contain caffeine, which is thought to have a protective effect on the nerves when consumed in moderation. Research has shown that drinking 2-4 cups of coffee a day can help prevent age-related cognitive decline. The mechanism of this is likely to be related to inflammation, reducing the properties of caffeine. Possible links between caffeine consumption and intestinal microbiota have also been established. ",
+        },
+        {
+          title: "Can help you sleep better",
+          description:
+            "Although cocoa contains caffeine, theobromine levels can help balance the stimulant properties of caffeine. Cocoa also contains tryptophan, an amino acid that can be converted to melatonin, an important hormone for sleep. ",
+        },
+        {
+          title: "Improved exercise recovery",
+          description:
+            "The caffeine content of cocoa can have a positive effect on exercise and rehabilitation. Caffeine acts as a vasodilator by stimulating the production of nitric oxide. This increases blood flow to the muscles, which can help the muscles work harder during exercise and recover faster. ",
+        },
+        {
+          title: "Help heart health",
+          description:
+            "The vasodilatory effects of caffeine not only aid in exercise, but can also reduce the pressure against the heart. Flavonoids in cocoa can help protect and combat damage to the endothelium, the lining of the artery wall, which when damaged can lead to heart and blood vessel weakness. ",
+        },
+        {
+          title: "Contains essential nutrients",
+          description:
+            "The main micronutrients in cocoa include magnesium, potassium and calcium. These three nutrients play an important role in promoting muscle contraction, including myocardial infarction. These nutrient deficiencies can lead to arrhythmias, as well as common symptoms of malnutrition, which can include fatigue, intestinal disturbances, and brain haze.",
+        },
+        {
+          title: "May have anti-aging properties",
+          description:
+            "Foods rich in cocoa and flavonoids can help protect against the signs of aging by preventing dehydration of the skin and increasing collagen production. Water and collagen are important ingredients for maintaining skin tone and elasticity. Loss of these substances can lead to dry skin. And old. Consuming cocoa can also help reduce the sensitivity to UV light, which damages the skin. ",
+        },
+      ],
+      grow_and_care: [
+        {
+          title: "Sunlight",
+          description:
+            "The cacao tree needs a little sunlight and shade. They need direct sunlight at least 3 hours a day.",
+        },
+        {
+          title: "Soil",
+          description:
+            "Cocoa tree grows in soils rich in organic matter and well-drained soil.",
+        },
+        {
+          title: "Water",
+          description:
+            "Cocoa trees need regular watering but are not resistant to waterlogged soil. They need about 1 water a week depending on the rainfall.",
+        },
+        {
+          title: "Temperature and humidity",
+          description:
+            "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
+        },
       ],
     },
   ],

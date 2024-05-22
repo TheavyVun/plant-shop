@@ -16,7 +16,7 @@
           />
         </router-link>
         <div
-          class="absolute bottom-[25px] flex items-center justify-center rounded-2xl bg-green-500 px-[15px] py-1 text-[18px] text-white sm:px-[10px]"
+          class="absolute bottom-[25px] flex items-center justify-center rounded-2xl bg-green-500 px-3 py-1 text-[16px] text-white sm:px-[10px]"
         >
           {{ "$" + item?.from + " - " + "$" + item?.to }}
         </div>
