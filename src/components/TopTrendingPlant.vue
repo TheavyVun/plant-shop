@@ -101,6 +101,7 @@ export default {
 .carousel-container {
   position: relative;
   width: 100%;
+  height: 278px !important;
   overflow: hidden;
   display: flex;
   align-items: center;

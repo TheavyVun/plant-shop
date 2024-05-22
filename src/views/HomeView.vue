@@ -36,7 +36,7 @@
       </div>
       <div class="cards">
         <div
-          class="p-[0.8em] xs:w-full sm:w-[50%] md:w-[33%] lg:w-[25%]"
+          class="p-[0.8em] xs:w-[50%] sm:w-[33%] md:w-[33%] lg:w-[25%]"
           v-for="plant in data?.plants"
           :key="plant"
         >
@@ -48,7 +48,7 @@
               @click.native="scrollToTop()"
             >
               <img
-                class="h-[180px] w-[180px]"
+                class="sm:h-[150px] sm:w-[150px] lg:h-[180px] lg:w-[180px]"
                 :src="plant.image"
                 alt="Not found"
               />
@@ -179,10 +179,10 @@
           :key="index"
         >
           <div
-            class="flex w-full flex-col items-center justify-center xs:h-[200px] sm:h-[250px] lg:h-[300px]"
+            class="flex w-full flex-col items-center justify-center xs:h-[150px] sm:h-[250px] lg:h-[300px]"
           >
             <img
-              class="gallery h-full w-full cursor-pointer"
+              class="gallery h-full w-full cursor-pointer object-cover"
               :src="item?.image"
               @click="openPopup(index)"
               alt="Not found"
