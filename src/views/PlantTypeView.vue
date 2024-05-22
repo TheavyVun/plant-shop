@@ -27,11 +27,13 @@
       </div>
 
     </div>
+    <Footer />
   </div>
 </template>
   
 <script>
 import { ref } from "vue";
+import Footer from "../components/Footer.vue";
 const message = ref("Plant Type");
 export default {
   data() {
