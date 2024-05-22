@@ -1,5 +1,5 @@
 <template>
-  <div class="cards px-2">
+  <div class="flex w-full flex-wrap px-2">
     <div
       class="p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
       v-for="item in plants"
@@ -48,10 +48,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.cards {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-}
-</style>
+<style scoped lang="scss"></style>

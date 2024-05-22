@@ -34,7 +34,7 @@
         <h1 class="text-center text-[26px]">Fine Plant You Will Love</h1>
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
-      <div class="cards">
+      <div class="flex w-full flex-wrap">
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[33%] md:w-[33%] lg:w-[25%]"
           v-for="plant in plantType"
@@ -82,7 +82,7 @@
           <h1 class="text-center text-[22px]">Shop By Care</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="cards">
+        <div class="flex w-full flex-wrap">
           <div
             class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByCare"
@@ -110,7 +110,7 @@
           <h1 class="text-center text-[22px]">Shop By Size</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="cards">
+        <div class="flex w-full flex-wrap">
           <div
             class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopBySize"
@@ -138,7 +138,7 @@
           <h1 class="text-center text-[22px]">Shop By Light</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="cards">
+        <div class="flex w-full flex-wrap">
           <div
             class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByLight"
@@ -171,7 +171,7 @@
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
     <div class="m-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
-      <div class="cards">
+      <div class="flex w-full flex-wrap">
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"
@@ -290,12 +290,6 @@ const scrollToTop = () => {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.cards {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .shop-by-care-box {

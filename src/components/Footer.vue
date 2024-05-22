@@ -2,7 +2,7 @@
   <div class="mt-1 w-full">
     <div class="footer-content box-content w-full md:h-auto lg:h-[450px]">
       <div
-        class="cards dark-2 flex h-full w-full justify-between py-8 xs:px-3 sm:flex-col sm:px-[5%] lg:px-[10%]"
+        class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:flex-col sm:px-[5%] md:w-full lg:px-[10%]"
       >
         <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
@@ -139,12 +139,6 @@ const scrollToTop = () => {
     border-color: rgba(0, 128, 0, 0.7);
   }
 
-  .cards {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
   .card-item {
     display: flex;
     width: 100%;
@@ -159,12 +153,6 @@ const scrollToTop = () => {
   @media all and (min-width: 56.25em) {
     .card-item {
       width: calc(100% / 12 * 3);
-    }
-  }
-
-  @media screen and (max-width: 968px) {
-    .cards {
-      width: 100% !important;
     }
   }
 }

@@ -1,10 +1,7 @@
 <template>
   <div class="h-auto w-full">
     <div class="m-auto my-[50px] h-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
-      <div
-        class="my-[50px] h-auto w-full justify-between md:flex-col lg:flex"
-        style="display: flex; flex-flow: row wrap"
-      >
+      <div class="my-[50px] flex h-auto w-full flex-wrap justify-between">
         <div class="xs:w-full sm:w-full md:w-full lg:w-[49%]">
           <div class="relative">
             <img
@@ -46,8 +43,7 @@
             </button>
           </div>
           <div
-            class="my-[30px] flex w-full items-center justify-center"
-            style="display: flex; flex-flow: row wrap"
+            class="my-[30px] flex w-full flex-wrap items-center justify-center"
           >
             <div
               v-for="(image, index) in plant?.images"
@@ -65,7 +61,7 @@
           </div>
         </div>
         <div
-          class="h-fit flex-col rounded-xl bg-[#efefef] p-6 xs:w-full sm:w-full md:w-full lg:w-[49%]"
+          class="h-fit flex-col rounded-xl bg-[#e9e9e9b5] p-6 xs:w-full sm:w-full md:w-full lg:w-[49%]"
         >
           <h1 class="text-[32px] font-bold">
             {{ plant?.name }}
@@ -85,13 +81,12 @@
           </div>
           <div class="my-[18px] border-b border-[#c3c3c3]"></div>
           <div class="my-[18px] w-full">
-            <div class="flex w-full items-center">
+            <div class="flex w-full flex-wrap items-center">
               <div class="mr-2 text-[16px]">Care:</div>
               <div
-                class=""
+                class="flex flex-wrap"
                 v-for="care in plant?.care"
                 :key="care?.name"
-                style="display: flex; flex-flow: row wrap"
               >
                 <div
                   class="m-1 rounded-full bg-green-500 px-3 py-1 text-[15px] text-white"
@@ -102,13 +97,12 @@
             </div>
           </div>
           <div class="my-[18px] w-full">
-            <div class="flex w-full items-center">
+            <div class="flex w-full flex-wrap items-center">
               <div class="mr-2 text-[16px]">Size:</div>
               <div
-                class=""
+                class="flex flex-wrap"
                 v-for="size in plant?.size"
                 :key="size?.name"
-                style="display: flex; flex-flow: row wrap"
               >
                 <div
                   class="m-1 rounded-full bg-[#2196f3] px-3 py-1 text-[15px] text-white"
@@ -119,13 +113,12 @@
             </div>
           </div>
           <div class="my-[18px] w-full">
-            <div class="flex w-full items-center">
+            <div class="flex w-full flex-wrap items-center">
               <div class="mr-2 text-[16px]">Light:</div>
               <div
-                class=""
+                class="flex flex-wrap"
                 v-for="light in plant?.light"
                 :key="light?.name"
-                style="display: flex; flex-flow: row wrap"
               >
                 <div
                   class="m-1 rounded-full bg-[#009688] px-3 py-1 text-[15px] text-white"
