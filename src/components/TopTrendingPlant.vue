@@ -4,12 +4,16 @@
   >
     <div class="cards" :style="carouselStyle">
       <div
-        class="card rounded-1 h-full w-[200px] flex-col bg-slate-100"
+        class="card rounded-1 h-full w-[200px] flex-col bg-slate-100 xs:m-[10px] lg:m-[15px]"
         v-for="item in plants"
         :key="item.id"
       >
         <router-link :to="'/plant/' + item.id" @click.native="scrollToTop()">
-          <img class="h-[70%]" :src="item?.images[0]?.image" alt="Not found" />
+          <img
+            class="lg:h-[70%]"
+            :src="item?.images[0]?.image"
+            alt="Not found"
+          />
           <div class="my-3 flex-col text-center text-[18px]">
             <div class="text-green-500">
               {{ "$" + item.from + " - " + "$" + item.to }}
@@ -71,7 +75,7 @@ export default {
   computed: {
     carouselStyle() {
       return {
-        transform: `translateX(-${this.currentSlide * 300}px)`,
+        transform: `translateX(-${this.currentSlide * 200}px)`,
       };
     },
   },
@@ -112,7 +116,7 @@ export default {
 
 .card {
   height: fit-content !important;
-  margin: 15px;
+
   display: inline-block;
   background: #f2f2f2;
   vertical-align: top;

@@ -2,9 +2,9 @@
   <div class="mt-1 w-full">
     <div class="footer-content box-content w-full md:h-auto lg:h-[450px]">
       <div
-        class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:flex-col sm:px-[5%] md:w-full lg:px-[10%]"
+        class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:px-[5%] md:w-full lg:px-[10%]"
       >
-        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[25%]">
+        <div class="card-item sm:mb-[20px] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Follow Us On Facebook
@@ -14,7 +14,7 @@
             ></div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[50%]">
+        <div class="card-item md:w-[100%] lg:mb-0 lg:w-[50%]">
           <div class="h-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Contact Us
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] md:w-full lg:mb-0 lg:w-[25%]">
+        <div class="card-item xs:w-[100%] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1
               class="mb-3 text-center text-xl font-semibold tracking-tight text-white"
@@ -75,32 +75,40 @@
               <router-link
                 to="/"
                 @click.native="scrollToTop()"
-                :class="{ 'active-nav-link': $route.path === '/' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 Home
               </router-link>
               <router-link
                 to="/all-plants"
                 @click.native="scrollToTop()"
-                :class="{ 'active-nav-link': $route.path === '/all-plants' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/all-plants',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 All Plant
               </router-link>
               <router-link
                 to="/about"
                 @click.native="scrollToTop()"
-                :class="{ 'active-nav-link': $route.path === '/about' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/about',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 About
               </router-link>
               <router-link
                 to="/contact"
                 @click.native="scrollToTop()"
-                :class="{ 'active-nav-link': $route.path === '/contact' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/contact',
+                }"
+                class="hover:bg-[rgba(255, 255, 255, 0.187)] flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 Contact
               </router-link>
@@ -155,13 +163,5 @@ const scrollToTop = () => {
       width: calc(100% / 12 * 3);
     }
   }
-}
-
-.active-nav-link {
-  background-color: rgba(255, 255, 255, 0.313);
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.187);
 }
 </style>

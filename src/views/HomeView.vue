@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 h-full w-full">
+  <div class="mt-5 h-full w-full">
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
@@ -72,8 +72,8 @@
       >
         SEE ALL PLANT
       </router-link>
-      <h1 class="mt-1 text-center text-[26px]">Top Trending Plants</h1>
-      <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
+      <h1 class="mt-2 text-center text-[26px]">Top Trending Plants</h1>
+      <div class="m-auto mt-3 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <TopTrendingPlant :plants="plants" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
@@ -84,7 +84,7 @@
         </div>
         <div class="flex w-full flex-wrap">
           <div
-            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByCare"
             :key="item"
           >
@@ -112,7 +112,7 @@
         </div>
         <div class="flex w-full flex-wrap">
           <div
-            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopBySize"
             :key="item"
           >
@@ -140,7 +140,7 @@
         </div>
         <div class="flex w-full flex-wrap">
           <div
-            class="m-auto p-[0.8em] xs:w-full sm:w-[50%] lg:w-[33%]"
+            class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByLight"
             :key="item"
           >

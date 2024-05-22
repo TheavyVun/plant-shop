@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-write flex w-full flex-wrap items-center justify-between py-4 xs:px-3 sm:px-[20px] lg:px-[30px]"
+    class="top-nav bg-write flex w-full flex-wrap items-center justify-between py-4 xs:px-3 sm:px-[20px] lg:px-[30px]"
   >
     <div class="mr-6 flex flex-shrink-0 items-center" to="/">
       <img
@@ -13,7 +13,10 @@
       </span>
     </div>
     <div class="block lg:hidden">
-      <button class="flex items-center rounded border px-3 py-2">
+      <button
+        @click="toggleMenu"
+        class="flex items-center rounded border px-3 py-2"
+      >
         <svg
           class="h-3 w-3 fill-current"
           viewBox="0 0 20 20"
@@ -25,7 +28,8 @@
       </button>
     </div>
     <div
-      class="block w-full xs:my-4 sm:my-4 lg:my-0 lg:flex lg:w-auto lg:items-center"
+      :class="{ block: isMenuOpen, hidden: !isMenuOpen, 'lg:flex': true }"
+      class="w-full xs:mt-4 sm:mt-4 lg:mt-0 lg:w-auto lg:items-center"
     >
       <div class="relative lg:mb-0">
         <input
@@ -55,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="flex-end flex w-full items-center lg:w-auto">
+    <div class="flex-end mb-0 mt-4 flex w-full items-center lg:w-auto">
       <button>
         <img
           src="../assets/images/icons/heart.svg"
@@ -89,23 +93,24 @@
     </div>
   </div>
   <nav
-    class="bg-write sticky top-0 z-[1] flex w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
+    :class="{ block: isMenuOpen, hidden: !isMenuOpen, 'lg:flex': true }"
+    class="sticky top-0 z-[1] w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
-    <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
+    <div class="w-full flex-grow lg:flex lg:w-auto lg:items-center">
       <div class="h-full text-sm xs:mb-4 sm:mb-4 lg:mb-0 lg:flex-grow">
         <router-link
           to="/"
           @click.native="scrollToTop()"
-          :class="{ 'active-nav-link': $route.path === '/' }"
-          class="mt-4 block font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'border-b border-white': $route.path === '/' }"
+          class="mt-4 block font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
         <router-link
           to="/plant-type"
           @click.native="scrollToTop()"
-          :class="{ 'active-nav-link': $route.path === '/plant-type' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'border-b border-white': $route.path === '/plant-type' }"
+          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Type
         </router-link>
@@ -113,33 +118,33 @@
           to="/plant-by-life-style"
           @click.native="scrollToTop()"
           :class="{
-            'active-nav-link': $route.path === '/plant-by-life-style',
+            'border-b border-white': $route.path === '/plant-by-life-style',
           }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant By Life Style
         </router-link>
         <router-link
           to="/plant-gifts"
           @click.native="scrollToTop()"
-          :class="{ 'active-nav-link': $route.path === '/plant-gifts' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'border-b border-white': $route.path === '/plant-gifts' }"
+          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Gifts
         </router-link>
         <router-link
           to="/about"
           @click.native="scrollToTop()"
-          :class="{ 'active-nav-link': $route.path === '/about' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'border-b border-white': $route.path === '/about' }"
+          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
           @click.native="scrollToTop()"
-          :class="{ 'active-nav-link': $route.path === '/contact' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b-2 hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'border-b border-white': $route.path === '/contact' }"
+          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
         </router-link>
@@ -149,13 +154,22 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
 let isLogin = false;
+const isMenuOpen = ref(false);
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
 </script>
 <style scoped>
-.active-nav-link {
-  @apply border-b-2 border-white;
+.top-nav {
+  box-shadow:
+    0 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0 20px 31px 3px rgba(0, 0, 0, 0.14),
+    0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
 }
 </style>
