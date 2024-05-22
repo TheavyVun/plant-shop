@@ -6,40 +6,38 @@
         style="display: flex; flex-flow: row wrap"
       >
         <div class="xs:w-full sm:w-full md:w-full lg:w-[49%]">
-          <img class="h-[500px] w-full" :src="mainImage" alt="Not found" />
+          <img
+            class="h-[500px] w-full object-cover"
+            :src="mainImage"
+            alt="Not found"
+          />
           <div
             class="my-[30px] flex w-full items-center justify-center"
             style="display: flex; flex-flow: row wrap"
           >
             <div
-              v-for="image in latestPlants[id]?.images"
+              v-for="image in plant?.images"
               :key="image?.image"
               @click="changeMainImage(image?.image)"
               class="cursor-pointer p-[0.5em] sm:h-[25%] sm:w-[25%] md:h-[20%] md:w-[20%] lg:h-[16.66%] lg:w-[16.66%]"
             >
               <img
                 :src="image?.image"
-                class="h-[80px] w-[85px] rounded-full bg-cover bg-center duration-300 hover:scale-110"
+                class="h-[80px] w-[85px] rounded-full bg-cover bg-center object-cover duration-300 hover:scale-110"
                 alt="Not found"
               />
             </div>
           </div>
         </div>
         <div class="flex-col xs:w-full sm:w-full md:w-full lg:w-[49%]">
-          <h1 class="text-[34px]">{{ latestPlants[id]?.name }}</h1>
+          <h1 class="text-[34px]">{{ plant?.name }}</h1>
           <div class="my-[30px] w-full">
             <div class="flex items-center text-[18px] text-green-600">
               <div class="mr-2">Code:</div>
-              <div>{{ latestPlants[id]?.code }}</div>
+              <div>{{ plant?.code }}</div>
             </div>
             <div class="text-[18px] text-green-600">
-              {{
-                "$" +
-                latestPlants[id]?.from +
-                " - " +
-                "$" +
-                latestPlants[id]?.to
-              }}
+              {{ "$" + plant?.from + " - " + "$" + plant?.to }}
             </div>
           </div>
           <div class="my-[30px] w-full">
@@ -47,7 +45,7 @@
               <div class="mr-2 text-[18px]">Care:</div>
               <div
                 class=""
-                v-for="care in latestPlants[id]?.care"
+                v-for="care in plant?.care"
                 :key="care?.name"
                 style="display: flex; flex-flow: row wrap"
               >
@@ -62,7 +60,7 @@
               <div class="mr-2 text-[18px]">Size:</div>
               <div
                 class=""
-                v-for="size in latestPlants[id]?.size"
+                v-for="size in plant?.size"
                 :key="size?.name"
                 style="display: flex; flex-flow: row wrap"
               >
@@ -77,7 +75,7 @@
               <div class="mr-2 text-[18px]">Light:</div>
               <div
                 class=""
-                v-for="light in latestPlants[id]?.light"
+                v-for="light in plant?.light"
                 :key="light?.name"
                 style="display: flex; flex-flow: row wrap"
               >
@@ -245,7 +243,7 @@
       <h1 class="mt-1 text-center text-[26px]">Relevant Plant</h1>
       <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <LatestPlants :latestPlants="latestPlants" />
+    <PlantCard :plants="plants" />
     <iframe
       class="mt-[100px] h-[350px] w-full"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.691465513618!2d144.96175371525688!3d-37.811466079756175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d7e62f05a5f%3A0x69f14f0e253266!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1589274753731!5m2!1sen!2sin"
@@ -260,13 +258,14 @@
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import Footer from "../components/Footer.vue";
-import LatestPlants from "../components/LatestPlants.vue";
+import PlantCard from "../components/PlantCard.vue";
 import { data } from "../data";
 
 const route = useRoute();
-const latestPlants = data?.latestPlants;
+const plants = data?.plants;
 const id = route.params.id - 1;
-const mainImage = ref(latestPlants[id]?.images[0]?.image);
+const plant = data?.plants[id];
+const mainImage = ref(plant?.images[0]?.image);
 const changeMainImage = (image) => {
   mainImage.value = image;
 };

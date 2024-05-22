@@ -2,7 +2,7 @@
   <div class="cards px-2">
     <div
       class="p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
-      v-for="item in latestPlants"
+      v-for="item in plants"
       :key="item"
     >
       <div
@@ -35,7 +35,7 @@
 <script>
 export default {
   props: {
-    latestPlants: {
+    plants: {
       type: Array,
       required: true,
     },

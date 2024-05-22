@@ -37,7 +37,7 @@
       <div class="cards">
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[33%] md:w-[33%] lg:w-[25%]"
-          v-for="plant in data?.plants"
+          v-for="plant in plantType"
           :key="plant"
         >
           <div
@@ -75,7 +75,7 @@
       <h1 class="mt-1 text-center text-[26px]">Top Trending Plants</h1>
       <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <TopTrendingPlant :latestPlants="data?.latestPlants" />
+    <TopTrendingPlant :plants="plants" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
@@ -166,23 +166,23 @@
       <h1 class="text-center text-[32px] font-bold">Latest Plant</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <LatestPlants :latestPlants="data?.latestPlants" />
+    <PlantCard :plants="plants" />
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
     <div class="m-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
       <div class="cards">
         <div
-          class="p-[0.8em] xs:w-[50%] sm:w-[25%] md:w-[33%] lg:w-[25%]"
+          class="p-[0.8em] xs:w-[50%] sm:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"
           v-for="(item, index) in gallery"
           :key="index"
         >
           <div
-            class="flex w-full flex-col items-center justify-center xs:h-[150px] sm:h-[250px] lg:h-[300px]"
+            class="flex w-full flex-col items-center justify-center xs:h-[200px] sm:h-[250px] lg:h-[300px]"
           >
             <img
-              class="gallery h-full w-full cursor-pointer object-cover"
+              class="gallery h-full w-full cursor-pointer"
               :src="item?.image"
               @click="openPopup(index)"
               alt="Not found"
@@ -245,7 +245,7 @@ import { ref } from "vue";
 import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
-import LatestPlants from "../components/LatestPlants.vue";
+import PlantCard from "../components/PlantCard.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
 import { data } from "../data";
 
@@ -253,6 +253,8 @@ const selectedIndex = ref(0);
 const selectedImage = ref("");
 const isPopupVisible = ref(false);
 
+const plantType = ref(data?.plantType || []);
+const plants = ref(data?.plants || []);
 const gallery = ref(data?.gallery || []);
 
 const openPopup = (index) => {

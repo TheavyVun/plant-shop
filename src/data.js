@@ -68,7 +68,7 @@ export const data = {
     },
   ],
 
-  plants: [
+  plantType: [
     {
       id: 1,
       image:
@@ -238,7 +238,7 @@ export const data = {
     },
   ],
 
-  latestPlants: [
+  plants: [
     {
       id: 1,
       name: "Cacao Tree",

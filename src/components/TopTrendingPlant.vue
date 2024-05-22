@@ -5,7 +5,7 @@
     <div class="cards" :style="carouselStyle">
       <div
         class="card rounded-1 h-full w-[200px] flex-col bg-slate-100"
-        v-for="item in latestPlants"
+        v-for="item in plants"
         :key="item.id"
       >
         <router-link :to="'/plant/' + item.id" @click.native="scrollToTop()">
@@ -32,13 +32,11 @@
     </button>
     <button
       @click="next"
-      :disabled="currentSlide === latestPlants.length - 1"
+      :disabled="currentSlide === plants.length - 1"
       class="next-btn flex h-full w-[70px] items-center justify-center bg-white xs:w-[50px] sm:w-[60px]"
     >
       <img
-        :src="
-          currentSlide === latestPlants.length - 1 ? nextDisabled : nextBlack
-        "
+        :src="currentSlide === plants.length - 1 ? nextDisabled : nextBlack"
         width="18"
         alt="Not found"
       />
@@ -54,7 +52,7 @@ import nextDisabled from "@/assets/images/icons/next-disabled.svg";
 
 export default {
   props: {
-    latestPlants: {
+    plants: {
       type: Array,
       required: true,
     },
@@ -83,7 +81,7 @@ export default {
     },
 
     next() {
-      if (this.currentSlide < this.latestPlants.length - 1) {
+      if (this.currentSlide < this.plants.length - 1) {
         this.currentSlide++;
       }
     },
