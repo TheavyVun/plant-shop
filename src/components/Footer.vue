@@ -1,18 +1,20 @@
 <template>
-  <div class="bottom-0 mt-1 w-full">
-    <div class="footer-content box-content w-full sm:h-auto lg:h-[500px]">
+  <div class="mt-1 w-full">
+    <div class="footer-content box-content w-full md:h-auto lg:h-[450px]">
       <div
-        class="cards dark-2 flex h-full w-full justify-between py-8 sm:px-[5%] lg:px-[10%]"
+        class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:px-[5%] md:w-full lg:px-[10%]"
       >
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item sm:mb-[20px] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Follow Us On Facebook
             </h1>
-            <div class="h-[88%] w-[100%] rounded bg-black">hi</div>
+            <div
+              class="w-[100%] cursor-pointer rounded-xl bg-[#d3d3d35a] lg:h-[88%]"
+            ></div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item md:w-[100%] lg:mb-0 lg:w-[50%]">
           <div class="h-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Contact Us
@@ -23,7 +25,7 @@
                   src="../assets/images/icons/address.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">412 Street 530,</div>
               </div>
@@ -44,7 +46,7 @@
                   src="../assets/images/icons/phone.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">+855 16 888 488</div>
               </div>
@@ -53,7 +55,7 @@
                   src="../assets/images/icons/mail.svg"
                   width="30"
                   height="30"
-                  alt=""
+                  alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">
                   info@greenhousecambodia.com
@@ -62,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item sm:mb-[20px] lg:mb-0">
+        <div class="card-item xs:w-[100%] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1
               class="mb-3 text-center text-xl font-semibold tracking-tight text-white"
@@ -72,28 +74,41 @@
             <div class="flex h-full w-full flex-col">
               <router-link
                 to="/"
-                :class="{ 'active-nav-link': $route.path === '/' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                @click.native="scrollToTop()"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 Home
               </router-link>
               <router-link
-                to="/all-plant"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                to="/all-plants"
+                @click.native="scrollToTop()"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/all-plants',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 All Plant
               </router-link>
               <router-link
                 to="/about"
-                :class="{ 'active-nav-link': $route.path === '/about' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                @click.native="scrollToTop()"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/about',
+                }"
+                class="flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 About
               </router-link>
               <router-link
                 to="/contact"
-                :class="{ 'active-nav-link': $route.path === '/contact' }"
-                class="nav-link flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white"
+                @click.native="scrollToTop()"
+                :class="{
+                  'bg-[rgba(255,255,255,0.313)]': $route.path === '/contact',
+                }"
+                class="hover:bg-[rgba(255, 255, 255, 0.187)] flex h-[45px] items-center justify-center rounded text-[14px] font-semibold text-white hover:bg-[rgba(255,255,255,0.187)]"
               >
                 Contact
               </router-link>
@@ -113,7 +128,13 @@
     </div>
   </div>
 </template>
-<script></script>
+
+<script setup>
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <style scoped lang="scss">
 .footer-content {
   background-image: url("https://gradinabotanica.ubbcluj.ro/wp-content/uploads/2020/09/complexul-de-sere-scaled.jpg");
@@ -124,12 +145,6 @@
   .dark-2 {
     background-color: rgba(0, 128, 0, 0.7);
     border-color: rgba(0, 128, 0, 0.7);
-  }
-
-  .cards {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
   }
 
   .card-item {
@@ -148,19 +163,5 @@
       width: calc(100% / 12 * 3);
     }
   }
-
-  @media screen and (max-width: 968px) {
-    .cards {
-      width: 100% !important;
-    }
-  }
-}
-
-.active-nav-link {
-  background-color: rgba(255, 255, 255, 0.313);
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.187);
 }
 </style>

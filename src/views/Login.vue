@@ -10,8 +10,6 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const message = ref("Plant Type");
-
 const login = () => {
   router.push("/app");
 };
