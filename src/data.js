@@ -241,7 +241,7 @@ export const data = {
   plants: [
     {
       id: 1,
-      name: "Cacao Tree",
+      name: "Cacao Tree 1",
       code: "A109",
       images: [
         {
@@ -352,7 +352,7 @@ export const data = {
     },
     {
       id: 2,
-      name: "Cacao Tree",
+      name: "Cacao Tree 2",
       code: "A109",
       images: [
         {
@@ -463,7 +463,7 @@ export const data = {
     },
     {
       id: 3,
-      name: "Cacao Tree",
+      name: "Cacao Tree 3",
       code: "A109",
       images: [
         {
@@ -574,7 +574,7 @@ export const data = {
     },
     {
       id: 4,
-      name: "Cacao Tree",
+      name: "Cacao Tree 4",
       code: "A109",
       images: [
         {
@@ -685,7 +685,7 @@ export const data = {
     },
     {
       id: 5,
-      name: "Cacao Tree",
+      name: "Cacao Tree 5",
       code: "A109",
       images: [
         {
@@ -796,7 +796,7 @@ export const data = {
     },
     {
       id: 6,
-      name: "Cacao Tree",
+      name: "Cacao Tree 6",
       code: "A109",
       images: [
         {
@@ -907,7 +907,7 @@ export const data = {
     },
     {
       id: 7,
-      name: "Cacao Tree",
+      name: "Cacao Tree 7",
       code: "A109",
       images: [
         {
@@ -1018,7 +1018,7 @@ export const data = {
     },
     {
       id: 8,
-      name: "Cacao Tree",
+      name: "Cacao Tree 8",
       code: "A109",
       images: [
         {
@@ -1129,7 +1129,7 @@ export const data = {
     },
     {
       id: 9,
-      name: "Cacao Tree",
+      name: "Cacao Tree 9",
       code: "A109",
       images: [
         {
@@ -1240,7 +1240,7 @@ export const data = {
     },
     {
       id: 10,
-      name: "Cacao Tree",
+      name: "Cacao Tree 10",
       code: "A109",
       images: [
         {
@@ -1351,7 +1351,7 @@ export const data = {
     },
     {
       id: 11,
-      name: "Cacao Tree",
+      name: "Cacao Tree 11",
       code: "A109",
       images: [
         {
@@ -1462,7 +1462,7 @@ export const data = {
     },
     {
       id: 12,
-      name: "Cacao Tree",
+      name: "Cacao Tree 12",
       code: "A109",
       images: [
         {
@@ -1573,7 +1573,7 @@ export const data = {
     },
     {
       id: 13,
-      name: "Cacao Tree",
+      name: "Cacao Tree 13",
       code: "A109",
       images: [
         {
@@ -1684,7 +1684,7 @@ export const data = {
     },
     {
       id: 14,
-      name: "Cacao Tree",
+      name: "Cacao Tree 14",
       code: "A109",
       images: [
         {
@@ -1795,7 +1795,7 @@ export const data = {
     },
     {
       id: 15,
-      name: "Cacao Tree",
+      name: "Cacao Tree 15",
       code: "A109",
       images: [
         {
@@ -1906,7 +1906,7 @@ export const data = {
     },
     {
       id: 16,
-      name: "Cacao Tree",
+      name: "Cacao Tree 16",
       code: "A109",
       images: [
         {
@@ -2017,7 +2017,7 @@ export const data = {
     },
     {
       id: 17,
-      name: "Cacao Tree",
+      name: "Cacao Tree 17",
       code: "A109",
       images: [
         {
@@ -2128,7 +2128,7 @@ export const data = {
     },
     {
       id: 18,
-      name: "Cacao Tree",
+      name: "Cacao Tree 18",
       code: "A109",
       images: [
         {
@@ -2239,7 +2239,7 @@ export const data = {
     },
     {
       id: 19,
-      name: "Cacao Tree",
+      name: "Cacao Tree 18",
       code: "A109",
       images: [
         {
@@ -2350,7 +2350,7 @@ export const data = {
     },
     {
       id: 20,
-      name: "Cacao Tree",
+      name: "Cacao Tree 20",
       code: "A109",
       images: [
         {
@@ -2461,7 +2461,7 @@ export const data = {
     },
     {
       id: 21,
-      name: "Cacao Tree",
+      name: "Cacao Tree 21",
       code: "A109",
       images: [
         {
@@ -2572,7 +2572,7 @@ export const data = {
     },
     {
       id: 22,
-      name: "Cacao Tree",
+      name: "Cacao Tree 22",
       code: "A109",
       images: [
         {
@@ -2683,7 +2683,7 @@ export const data = {
     },
     {
       id: 23,
-      name: "Cacao Tree",
+      name: "Cacao Tree 23",
       code: "A109",
       images: [
         {
@@ -2794,7 +2794,7 @@ export const data = {
     },
     {
       id: 24,
-      name: "Cacao Tree",
+      name: "Cacao Tree 24",
       code: "A109",
       images: [
         {
@@ -2905,7 +2905,7 @@ export const data = {
     },
     {
       id: 25,
-      name: "Cacao Tree",
+      name: "Cacao Tree 25",
       code: "A109",
       images: [
         {
@@ -3016,7 +3016,7 @@ export const data = {
     },
     {
       id: 26,
-      name: "Cacao Tree",
+      name: "Cacao Tree 26",
       code: "A109",
       images: [
         {
@@ -3127,7 +3127,7 @@ export const data = {
     },
     {
       id: 27,
-      name: "Cacao Tree",
+      name: "Cacao Tree 27",
       code: "A109",
       images: [
         {
@@ -3238,7 +3238,7 @@ export const data = {
     },
     {
       id: 28,
-      name: "Cacao Tree",
+      name: "Cacao Tree 28",
       code: "A109",
       images: [
         {
@@ -3349,7 +3349,7 @@ export const data = {
     },
     {
       id: 29,
-      name: "Cacao Tree",
+      name: "Cacao Tree 29",
       code: "A109",
       images: [
         {
@@ -3460,7 +3460,7 @@ export const data = {
     },
     {
       id: 30,
-      name: "Cacao Tree",
+      name: "Cacao Tree 30",
       code: "A109",
       images: [
         {
@@ -3571,7 +3571,7 @@ export const data = {
     },
     {
       id: 31,
-      name: "Cacao Tree",
+      name: "Cacao Tree 31",
       code: "A109",
       images: [
         {
@@ -3682,7 +3682,7 @@ export const data = {
     },
     {
       id: 32,
-      name: "Cacao Tree",
+      name: "Cacao Tree 32",
       code: "A109",
       images: [
         {
@@ -3793,7 +3793,7 @@ export const data = {
     },
     {
       id: 33,
-      name: "Cacao Tree",
+      name: "Cacao Tree 33",
       code: "A109",
       images: [
         {
@@ -3904,7 +3904,7 @@ export const data = {
     },
     {
       id: 34,
-      name: "Cacao Tree",
+      name: "Cacao Tree 34",
       code: "A109",
       images: [
         {
@@ -4015,7 +4015,7 @@ export const data = {
     },
     {
       id: 35,
-      name: "Cacao Tree",
+      name: "Cacao Tree 35",
       code: "A109",
       images: [
         {
@@ -4126,7 +4126,7 @@ export const data = {
     },
     {
       id: 36,
-      name: "Cacao Tree",
+      name: "Cacao Tree 36",
       code: "A109",
       images: [
         {
@@ -4237,7 +4237,7 @@ export const data = {
     },
     {
       id: 37,
-      name: "Cacao Tree",
+      name: "Cacao Tree 37",
       code: "A109",
       images: [
         {
@@ -4348,7 +4348,7 @@ export const data = {
     },
     {
       id: 38,
-      name: "Cacao Tree",
+      name: "Cacao Tree 38",
       code: "A109",
       images: [
         {
@@ -4459,7 +4459,7 @@ export const data = {
     },
     {
       id: 39,
-      name: "Cacao Tree",
+      name: "Cacao Tree 39",
       code: "A109",
       images: [
         {
@@ -4570,7 +4570,7 @@ export const data = {
     },
     {
       id: 40,
-      name: "Cacao Tree",
+      name: "Cacao Tree 40",
       code: "A109",
       images: [
         {
