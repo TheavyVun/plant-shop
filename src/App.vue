@@ -1,7 +1,7 @@
 <template>
   <div v-if="isRouteMatched" class="flex h-full w-full flex-col">
-    <NavBar />
-    <div class="">
+    <Navigation />
+    <div>
       <router-view></router-view>
     </div>
   </div>
@@ -10,7 +10,7 @@
 
 <script setup>
 import { useRoute } from "vue-router";
-import NavBar from "./components/NavBar.vue";
+import Navigation from "./components/Navigation.vue";
 import PageNotFound from "./views/PageNotFound.vue";
 
 const route = useRoute();

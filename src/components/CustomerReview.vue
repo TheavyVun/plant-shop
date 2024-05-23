@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full">
-    <div class="cards my-[50px]">
+  <div class="carousel-container my-[50px] w-full">
+    <div class="carousel cards" :style="carouselStyle">
       <div
         class="card-item rounded-3xl"
         v-for="customer in customers"
         :key="customer.id"
       >
-        <div class="w-[300px] p-3">
+        <div class="w-[300px] p-5">
           <div class="flex">
             <div
               class="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-full text-[20px] font-bold text-white"
@@ -49,8 +49,27 @@
         </div>
       </div>
     </div>
+    <button
+      v-if="currentSlide > 0"
+      @click="prev"
+      class="prev-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
+    >
+      <img
+        src="../assets/images/icons/previous.svg"
+        width="100"
+        alt="Not found"
+      />
+    </button>
+    <button
+      v-if="currentSlide != customers.length - 1"
+      @click="next"
+      class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
+    >
+      <img src="../assets/images/icons/next.svg" width="100" alt="Not found" />
+    </button>
   </div>
 </template>
+
 <script>
 export default {
   props: {
@@ -63,16 +82,26 @@ export default {
     return {
       expandedComments: [],
       colorMap: {},
+      currentSlide: 0,
     };
+  },
+  computed: {
+    carouselStyle() {
+      return {
+        transform: `translateX(-${this.currentSlide * 300}px)`,
+      };
+    },
   },
   methods: {
     isLongComment(comment) {
       return comment.split(" ").length > 100;
     },
+
     truncatedComment(comment) {
       const words = comment.split(" ");
       return words.slice(0, 100).join(" ") + (words.length > 100 ? "..." : "");
     },
+
     toggleTextExpansion(customerId) {
       const index = this.expandedComments.indexOf(customerId);
       if (index > -1) {
@@ -81,9 +110,11 @@ export default {
         this.expandedComments.push(customerId);
       }
     },
+
     isTextExpanded(customerId) {
       return this.expandedComments.includes(customerId);
     },
+
     getRandomColor(customerId) {
       if (!this.colorMap[customerId]) {
         let randomColor;
@@ -94,6 +125,7 @@ export default {
       }
       return this.colorMap[customerId];
     },
+
     isColorTooLight(color) {
       const rgb = parseInt(color.substring(1), 16);
       const r = (rgb >> 16) & 0xff;
@@ -102,25 +134,41 @@ export default {
       const brightness = (r * 299 + g * 587 + b * 114) / 1000;
       return brightness > 200;
     },
+
+    next() {
+      if (this.currentSlide < this.customers.length - 1) {
+        this.currentSlide++;
+      }
+    },
+
+    prev() {
+      if (this.currentSlide > 0) {
+        this.currentSlide--;
+      }
+    },
   },
 };
 </script>
-<style scoped>
-.cards {
+
+<style scoped lang="scss">
+.carousel-container {
+  position: relative;
   width: 100%;
-  padding-bottom: 15px;
+  overflow: hidden;
   display: flex;
-  flex-flow: row nowrap;
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .card-item {
   height: fit-content !important;
   margin: 10px;
   display: inline-block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f2f2f2;
   vertical-align: top;
 }
 
@@ -141,5 +189,19 @@ export default {
   color: #555;
   line-height: 1.4;
   text-align: left;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: rgba(17, 17, 17, 0.5);
+  fill: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(17, 17, 17);
+  fill: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px 0px;
 }
 </style>
