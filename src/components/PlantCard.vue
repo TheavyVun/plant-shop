@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full flex-wrap px-2">
     <div
-      class="p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
+      class="my-[15px] p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
       v-for="item in plants"
       :key="item"
     >
@@ -23,7 +23,7 @@
         <router-link
           :to="'/plant/' + item?.id"
           @click.native="scrollToTop()"
-          class="mt-4 text-center text-[16px] hover:text-[#ffc249]"
+          class="mt-4 text-wrap text-center text-[16px] hover:text-[#ffc249]"
         >
           {{ item?.name }}
         </router-link>

@@ -1,7 +1,9 @@
 <template>
   <div class="h-auto w-full">
     <div class="m-auto my-[50px] h-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
-      <div class="my-[50px] flex h-auto w-full flex-wrap justify-between">
+      <div
+        class="my-[50px] flex h-auto w-full flex-wrap justify-between xs:px-3 md:px-3"
+      >
         <div class="xs:w-full sm:w-full md:w-full lg:w-[49%]">
           <div class="relative">
             <img
@@ -144,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-[50px] mt-[50px]">
+      <div class="mb-[50px] mt-[50px] xs:px-3 md:px-3">
         {{ plant?.description }}
       </div>
       <div class="my-[50px]">
@@ -154,7 +156,7 @@
           v-for="(item, index) in plant?.benefit"
           :key="item"
         >
-          <div class="my-[20px] flex-col">
+          <div class="my-[20px] flex-col xs:px-3 md:px-3">
             <h1 class="mb-[20px]">
               {{ index + 1 + "." }} {{ item?.title + ":" }}
             </h1>
@@ -164,7 +166,7 @@
           </div>
         </div>
       </div>
-      <div class="my-[50px]">
+      <div class="my-[50px] xs:px-3 md:px-3">
         <h1>Grow and Care:</h1>
         <div v-for="item of plant?.grow_and_care" :key="item">
           <div class="my-[10px]">

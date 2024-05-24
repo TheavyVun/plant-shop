@@ -5,15 +5,17 @@
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
         <h1
-          class="text-[40px] text-white"
+          class="text-white sm:text-[24px] md:text-[36px] lg:text-[40px]"
           style="font-family: Khmer OS Muol Light"
         >
           ហាងលក់រុក្ខជាតិ
         </h1>
         <br />
-        <h1 class="text-[40px] text-white">Plant Shop</h1>
+        <h1 class="text-white sm:text-[24px] md:text-[36px] lg:text-[40px]">
+          Plant Shop
+        </h1>
       </div>
-      <p class="my-[50px] text-center xs:px-3">
+      <p class="my-[50px] text-center xs:px-5 md:px-5">
         Trees have been with us throughout our whole lives. They look beautiful,
         and we've probably all enjoyed a lovely walk through a forest. They're
         the background of a favorite memory and that welcome patch of green our
@@ -21,7 +23,7 @@
         days. But their benefits go far beyond that. Trees are like best friends
         or model employees - they give so much and ask little in return.
       </p>
-      <p class="my-[50px] text-center xs:px-3">
+      <p class="my-[50px] text-center xs:px-5 md:px-5">
         According to nature.org, there are six major benefits of tree; (1) Trees
         eat the greenhouse gases that cause climate change—for breakfast, (2)
         trees boost our mental health while raising our physical health, (3)
@@ -34,7 +36,7 @@
         <h1 class="text-center text-[26px]">Fine Plant You Will Love</h1>
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
-      <div class="flex w-full flex-wrap">
+      <div class="flex w-full flex-wrap xs:px-5 md:px-5">
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[33%] md:w-[33%] lg:w-[25%]"
           v-for="plant in plantType"
@@ -82,7 +84,7 @@
           <h1 class="text-center text-[22px]">Shop By Care</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="flex w-full flex-wrap">
+        <div class="flex w-full flex-wrap xs:px-5 md:px-5">
           <div
             class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByCare"
@@ -110,7 +112,7 @@
           <h1 class="text-center text-[22px]">Shop By Size</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="flex w-full flex-wrap">
+        <div class="flex w-full flex-wrap xs:px-5 md:px-5">
           <div
             class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopBySize"
@@ -138,7 +140,7 @@
           <h1 class="text-center text-[22px]">Shop By Light</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
-        <div class="flex w-full flex-wrap">
+        <div class="flex w-full flex-wrap xs:px-5 md:px-5">
           <div
             class="m-auto p-[0.8em] xs:w-[50%] sm:w-[50%] lg:w-[33%]"
             v-for="item in data?.shopByLight"
@@ -171,7 +173,7 @@
       <h1 class="text-center text-[32px] font-bold">Gallery</h1>
     </div>
     <div class="m-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
-      <div class="flex w-full flex-wrap">
+      <div class="flex w-full flex-wrap xs:px-1 md:px-1">
         <div
           class="p-[0.8em] xs:w-[50%] sm:w-[33%] lg:w-[25%]"
           style="padding: 0 !important"

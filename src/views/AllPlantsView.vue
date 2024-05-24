@@ -4,8 +4,8 @@
       <h1 class="text-center text-[32px] font-bold text-black">All Plant</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <div class="m-auto my-[50px] sm:w-[90%] lg:w-[70%]">
-      <div class="h-[250px] w-full bg-[#e3e3e3ba]"></div>
+    <div class="m-auto sm:w-[90%] lg:w-[70%]">
+      <Filter />
     </div>
     <PlantCard :plants="plants" />
     <iframe
@@ -20,6 +20,7 @@
 
 <script setup>
 import { data } from "../data";
+import Filter from "../components/Filter.vue";
 import Footer from "../components/Footer.vue";
 
 const plants = data?.plants;

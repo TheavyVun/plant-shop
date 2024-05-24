@@ -1,20 +1,18 @@
 <template>
   <div class="mt-1 w-full">
-    <div class="footer-content box-content w-full md:h-auto lg:h-[450px]">
+    <div class="footer-content box-content w-full md:h-auto lg:h-[400px]">
       <div
         class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:px-[5%] md:w-full lg:px-[10%]"
       >
-        <div class="card-item sm:mb-[20px] md:w-[100%] lg:mb-0 lg:w-[25%]">
+        <div class="sm:mb-[20px] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Follow Us On Facebook
             </h1>
-            <div
-              class="w-[100%] cursor-pointer rounded-xl bg-[#d3d3d35a] lg:h-[88%]"
-            ></div>
+            <div class="w-[100%] lg:h-[88%]"></div>
           </div>
         </div>
-        <div class="card-item md:w-[100%] lg:mb-0 lg:w-[50%]">
+        <div class="md:w-[100%] lg:mb-0 lg:w-[50%]">
           <div class="h-full">
             <h1 class="mb-3 text-xl font-semibold tracking-tight text-white">
               Contact Us
@@ -61,7 +59,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item xs:w-[100%] md:w-[100%] lg:mb-0 lg:w-[25%]">
+        <div class="xs:w-[100%] md:w-[100%] lg:mb-0 lg:w-[25%]">
           <div class="h-full w-full">
             <h1
               class="mb-3 text-center text-xl font-semibold tracking-tight text-white"
@@ -142,23 +140,6 @@ const scrollToTop = () => {
   .dark-2 {
     background-color: rgba(0, 128, 0, 0.7);
     border-color: rgba(0, 128, 0, 0.7);
-  }
-
-  .card-item {
-    display: flex;
-    width: 100%;
-  }
-
-  @media all and (min-width: 37.5em) {
-    .card-item {
-      width: calc(100% / 12 * 6);
-    }
-  }
-
-  @media all and (min-width: 56.25em) {
-    .card-item {
-      width: calc(100% / 12 * 3);
-    }
   }
 }
 </style>
