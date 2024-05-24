@@ -59,7 +59,9 @@
         </div>
       </div>
     </div>
-    <div class="flex-end mb-0 mt-4 flex w-full items-center lg:w-auto">
+    <div
+      class="flex-end mb-0 flex w-full items-center xs:mt-4 sm:mt-4 lg:mt-4 lg:w-auto"
+    >
       <button>
         <img
           src="../assets/images/icons/heart.svg"
@@ -101,7 +103,10 @@
         <router-link
           to="/"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/' }"
+          :class="{
+            'border-b border-white':
+              $route.path === '/' || $route.path === '/all-plants',
+          }"
           class="mt-4 block font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home

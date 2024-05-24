@@ -4,39 +4,39 @@
       <div
         class="card-item rounded-3xl"
         v-for="customer in customers"
-        :key="customer.id"
+        :key="customer?.id"
       >
         <div class="w-[300px] p-5">
           <div class="flex">
             <div
               class="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-full text-[20px] font-bold text-white"
-              :style="{ backgroundColor: getRandomColor(customer.id) }"
+              :style="{ backgroundColor: getRandomColor(customer?.id) }"
             >
-              {{ customer.first_name[0] }}
+              {{ customer?.first_name[0] }}
             </div>
             <div class="name">
-              <p class="reviewer-name">{{ customer.name }}</p>
+              <p class="reviewer-name">{{ customer?.name }}</p>
               <p class="text-left text-[12px] text-gray-300">
-                {{ customer.date }}
+                {{ customer?.date }}
               </p>
             </div>
           </div>
           <div class="review-rating">
-            <span v-for="star in customer.rate" :key="star" class="star">
+            <span v-for="star in customer?.rate" :key="star" class="star">
               &#9733;
             </span>
           </div>
           <p class="review-text text-wrap">
-            <span v-if="isTextExpanded(customer.id)">{{
-              customer.comment
-            }}</span>
-            <span v-else>{{ truncatedComment(customer.comment) }}</span>
-            <template v-if="isLongComment(customer.comment)">
+            <span v-if="isTextExpanded(customer?.id)">
+              {{ customer?.comment }}
+            </span>
+            <span v-else>{{ truncatedComment(customer?.comment) }}</span>
+            <template v-if="isLongComment(customer?.comment)">
               <span
                 class="cursor-pointer text-blue-500"
-                @click="toggleTextExpansion(customer.id)"
+                @click="toggleTextExpansion(customer?.id)"
               >
-                {{ isTextExpanded(customer.id) ? "See less" : "See more" }}
+                {{ isTextExpanded(customer?.id) ? "See less" : "See more" }}
               </span>
             </template>
           </p>

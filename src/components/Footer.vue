@@ -27,18 +27,15 @@
                   height="30"
                   alt="Not found"
                 />
-                <div class="ml-4 text-[14px] text-white">412 Street 530,</div>
+                <div class="ml-4 text-[14px] text-white">
+                  # 36B, Street 371, Group 5,
+                </div>
               </div>
               <div class="flex items-center">
                 <div></div>
                 <div class="ml-11 text-[14px] text-white">
-                  Chamkar Samrong 2, Chamkar Samrong commune,
-                </div>
-              </div>
-              <div class="my-2 flex items-center">
-                <div></div>
-                <div class="ml-11 text-[14px] text-white">
-                  Battambang municipal, Battambang province, Cambodia
+                  Orchide Village, Sangkat Ou Baek K'am, Khan Sen Sok, Phnom
+                  Penh.
                 </div>
               </div>
               <div class="my-2 flex items-center">
@@ -48,7 +45,7 @@
                   height="30"
                   alt="Not found"
                 />
-                <div class="ml-4 text-[14px] text-white">+855 16 888 488</div>
+                <div class="ml-4 text-[14px] text-white">+855 12 345 678</div>
               </div>
               <div class="my-2 flex items-center">
                 <img
@@ -58,7 +55,7 @@
                   alt="Not found"
                 />
                 <div class="ml-4 text-[14px] text-white">
-                  info@greenhousecambodia.com
+                  info@plantshopcambodia.com
                 </div>
               </div>
             </div>
