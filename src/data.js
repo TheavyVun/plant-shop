@@ -241,12 +241,12 @@ export const data = {
   plants: [
     {
       id: 1,
-      name: "Cacao Tree 1",
+      name: "Citrus Orange Variegated",
       code: "A109",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728101424A135-GG%20(1).jpg?alt=media&token=daa3cac5-11bc-4154-97f3-1bb65b75374c",
         },
         {
           image:
@@ -269,8 +269,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "3",
+      to: "8",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -380,8 +380,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "3",
+      to: "7",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -463,12 +463,12 @@ export const data = {
     },
     {
       id: 3,
-      name: "Cacao Tree 3",
+      name: "Red Dragon Fruit",
       code: "A109",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728104212A014?alt=media&token=cf8a4f6b-0d4b-400b-bd03-618d2b2a4a31",
         },
         {
           image:
@@ -491,8 +491,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "10",
+      to: "20",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -574,12 +574,12 @@ export const data = {
     },
     {
       id: 4,
-      name: "Cacao Tree 4",
+      name: "Plum",
       code: "A109",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728105022A013-GG%20(1)?alt=media&token=1124b61e-384b-4cab-928d-43f556b64cd4",
         },
         {
           image:
@@ -602,8 +602,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "8",
+      to: "15",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
