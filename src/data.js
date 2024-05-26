@@ -71,51 +71,60 @@ export const data = {
   plantType: [
     {
       id: 1,
+
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
       name: "Succulents Plants",
+      type: "Succulents Plants",
     },
     {
       id: 2,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113812Flowering%20Plants?alt=media&token=bf816531-06d6-4d57-9565-120df818f71d",
       name: "Flowering Plants",
+      type: "Flowering Plants",
     },
     {
       id: 3,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113954House%20Plants?alt=media&token=feccc8ed-825a-4d3c-a85e-684d39257462",
       name: "House Plants",
+      type: "House Plants",
     },
     {
       id: 4,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114032Bonsai%20Plants?alt=media&token=94f083ae-868e-4b63-b87e-1b195723b774",
       name: "Bonsai Plants",
+      type: "Bonsai Plants",
     },
     {
       id: 5,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114116Rare%20Plants?alt=media&token=ad3da504-befb-439d-ba4b-2617fe571b66",
       name: "Rare Plants",
+      type: "Rare Plants",
     },
     {
       id: 6,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114128Hanging%20Plants?alt=media&token=7a6585d7-1ec0-438a-9df5-98707ee0c44d",
       name: "Hanging Plants",
+      type: "Hanging Plants",
     },
     {
       id: 7,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010115648Fruit%20Plants?alt=media&token=46efe0f5-dc88-4855-ada6-fd82e463a18f",
       name: "Fruit Plants",
+      type: "Fruit Plants",
     },
     {
       id: 8,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
       name: "Air Purifying Plants",
+      type: "Air Purifying Plants",
     },
   ],
 
@@ -241,12 +250,13 @@ export const data = {
   plants: [
     {
       id: 1,
-      name: "Cacao Tree 1",
+      name: "Citrus Orange Variegated",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728101424A135-GG%20(1).jpg?alt=media&token=daa3cac5-11bc-4154-97f3-1bb65b75374c",
         },
         {
           image:
@@ -269,8 +279,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "3",
+      to: "8",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -354,6 +364,7 @@ export const data = {
       id: 2,
       name: "Cacao Tree 2",
       code: "A109",
+      type: "Hanging Plants",
       images: [
         {
           image:
@@ -380,8 +391,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "3",
+      to: "7",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -463,12 +474,13 @@ export const data = {
     },
     {
       id: 3,
-      name: "Cacao Tree 3",
+      name: "Red Dragon Fruit",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728104212A014?alt=media&token=cf8a4f6b-0d4b-400b-bd03-618d2b2a4a31",
         },
         {
           image:
@@ -491,8 +503,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "10",
+      to: "20",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -574,12 +586,13 @@ export const data = {
     },
     {
       id: 4,
-      name: "Cacao Tree 4",
+      name: "Plum",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103132A109-GG%20(1)?alt=media&token=f55e8336-3f9f-485f-9e73-bf8e94ae4170",
+            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728105022A013-GG%20(1)?alt=media&token=1124b61e-384b-4cab-928d-43f556b64cd4",
         },
         {
           image:
@@ -602,8 +615,8 @@ export const data = {
             "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
         },
       ],
-      from: "5",
-      to: "10",
+      from: "8",
+      to: "15",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [
@@ -687,6 +700,7 @@ export const data = {
       id: 5,
       name: "Cacao Tree 5",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -798,6 +812,7 @@ export const data = {
       id: 6,
       name: "Cacao Tree 6",
       code: "A109",
+      type: "Bonsai Plants",
       images: [
         {
           image:
@@ -909,6 +924,7 @@ export const data = {
       id: 7,
       name: "Cacao Tree 7",
       code: "A109",
+      type: "House Plants",
       images: [
         {
           image:
@@ -1020,6 +1036,7 @@ export const data = {
       id: 8,
       name: "Cacao Tree 8",
       code: "A109",
+      type: "Flowering Plants",
       images: [
         {
           image:
@@ -1131,6 +1148,7 @@ export const data = {
       id: 9,
       name: "Cacao Tree 9",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -1242,6 +1260,7 @@ export const data = {
       id: 10,
       name: "Cacao Tree 10",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -1353,6 +1372,7 @@ export const data = {
       id: 11,
       name: "Cacao Tree 11",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -1464,6 +1484,7 @@ export const data = {
       id: 12,
       name: "Cacao Tree 12",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
@@ -1575,6 +1596,7 @@ export const data = {
       id: 13,
       name: "Cacao Tree 13",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -1686,6 +1708,7 @@ export const data = {
       id: 14,
       name: "Cacao Tree 14",
       code: "A109",
+      type: "Air Purifying Plants",
       images: [
         {
           image:
@@ -1797,6 +1820,7 @@ export const data = {
       id: 15,
       name: "Cacao Tree 15",
       code: "A109",
+      type: "Air Purifying Plants",
       images: [
         {
           image:
@@ -1908,6 +1932,7 @@ export const data = {
       id: 16,
       name: "Cacao Tree 16",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -2019,6 +2044,7 @@ export const data = {
       id: 17,
       name: "Cacao Tree 17",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -2130,6 +2156,7 @@ export const data = {
       id: 18,
       name: "Cacao Tree 18",
       code: "A109",
+      type: "Flowering Plants",
       images: [
         {
           image:
@@ -2241,6 +2268,7 @@ export const data = {
       id: 19,
       name: "Cacao Tree 18",
       code: "A109",
+      type: "Bonsai Plants",
       images: [
         {
           image:
@@ -2352,6 +2380,7 @@ export const data = {
       id: 20,
       name: "Cacao Tree 20",
       code: "A109",
+      type: "Hanging Plants",
       images: [
         {
           image:
@@ -2463,6 +2492,7 @@ export const data = {
       id: 21,
       name: "Cacao Tree 21",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -2574,6 +2604,7 @@ export const data = {
       id: 22,
       name: "Cacao Tree 22",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -2685,6 +2716,7 @@ export const data = {
       id: 23,
       name: "Cacao Tree 23",
       code: "A109",
+      type: "Air Purifying Plants",
       images: [
         {
           image:
@@ -2796,6 +2828,7 @@ export const data = {
       id: 24,
       name: "Cacao Tree 24",
       code: "A109",
+      type: "Air Purifying Plants",
       images: [
         {
           image:
@@ -2907,6 +2940,7 @@ export const data = {
       id: 25,
       name: "Cacao Tree 25",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
@@ -3018,6 +3052,7 @@ export const data = {
       id: 26,
       name: "Cacao Tree 26",
       code: "A109",
+      type: "Flowering Plants",
       images: [
         {
           image:
@@ -3129,6 +3164,7 @@ export const data = {
       id: 27,
       name: "Cacao Tree 27",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -3240,6 +3276,7 @@ export const data = {
       id: 28,
       name: "Cacao Tree 28",
       code: "A109",
+      type: "Succulents Plants",
       images: [
         {
           image:
@@ -3351,6 +3388,7 @@ export const data = {
       id: 29,
       name: "Cacao Tree 29",
       code: "A109",
+      type: "Flowering Plants",
       images: [
         {
           image:
@@ -3462,6 +3500,7 @@ export const data = {
       id: 30,
       name: "Cacao Tree 30",
       code: "A109",
+      type: "House Plants",
       images: [
         {
           image:
@@ -3573,6 +3612,7 @@ export const data = {
       id: 31,
       name: "Cacao Tree 31",
       code: "A109",
+      type: "House Plants",
       images: [
         {
           image:
@@ -3684,6 +3724,7 @@ export const data = {
       id: 32,
       name: "Cacao Tree 32",
       code: "A109",
+      type: "Bonsai Plants",
       images: [
         {
           image:
@@ -3795,6 +3836,7 @@ export const data = {
       id: 33,
       name: "Cacao Tree 33",
       code: "A109",
+      type: "Bonsai Plants",
       images: [
         {
           image:
@@ -3906,6 +3948,7 @@ export const data = {
       id: 34,
       name: "Cacao Tree 34",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
@@ -4017,6 +4060,7 @@ export const data = {
       id: 35,
       name: "Cacao Tree 35",
       code: "A109",
+      type: "Rare Plants",
       images: [
         {
           image:
@@ -4128,6 +4172,7 @@ export const data = {
       id: 36,
       name: "Cacao Tree 36",
       code: "A109",
+      type: "Hanging Plants",
       images: [
         {
           image:
@@ -4239,6 +4284,7 @@ export const data = {
       id: 37,
       name: "Cacao Tree 37",
       code: "A109",
+      type: "Hanging Plants",
       images: [
         {
           image:
@@ -4350,6 +4396,7 @@ export const data = {
       id: 38,
       name: "Cacao Tree 38",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -4461,6 +4508,7 @@ export const data = {
       id: 39,
       name: "Cacao Tree 39",
       code: "A109",
+      type: "Fruit Plants",
       images: [
         {
           image:
@@ -4572,6 +4620,7 @@ export const data = {
       id: 40,
       name: "Cacao Tree 40",
       code: "A109",
+      type: "Air Purifying Plants",
       images: [
         {
           image:

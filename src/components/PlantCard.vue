@@ -1,14 +1,17 @@
 <template>
   <div class="flex w-full flex-wrap px-2">
     <div
-      class="p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
+      class="my-[15px] p-[0.5em] xs:w-[50%] sm:w-[25%] md:w-[20%] lg:w-[16.66%]"
       v-for="item in plants"
       :key="item"
     >
       <div
         class="relative my-[10px] flex w-full flex-col items-center justify-center"
       >
-        <router-link :to="'/plant/' + item?.id" @click.native="scrollToTop()">
+        <router-link
+          :to="'/plant-detail/' + item?.id"
+          @click.native="scrollToTop()"
+        >
           <img
             class="h-[90%] w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
             :src="item?.images[0]?.image"
@@ -21,9 +24,9 @@
           {{ "$" + item?.from + " - " + "$" + item?.to }}
         </div>
         <router-link
-          :to="'/plant/' + item?.id"
+          :to="'/plant-detail/' + item?.id"
           @click.native="scrollToTop()"
-          class="mt-4 text-center text-[16px] hover:text-[#ffc249]"
+          class="mt-4 text-wrap text-center text-[16px] hover:text-[#ffc249]"
         >
           {{ item?.name }}
         </router-link>

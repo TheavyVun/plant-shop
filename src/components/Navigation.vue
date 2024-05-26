@@ -59,7 +59,9 @@
         </div>
       </div>
     </div>
-    <div class="flex-end mb-0 mt-4 flex w-full items-center lg:w-auto">
+    <div
+      class="flex-end mb-0 flex w-full items-center xs:mt-4 sm:mt-4 lg:mt-0 lg:w-auto"
+    >
       <button>
         <img
           src="../assets/images/icons/heart.svg"
@@ -101,16 +103,21 @@
         <router-link
           to="/"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/' }"
-          class="mt-4 block font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{
+            'text-[#ffffff]':
+              $route.path === '/' || $route.path === '/all-plants',
+          }"
+          class="mt-4 block font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
         <router-link
-          to="/plant-type"
+          :to="{ name: 'Plant', params: { type: type } }"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/plant-type' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{
+            'text-[#ffffff]': $route.path.startsWith('/plant/' + plantType),
+          }"
+          class="mt-4 block h-full font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Type
         </router-link>
@@ -118,33 +125,33 @@
           to="/plant-by-life-style"
           @click.native="scrollToTop()"
           :class="{
-            'border-b border-white': $route.path === '/plant-by-life-style',
+            'text-[#ffffff]': $route.path === '/plant-by-life-style',
           }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="mt-4 block h-full font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant By Life Style
         </router-link>
         <router-link
           to="/plant-gifts"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/plant-gifts' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-[#ffffff]': $route.path === '/plant-gifts' }"
+          class="mt-4 block h-full font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Gifts
         </router-link>
         <router-link
           to="/about"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/about' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-[#ffffff]': $route.path === '/about' }"
+          class="mt-4 block h-full font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
           @click.native="scrollToTop()"
-          :class="{ 'border-b border-white': $route.path === '/contact' }"
-          class="mt-4 block h-full font-semibold text-white hover:border-b hover:border-gray-300 hover:text-gray-300 sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-[#ffffff]': $route.path === '/contact' }"
+          class="mt-4 block h-full font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
         </router-link>
@@ -155,8 +162,11 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
 
-let isLogin = false;
+let plantType = route.params.type ? route.params.type : "";
+let type = "Succulents Plants";
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
