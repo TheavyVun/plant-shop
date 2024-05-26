@@ -32,19 +32,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    plants: {
-      type: Array,
-      required: true,
-    },
+<script setup>
+const props = defineProps({
+  plants: {
+    type: Array,
+    required: true,
   },
-  methods: {
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    },
-  },
+});
+
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
 };
 </script>
 

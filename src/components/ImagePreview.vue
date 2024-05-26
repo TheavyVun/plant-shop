@@ -5,7 +5,7 @@
       @click.stop
     >
       <button
-        class="close-btn h-[50px] w-[50px] rounded-full p-2"
+        class="close-btn h-[46px] w-[46px] rounded-full p-2"
         @click="$emit('close')"
       >
         <img src="../assets/images/icons/close.svg" alt="Not found" />
@@ -60,10 +60,6 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-}
-
-button {
-  margin-top: 10px;
 }
 
 .close-btn {

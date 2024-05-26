@@ -132,12 +132,12 @@
           <div class="my-[18px] text-[16px]">Shopping Cart</div>
           <div class="flex w-full items-center justify-between">
             <button
-              class="w-[49%] rounded-full bg-green-500 py-2 text-white hover:bg-green-400"
+              class="w-[49%] rounded-full bg-green-500 py-2 text-white hover:bg-green-600"
             >
               Start Order
             </button>
             <button
-              class="w-[49%] rounded-full bg-[#2196f3] py-2 text-white hover:bg-[#59a5e4]"
+              class="w-[49%] rounded-full bg-[#2196f3] py-2 text-white hover:bg-[#4485ba]"
             >
               Add to cart
             </button>

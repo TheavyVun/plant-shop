@@ -89,7 +89,7 @@
             :key="item"
           >
             <router-link
-              to="/"
+              to="/all-plants"
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
@@ -117,7 +117,7 @@
             :key="item"
           >
             <router-link
-              to="/"
+              to="/all-plants"
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
@@ -145,7 +145,7 @@
             :key="item"
           >
             <router-link
-              to="/"
+              to="/all-plants"
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90]"
             >

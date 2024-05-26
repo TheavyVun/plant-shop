@@ -101,9 +101,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import Footer from "../components/Footer.vue";
-const message = ref("Contact");
 </script>
 
 <style scoped>
