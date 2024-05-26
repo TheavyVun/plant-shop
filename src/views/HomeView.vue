@@ -4,16 +4,22 @@
       <div
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
-        <h1
-          class="text-white sm:text-[24px] md:text-[36px] lg:text-[40px]"
-          style="font-family: Khmer OS Muol Light"
+        <div
+          class="rounded-md bg-[rgba(255,255,255,0.41)] px-8 py-4 text-center"
         >
-          ហាងលក់រុក្ខជាតិ
-        </h1>
-        <br />
-        <h1 class="text-white sm:text-[24px] md:text-[36px] lg:text-[40px]">
-          Plant Shop
-        </h1>
+          <h1
+            class="text-black sm:text-[24px] md:text-[36px] lg:text-[40px]"
+            style="font-family: Khmer OS Muol Light"
+          >
+            ហាងលក់រុក្ខជាតិ
+          </h1>
+          <br />
+          <h1
+            class="tex font-bold text-black sm:text-[24px] md:text-[36px] lg:text-[40px]"
+          >
+            Plant Shop
+          </h1>
+        </div>
       </div>
       <p class="my-[50px] text-center xs:px-5 md:px-5">
         Trees have been with us throughout our whole lives. They look beautiful,

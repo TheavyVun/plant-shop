@@ -4,7 +4,7 @@
       <div
         class="my-[50px] flex h-auto w-full flex-wrap justify-between xs:px-3 md:px-3 lg:px-0"
       >
-        <div class="xs:w-full sm:w-full md:w-full lg:w-[49%]">
+        <div class="xs:w-full sm:w-full md:w-full xl:w-[49%]">
           <div class="relative">
             <img
               v-if="mainImage"
@@ -56,14 +56,14 @@
               <img
                 :src="image?.image"
                 :class="{ 'border-2 border-blue-500': currentIndex === index }"
-                class="h-[80px] w-[85px] rounded-full bg-cover bg-center object-cover duration-300 hover:scale-110"
+                class="h-[65px] w-[65px] rounded-full bg-cover bg-center object-cover duration-300 hover:scale-110"
                 alt="Not found"
               />
             </div>
           </div>
         </div>
         <div
-          class="h-fit flex-col rounded-xl bg-[#e9e9e9b5] p-6 xs:w-full sm:w-full md:w-full lg:w-[49%]"
+          class="h-fit flex-col rounded-xl bg-[#e9e9e9b5] p-6 xs:w-full sm:w-full md:w-full xl:w-[49%]"
         >
           <h1 class="text-[32px] font-bold">
             {{ plant?.name }}
