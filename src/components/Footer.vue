@@ -1,6 +1,6 @@
 <template>
   <div class="mt-1 w-full">
-    <div class="footer-content box-content w-full md:h-auto lg:h-[400px]">
+    <div class="footer-content box-content w-full md:h-auto lg:h-[350px]">
       <div
         class="dark-2 flex h-full w-full flex-wrap justify-between py-8 xs:px-3 sm:px-[5%] md:w-full lg:px-[10%]"
       >

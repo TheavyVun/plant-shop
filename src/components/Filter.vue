@@ -73,13 +73,14 @@
       >
         <button
           type="button"
-          @click="onResetForm"
+          @click="onResetForm()"
           class="my-2 mt-8 w-[48%] rounded-lg border border-gray-500 p-2 text-gray-500 hover:bg-gray-200"
         >
           Clear
         </button>
         <button
           type="submit"
+          @click="onSubmit()"
           class="my-2 mt-8 w-[48%] rounded-lg bg-green-500 p-[10px] text-white hover:bg-green-600"
         >
           Filter
@@ -113,7 +114,6 @@ export default {
   methods: {
     onSubmit() {
       console.log("Applying filters:", this.filters);
-      // Add your filtering logic here
     },
     onResetForm() {
       this.filters = {

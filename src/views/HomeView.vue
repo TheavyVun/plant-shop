@@ -37,33 +37,7 @@
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
       <div class="flex w-full flex-wrap xs:px-5 md:px-5">
-        <div
-          class="p-[0.8em] xs:w-[50%] sm:w-[33%] md:w-[33%] lg:w-[25%]"
-          v-for="plant in plantType"
-          :key="plant"
-        >
-          <div
-            class="my-[10px] flex w-full flex-col items-center justify-center"
-          >
-            <router-link
-              :to="{ name: 'Plant', params: { type: plant.type } }"
-              @click.native="scrollToTop()"
-            >
-              <img
-                class="sm:h-[150px] sm:w-[150px] lg:h-[180px] lg:w-[180px]"
-                :src="plant.image"
-                alt="Not found"
-              />
-            </router-link>
-            <router-link
-              :to="{ name: 'Plant', params: { type: plant.type } }"
-              @click.native="scrollToTop()"
-              class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
-            >
-              {{ plant?.name }}
-            </router-link>
-          </div>
-        </div>
+        <PlantTypeCard />
       </div>
     </div>
     <div class="my-[50px] flex flex-col items-center justify-center">
@@ -248,6 +222,7 @@ import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
 import PlantCard from "../components/PlantCard.vue";
+import PlantTypeCard from "../components/PlantTypeCard.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
 import { data } from "../data";
 
@@ -255,7 +230,6 @@ const selectedIndex = ref(0);
 const selectedImage = ref("");
 const isPopupVisible = ref(false);
 
-const plantType = ref(data?.plantType || []);
 const plants = ref(data?.plants || []);
 const gallery = ref(data?.gallery || []);
 

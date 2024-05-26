@@ -104,10 +104,9 @@
           to="/"
           @click.native="scrollToTop()"
           :class="{
-            'text-[#ffffff]':
-              $route.path === '/' || $route.path === '/all-plants',
+            'text-white': $route.path === '/' || $route.path === '/all-plants',
           }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
@@ -115,9 +114,9 @@
           :to="{ name: 'Plant', params: { type: type } }"
           @click.native="scrollToTop()"
           :class="{
-            'text-[#ffffff]': $route.path.startsWith('/plant/' + plantType),
+            'text-white': $route.path.startsWith('/plant/' + plantType),
           }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Type
         </router-link>
@@ -125,33 +124,33 @@
           to="/plant-by-life-style"
           @click.native="scrollToTop()"
           :class="{
-            'text-[#ffffff]': $route.path === '/plant-by-life-style',
+            'text-white': $route.path === '/plant-by-life-style',
           }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant By Life Style
         </router-link>
         <router-link
           to="/plant-gifts"
           @click.native="scrollToTop()"
-          :class="{ 'text-[#ffffff]': $route.path === '/plant-gifts' }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-white': $route.path === '/plant-gifts' }"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Plant Gifts
         </router-link>
         <router-link
           to="/about"
           @click.native="scrollToTop()"
-          :class="{ 'text-[#ffffff]': $route.path === '/about' }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-white': $route.path === '/about' }"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
           @click.native="scrollToTop()"
-          :class="{ 'text-[#ffffff]': $route.path === '/contact' }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          :class="{ 'text-white': $route.path === '/contact' }"
+          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
         </router-link>
