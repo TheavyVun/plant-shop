@@ -46,7 +46,7 @@
             class="my-[10px] flex w-full flex-col items-center justify-center"
           >
             <router-link
-              :to="'/plant-by-type/' + plant.id"
+              :to="{ name: 'Plant', params: { type: plant.type } }"
               @click.native="scrollToTop()"
             >
               <img
@@ -56,7 +56,7 @@
               />
             </router-link>
             <router-link
-              :to="'/plant/' + plant.id"
+              :to="{ name: 'Plant', params: { type: plant.type } }"
               @click.native="scrollToTop()"
               class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
             >

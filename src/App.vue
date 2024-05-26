@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isRouteMatched" class="flex h-full w-full flex-col">
+  <div class="flex h-full w-full flex-col">
     <Navigation />
     <div>
       <router-view class="relative"></router-view>
@@ -12,7 +12,6 @@
       </button>
     </div>
   </div>
-  <PageNotFound v-else />
 </template>
 
 <script setup>

@@ -8,7 +8,10 @@
       <div
         class="relative my-[10px] flex w-full flex-col items-center justify-center"
       >
-        <router-link :to="'/plant/' + item?.id" @click.native="scrollToTop()">
+        <router-link
+          :to="'/plant-detail/' + item?.id"
+          @click.native="scrollToTop()"
+        >
           <img
             class="h-[90%] w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
             :src="item?.images[0]?.image"
@@ -21,7 +24,7 @@
           {{ "$" + item?.from + " - " + "$" + item?.to }}
         </div>
         <router-link
-          :to="'/plant/' + item?.id"
+          :to="'/plant-detail/' + item?.id"
           @click.native="scrollToTop()"
           class="mt-4 text-wrap text-center text-[16px] hover:text-[#ffc249]"
         >
