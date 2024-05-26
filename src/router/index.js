@@ -5,7 +5,6 @@ import PlantByLifeStyle from "../views/PlantBytLifeStyleView.vue";
 import PlantGifts from "../views/PlantGiftsView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
-import PlantByTypeView from "../views/PlantByTypeView.vue";
 import PlantDetailsView from "../views/PlantDetailsView.vue";
 import AllPlantsView from "../views/AllPlantsView.vue";
 import PageNotFound from "../views/PageNotFound.vue";
@@ -16,11 +15,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomeView,
-  },
-  {
-    path: "/plant-type",
-    name: "Plant Type",
-    component: PlantTypeView,
   },
   {
     path: "/plant-by-life-style",
@@ -43,13 +37,13 @@ const routes = [
     component: ContactView,
   },
   {
-    path: "/plant-by-type/:id",
-    name: "Plant By Type",
-    component: PlantByTypeView,
+    path: "/plant/:type",
+    name: "Plant",
+    component: PlantTypeView,
   },
   {
-    path: "/plant/:id",
-    name: "Plant",
+    path: "/plant-detail/:id",
+    name: "Plant-detail",
     component: PlantDetailsView,
   },
   {
@@ -72,5 +66,16 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+// Global Guard Example
+router.beforeEach((to, from, next) => {
+  if (to.name !== "login" && !isAuthenticated()) next({ name: "login" });
+  else next();
+});
+
+function isAuthenticated() {
+  // Implement your authentication logic here
+  return true;
+}
 
 export default router;

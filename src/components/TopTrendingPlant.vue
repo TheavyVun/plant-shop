@@ -8,13 +8,16 @@
         v-for="item in plants"
         :key="item.id"
       >
-        <router-link :to="'/plant/' + item.id" @click.native="scrollToTop()">
+        <router-link
+          :to="'/plant-detail/' + item.id"
+          @click.native="scrollToTop()"
+        >
           <img
             class="lg:h-[70%]"
             :src="item?.images[0]?.image"
             alt="Not found"
           />
-          <div class="my-3 flex-col text-center text-[18px]">
+          <div class="my-3 flex-col text-center text-[16px]">
             <div class="text-green-500">
               {{ "$" + item.from + " - " + "$" + item.to }}
             </div>

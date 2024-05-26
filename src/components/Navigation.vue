@@ -59,7 +59,9 @@
         </div>
       </div>
     </div>
-    <div class="flex-end mb-0 mt-4 flex w-full items-center lg:w-auto">
+    <div
+      class="flex-end mb-0 flex w-full items-center xs:mt-4 sm:mt-4 lg:mt-0 lg:w-auto"
+    >
       <button>
         <img
           src="../assets/images/icons/heart.svg"
@@ -110,7 +112,7 @@
           Home
         </router-link>
         <router-link
-          to="/plant-type"
+          :to="{ name: 'Plant', params: { type: type } }"
           @click.native="scrollToTop()"
           :class="{
             'text-[#ffffff]': $route.path.startsWith('/plant/' + plantType),
@@ -123,7 +125,7 @@
           to="/plant-by-life-style"
           @click.native="scrollToTop()"
           :class="{
-            'border-b border-white': $route.path === '/plant-by-life-style',
+            'text-[#ffffff]': $route.path === '/plant-by-life-style',
           }"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-[#ffffff] sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
@@ -160,8 +162,11 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
 
-let isLogin = false;
+let plantType = route.params.type ? route.params.type : "";
+let type = "Succulents Plants";
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
