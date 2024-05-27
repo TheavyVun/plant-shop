@@ -169,8 +169,8 @@ export const data = {
       id: 2,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Flowering Plants",
-      type: "Flowering Plants",
+      name: "Test1 Plants",
+      type: "Test1 Plants",
     },
     {
       id: 3,
@@ -183,8 +183,8 @@ export const data = {
       id: 4,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Test1 Plants",
-      type: "Test1 Plants",
+      name: "Test2 Plants",
+      type: "Test2 Plants",
     },
     {
       id: 5,
@@ -197,8 +197,8 @@ export const data = {
       id: 6,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Test2 Plants",
-      type: "Test2 Plants",
+      name: "Test3 Plants",
+      type: "Test3 Plants",
     },
     {
       id: 7,
