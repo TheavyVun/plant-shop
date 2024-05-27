@@ -71,7 +71,7 @@
           alt="Not found"
         />
       </router-link>
-      <router-link to="/shopping-cart">
+      <router-link to="/shopping-cart" class="relative">
         <img
           src="@/assets/images/icons/bag.svg"
           class="mx-1"
@@ -79,6 +79,12 @@
           height="25"
           alt="Not found"
         />
+        <div
+          v-if="cartItems > 0"
+          class="absolute right-[-6px] top-[-8px] flex h-[20px] w-[20px] items-center justify-center rounded-full bg-red-500 p-1 text-[12px] text-white"
+        >
+          {{ cartItems }}
+        </div>
       </router-link>
       <router-link to="/">
         <img
@@ -95,7 +101,11 @@
     </div>
   </div>
   <nav
-    :class="{ block: isMenuOpen, hidden: !isMenuOpen, 'lg:flex': true }"
+    :class="{
+      block: isMenuOpen,
+      hidden: !isMenuOpen,
+      'lg:flex': true,
+    }"
     class="sticky top-0 z-[1] w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
     <div class="h-full w-full flex-grow lg:flex lg:w-auto lg:items-center">
@@ -240,7 +250,7 @@ const isMenuOpen = ref(false);
 const plantTypes = data?.plantType;
 const plantByLifeStyle = data?.plantByLifeStyle;
 const plantGifts = data?.plantGifts;
-
+const cartItems = 1;
 let type = route.params.type ? route.params.type : "";
 
 const toggleMenu = () => {
