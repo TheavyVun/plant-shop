@@ -27,7 +27,7 @@
         <router-link
           :to="'/plant-detail/' + plant?.id"
           @click.native="scrollToTop()"
-          class="mt-4 text-wrap text-center text-[16px] hover:text-[#ffc249]"
+          class="mt-4 block overflow-hidden text-ellipsis whitespace-nowrap text-center text-[16px] hover:text-[#ffc249] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[80%]"
         >
           {{ plant?.name }}
         </router-link>
@@ -56,4 +56,11 @@ const scrollToTop = () => {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+// .text-ellipsis {
+//   display: block;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+</style>

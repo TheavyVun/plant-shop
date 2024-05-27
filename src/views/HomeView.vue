@@ -8,7 +8,7 @@
           class="rounded-md bg-[rgba(255,255,255,0.41)] px-8 py-4 text-center"
         >
           <h1
-            class="text-black sm:text-[24px] md:text-[36px] lg:text-[40px]"
+            class="font-bold text-black xs:text-[24px] sm:text-[24px] md:text-[36px] lg:text-[40px]"
             style="font-family: Khmer OS Muol Light"
           >
             ហាងលក់រុក្ខជាតិ

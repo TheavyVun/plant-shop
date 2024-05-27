@@ -65,7 +65,9 @@
         <div
           class="h-fit flex-col rounded-xl bg-[#e9e9e9b5] p-6 xs:w-full sm:w-full md:w-full xl:w-[49%]"
         >
-          <h1 class="text-[32px] font-bold">
+          <h1
+            class="text-[32px] font-bold xs:text-[20px] sm:text-[24px] md:text-[28px]"
+          >
             {{ plant?.name }}
           </h1>
           <div class="my-[18px] border-b border-[#c3c3c3]"></div>
@@ -150,7 +152,7 @@
         {{ plant?.description }}
       </div>
       <div class="my-[50px]">
-        <h1 class="">Benefits:</h1>
+        <h1 class="xs:px-3 md:px-3 lg:px-0">Benefits:</h1>
         <div
           class="flex-col"
           v-for="(item, index) in plant?.benefit"

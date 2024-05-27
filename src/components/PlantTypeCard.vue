@@ -18,7 +18,7 @@
       <router-link
         :to="{ name: 'Plant', params: { type: plant.type } }"
         @click.native="scrollToTop()"
-        class="mt-3 text-center text-[16px] hover:text-[#ffc249]"
+        class="mt-4 block overflow-hidden text-ellipsis whitespace-nowrap text-center text-[16px] hover:text-[#ffc249] xs:w-[150px] sm:w-[150px] md:w-[150px] lg:w-[80%]"
       >
         {{ plant?.name }}
       </router-link>
