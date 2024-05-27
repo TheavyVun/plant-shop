@@ -1,7 +1,9 @@
 <template>
   <div class="h-full w-full">
     <div class="my-[20px] lg:px-[33px]">
-      <h1 class="text-center text-[32px] font-bold text-black">All Plant</h1>
+      <h1 class="text-center text-[32px] font-bold text-black">
+        {{ "All Plant" }}
+      </h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <div class="m-auto sm:w-[90%] lg:w-[70%]">

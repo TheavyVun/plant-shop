@@ -7,14 +7,15 @@
       @click="handleClick(plant)"
     >
       <div
-        class="relative my-[10px] flex w-full flex-col items-center justify-center"
+        class="relative my-[10px] flex h-full w-full flex-col items-center justify-center"
       >
         <router-link
           :to="'/plant-detail/' + plant?.id"
           @click.native="scrollToTop()"
+          class="h-[90%]"
         >
           <img
-            class="h-[90%] w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
+            class="h-full w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
             :src="plant?.images[0]?.image"
             alt="Not found"
           />

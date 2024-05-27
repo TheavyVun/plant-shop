@@ -5,7 +5,8 @@ import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
 import PlantDetailsView from "../views/PlantDetailsView.vue";
 import AllPlantsView from "../views/AllPlantsView.vue";
-import PageNotFound from "../views/PageNotFound.vue";
+import ShoppingCart from "../views/ShoppingCart.vue";
+import NotFound from "../components/NotFound.vue";
 import Login from "../views/Login.vue";
 
 const routes = [
@@ -40,13 +41,18 @@ const routes = [
     component: AllPlantsView,
   },
   {
+    path: "/shopping-cart",
+    name: "Shopping Cart",
+    component: ShoppingCart,
+  },
+  {
     path: "/login",
     name: "Login",
     component: Login,
   },
   {
     path: "/:pathMatch(.*)*",
-    component: PageNotFound,
+    component: NotFound,
   },
 ];
 

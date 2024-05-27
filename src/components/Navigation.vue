@@ -5,11 +5,11 @@
     <div class="mr-6 flex flex-shrink-0 items-center" to="/">
       <img
         class="mr-4 h-8 w-8 fill-current"
-        src="../assets/logo.svg"
+        src="@/assets/logo.svg"
         alt="Not found"
       />
       <span class="text-xl font-semibold tracking-tight text-black">
-        Plant Shop
+        {{ "Plant Shop" }}
       </span>
     </div>
     <div class="block lg:hidden">
@@ -62,33 +62,33 @@
     <div
       class="flex-end mb-0 flex w-full items-center xs:mt-4 sm:mt-4 lg:mt-0 lg:w-auto"
     >
-      <button>
+      <router-link to="/">
         <img
-          src="../assets/images/icons/heart.svg"
+          src="@/assets/images/icons/heart.svg"
           class="mx-1"
           width="25"
           height="25"
           alt="Not found"
         />
-      </button>
-      <button>
+      </router-link>
+      <router-link to="/shopping-cart">
         <img
-          src="../assets/images/icons/bag.svg"
+          src="@/assets/images/icons/bag.svg"
           class="mx-1"
           width="25"
           height="25"
           alt="Not found"
         />
-      </button>
-      <button>
+      </router-link>
+      <router-link to="/">
         <img
-          src="../assets/images/icons/user.svg"
+          src="@/assets/images/icons/user.svg"
           class="mx-1"
           width="25"
           height="25"
           alt="Not found"
         />
-      </button>
+      </router-link>
       <button to="/login" class="ml-1 text-[18px]">
         {{ isLogin ? "Log out" : "Log In" }}
       </button>
@@ -110,7 +110,7 @@
           @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
-          Home
+          {{ "Home" }}
         </router-link>
         <div class="dropdown h-full pt-[15px]">
           <div
@@ -121,7 +121,7 @@
             }"
             class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
           >
-            Plant Type
+            {{ "Plant Type" }}
             <div class="dropdown-content">
               <div class="flex w-[500px] flex-wrap">
                 <div
@@ -155,7 +155,7 @@
             }"
             class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
           >
-            Plant By Life Style
+            {{ "Plant By Life Style" }}
             <div class="dropdown-content">
               <div class="flex w-[500px] flex-wrap">
                 <div
@@ -187,7 +187,7 @@
             }"
             class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
           >
-            Plant Gifts
+            {{ "Plant Gifts" }}
             <div class="dropdown-content">
               <div class="flex w-[500px] flex-wrap">
                 <div
@@ -216,7 +216,7 @@
           @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
-          About
+          {{ "About" }}
         </router-link>
         <router-link
           to="/contact"
@@ -224,7 +224,7 @@
           @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
-          Contact
+          {{ " Contact" }}
         </router-link>
       </div>
     </div>

@@ -169,8 +169,8 @@ export const data = {
       id: 2,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Test1 Plants",
-      type: "Test1 Plants",
+      name: "Flowering Plants",
+      type: "Flowering Plants",
     },
     {
       id: 3,
@@ -183,8 +183,8 @@ export const data = {
       id: 4,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Test2 Plants",
-      type: "Test2 Plants",
+      name: "Test1 Plants",
+      type: "Test1 Plants",
     },
     {
       id: 5,
@@ -197,8 +197,8 @@ export const data = {
       id: 6,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
-      name: "Test3 Plants",
-      type: "Test3 Plants",
+      name: "Test2 Plants",
+      type: "Test2 Plants",
     },
     {
       id: 7,
@@ -397,37 +397,61 @@ export const data = {
   plants: [
     {
       id: 1,
-      name: "Citrus Orange Variegated",
-      code: "A109",
-      type: "Fruit Plants",
+      name: "Giant stick AND Alovira",
+      code: "B100",
+      type: "Design House Plants",
       images: [
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728101424A135-GG%20(1).jpg?alt=media&token=daa3cac5-11bc-4154-97f3-1bb65b75374c",
+            "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRo-Q82WwF3HvDpvEbgyLH6VWa3DDx-PW1q8UT8d1RUASk_blWLGt8Qfo6tJ-NHPg1fSRIM126gNOnBk-U",
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728%2F20230728103125A109-AA%20(3)?alt=media&token=db8ed205-4270-44e1-9342-9eb20f1b8385",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHUlzRJ1Mg2Vw17Qe7FWlZ3MyRxJCHvYnjqfH2a82N_yj5qN8LELZCqQ-1BPuhzoVNCM&usqp=CAU",
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082703AA%20(9)?alt=media&token=73820495-e678-450e-9d71-b03182929d1c",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0mQ15ylAABmwoXIgzd-GojD7zwVrZmHmYNUOIEeH6IFYEZzVU_xK2yBa-7-9_SHwjIw&usqp=CAU",
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082654AA%20(8)?alt=media&token=0b8a9757-f150-4d2a-94d5-a7839bcb7a47",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuCG5FCH2zbZbPOcIh6S20ASmEqrXsj_LgN4ySU6R6hAfdJqRaeW7N6XP3ka1vadbR3I&usqp=CAU",
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082640AA%20(11)?alt=media&token=6317b76a-b61e-4d60-9332-9ea88fde77b8",
+            "https://www.goatcityplantdesign.com/cdn/shop/products/image_9cc8c24d-ba55-4140-b074-4e16ae79f811_1200x1200.jpg?v=1664040646",
         },
         {
           image:
-            "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20220929%2F20220929082625AA%20(10)?alt=media&token=d2a64c80-f8ad-45f0-962e-90e714f663c7",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGcnw35Tih6lJJB1xG_kIaR9lhp_KoABEvwbER7KwJPo7CpaJl8NMV0rCz4HHCx7ciw8&usqp=CAU",
+        },
+        {
+          image:
+            "https://www.denverpost.com/wp-content/uploads/2018/06/SUCCULENTS_KS_05302018_KS10341.jpg?w=1024",
+        },
+        {
+          image:
+            "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/158491lx.jpg",
+        },
+        {
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDEWtkXha0FQJ2gc1XJv8dk1AV1b7zsUGl3e7qHa0A0Zd-50WIJp_BLWl1nVe2Xwtvoo0&usqp=CAU",
+        },
+        {
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZazkJLmJ0W9NzMbxxNAfoas_sjG1m-MaTiD0wmDgsQ&s",
+        },
+        {
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFpChJExrYR5LqaI4zLtflgMjFbcTkEFzNFk88cKAUQ&s",
+        },
+        {
+          image:
+            "https://i.etsystatic.com/25639060/r/il/c40c53/5750604940/il_570xN.5750604940_4qll.jpg",
         },
       ],
-      from: "3",
-      to: "8",
+      from: "5",
+      to: "15",
       care: [{ name: "Moderate" }, { name: "Advance" }, { name: "Moderate" }],
       size: [{ name: "Small" }, { name: "Medium" }],
       light: [

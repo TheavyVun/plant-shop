@@ -2,9 +2,9 @@
   <div
     class="carousel-container mb-[50px] w-full px-[70px] xs:px-[30px] sm:px-[50px]"
   >
-    <div class="cards" :style="carouselStyle">
+    <div class="cards h-auto" :style="carouselStyle">
       <div
-        class="card rounded-1 h-full w-[200px] flex-col bg-slate-100 xs:m-[10px] lg:m-[15px]"
+        class="card rounded-1 h-auto w-[200px] flex-col bg-slate-100 xs:m-[10px] lg:m-[15px]"
         v-for="item in plants"
         :key="item.id"
       >
@@ -13,7 +13,7 @@
           @click.native="scrollToTop()"
         >
           <img
-            class="lg:h-[70%]"
+            class="h-[70%] w-full"
             :src="item?.images[0]?.image"
             alt="Not found"
           />
@@ -118,8 +118,6 @@ export default {
 }
 
 .card {
-  height: fit-content !important;
-
   display: inline-block;
   background: #f2f2f2;
   vertical-align: top;

@@ -22,7 +22,7 @@
               class="absolute left-[10px] top-1/2 h-[30px] w-[30px] -translate-y-1/2 transform rounded-full bg-[rgba(17,17,17,0.5)] p-2 text-white shadow-md hover:bg-[rgba(17,17,17)] hover:shadow-lg"
             >
               <img
-                src="../assets/images/icons/previous.svg"
+                src="@/assets/images/icons/previous.svg"
                 width="20"
                 alt="Not found"
               />
@@ -38,7 +38,7 @@
               class="absolute right-[10px] top-1/2 h-[30px] w-[30px] -translate-y-1/2 transform rounded-full bg-[rgba(17,17,17,0.5)] p-2 text-white shadow-md hover:bg-[rgba(17,17,17)] hover:shadow-lg"
             >
               <img
-                src="../assets/images/icons/next.svg"
+                src="@/assets/images/icons/next.svg"
                 width="20"
                 alt="Not found"
               />
@@ -73,11 +73,11 @@
           <div class="my-[18px] border-b border-[#c3c3c3]"></div>
           <div class="my-[18px] w-full">
             <div class="flex items-center">
-              <div class="mr-2 text-[16px]">Code:</div>
+              <div class="mr-2 text-[16px]">{{ "Code:" }}</div>
               <div class="text-[16px] text-green-500">{{ plant?.code }}</div>
             </div>
             <div class="my-[18px] flex items-center">
-              <div class="mr-2 text-[16px]">Price:</div>
+              <div class="mr-2 text-[16px]">{{ "Price:" }}</div>
               <div class="text-[16px] text-green-500">
                 {{ "$" + plant?.from + " - " + "$" + plant?.to }}
               </div>
@@ -86,7 +86,7 @@
           <div class="my-[18px] border-b border-[#c3c3c3]"></div>
           <div class="my-[18px] w-full">
             <div class="flex w-full flex-wrap items-center">
-              <div class="mr-2 text-[16px]">Care:</div>
+              <div class="mr-2 text-[16px]">{{ "Care:" }}</div>
               <div
                 class="flex flex-wrap"
                 v-for="care in plant?.care"
@@ -102,7 +102,7 @@
           </div>
           <div class="my-[18px] w-full">
             <div class="flex w-full flex-wrap items-center">
-              <div class="mr-2 text-[16px]">Size:</div>
+              <div class="mr-2 text-[16px]">{{ "Size:" }}</div>
               <div
                 class="flex flex-wrap"
                 v-for="size in plant?.size"
@@ -118,7 +118,7 @@
           </div>
           <div class="my-[18px] w-full">
             <div class="flex w-full flex-wrap items-center">
-              <div class="mr-2 text-[16px]">Light:</div>
+              <div class="mr-2 text-[16px]">{{ "Light:" }}</div>
               <div
                 class="flex flex-wrap"
                 v-for="light in plant?.light"
@@ -133,17 +133,17 @@
             </div>
           </div>
           <div class="my-[18px] border-b border-[#c3c3c3]"></div>
-          <div class="my-[18px] text-[16px]">Shopping Cart</div>
+          <div class="my-[18px] text-[16px]">{{ "Shopping Cart" }}</div>
           <div class="flex w-full items-center justify-between">
             <button
               class="w-[49%] rounded-full bg-green-500 py-2 text-white hover:bg-green-600"
             >
-              Start Order
+              {{ "Start Order" }}
             </button>
             <button
               class="w-[49%] rounded-full bg-[#2196f3] py-2 text-white hover:bg-[#4485ba]"
             >
-              Add to cart
+              {{ "Add to cart" }}
             </button>
           </div>
         </div>
@@ -152,7 +152,7 @@
         {{ plant?.description }}
       </div>
       <div class="my-[50px]">
-        <h1 class="xs:px-3 md:px-3 lg:px-0">Benefits:</h1>
+        <h1 class="xs:px-3 md:px-3 lg:px-0">{{ "Benefits:" }}</h1>
         <div
           class="flex-col"
           v-for="(item, index) in plant?.benefit"
@@ -169,7 +169,7 @@
         </div>
       </div>
       <div class="my-[50px] xs:px-3 md:px-3 lg:px-0">
-        <h1>Grow and Care:</h1>
+        <h1>{{ "Grow and Care:" }}</h1>
         <div v-for="item of plant?.grow_and_care" :key="item">
           <div class="my-[10px]">
             {{ item?.title + ":" }} {{ item?.description }}
@@ -178,7 +178,7 @@
       </div>
     </div>
     <div class="my-[20px] flex flex-col items-center justify-center">
-      <h1 class="mt-1 text-center text-[26px]">Relevant Plant</h1>
+      <h1 class="mt-1 text-center text-[26px]">{{ "Relevant Plant" }}</h1>
       <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <PlantCard :plants="plants" @plant-click="handlePlantClick" />

@@ -8,7 +8,7 @@
         class="close-btn h-[46px] w-[46px] rounded-full p-2"
         @click="$emit('close')"
       >
-        <img src="../assets/images/icons/close.svg" alt="Not found" />
+        <img src="@/assets/images/icons/close.svg" alt="Not found" />
       </button>
       <img
         class="h-full w-full object-cover"

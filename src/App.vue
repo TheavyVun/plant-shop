@@ -16,14 +16,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
-import { useRoute } from "vue-router";
 import Navigation from "./components/Navigation.vue";
-import PageNotFound from "./views/PageNotFound.vue";
-
-const route = useRoute();
-const isRouteMatched = () => {
-  return route.matched.length > 0;
-};
 
 const showGoUpButton = ref(false);
 

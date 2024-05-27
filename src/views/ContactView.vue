@@ -38,7 +38,7 @@
         </div>
         <div class="m-auto flex w-[50%] flex-col">
           <img
-            src="../assets/logo.svg"
+            src="@/assets/logo.svg"
             alt="Logo"
             class="m-auto mb-4 h-[250px]"
           />
@@ -53,7 +53,7 @@
         <p>=&gt; 7:30AM - 6:00PM&nbsp;(Every weekend)</p>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../assets/images/about/contact.jpg" alt="" />
+        <img src="@/assets/images/about/contact.jpg" alt="" />
       </div>
       <div class="m-auto my-[50px] sm:w-[90%] lg:w-[70%]">
         <div class="my-[20px]">
@@ -63,10 +63,10 @@
         </div>
         <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         <div class="m-auto my-[20px] flex w-[20%] items-center justify-between">
-          <img src="../assets/images/icons/facebook.svg" width="35" alt="" />
-          <img src="../assets/images/icons/linkedin.svg" width="30" alt="" />
-          <img src="../assets/images/icons/instagram.svg" width="30" alt="" />
-          <img src="../assets/images/icons/telegram.svg" width="30" alt="" />
+          <img src="@/assets/images/icons/facebook.svg" width="35" alt="" />
+          <img src="@/assets/images/icons/linkedin.svg" width="30" alt="" />
+          <img src="@/assets/images/icons/instagram.svg" width="30" alt="" />
+          <img src="@/assets/images/icons/telegram.svg" width="30" alt="" />
         </div>
       </div>
     </div>

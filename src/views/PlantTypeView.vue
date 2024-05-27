@@ -20,7 +20,7 @@
           src="https://cdn.dribbble.com/users/363634/screenshots/4200296/attachments/960005/cactus-lendit.jpg"
           alt=""
         />
-        Empty list 🫣
+        {{ "Empty list" }}
       </div>
     </div>
     <iframe

@@ -11,13 +11,13 @@
             class="font-bold text-black xs:text-[24px] sm:text-[24px] md:text-[36px] lg:text-[40px]"
             style="font-family: Khmer OS Muol Light"
           >
-            ហាងលក់រុក្ខជាតិ
+            {{ "ហាងលក់រុក្ខជាតិ" }}
           </h1>
           <br />
           <h1
             class="tex font-bold text-black sm:text-[24px] md:text-[36px] lg:text-[40px]"
           >
-            Plant Shop
+            {{ "Plant Shop" }}
           </h1>
         </div>
       </div>
@@ -39,7 +39,9 @@
         and more reliable.
       </p>
       <div class="my-[50px]">
-        <h1 class="text-center text-[26px]">Fine Plant You Will Love</h1>
+        <h1 class="text-center text-[26px]">
+          {{ "Fine Plant You Will Love" }}
+        </h1>
         <div class="m-auto mt-5 w-[80px] border-b-[3px] border-green-600"></div>
       </div>
       <div class="flex w-full flex-wrap xs:px-5 md:px-5">
@@ -52,16 +54,16 @@
         @click.native="scrollToTop()"
         class="rounded border border-green-500 px-[100px] py-1 text-center text-[26px] text-green-600 hover:bg-green-100 xs:px-[50px] xs:text-[18px] sm:px-[80px] sm:text-[22px]"
       >
-        SEE ALL PLANT
+        {{ "SEE ALL PLANT" }}
       </router-link>
-      <h1 class="mt-2 text-center text-[26px]">Top Trending Plants</h1>
+      <h1 class="mt-2 text-center text-[26px]">{{ "Top Trending Plants" }}</h1>
       <div class="m-auto mt-3 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <TopTrendingPlant :plants="plants" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
-          <h1 class="text-center text-[22px]">Shop By Care</h1>
+          <h1 class="text-center text-[22px]">{{ "Shop By Care" }}</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="flex w-full flex-wrap xs:px-5 md:px-5">
@@ -89,7 +91,7 @@
       </div>
       <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
-          <h1 class="text-center text-[22px]">Shop By Size</h1>
+          <h1 class="text-center text-[22px]">{{ "Shop By Size" }}</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="flex w-full flex-wrap xs:px-5 md:px-5">
@@ -117,7 +119,7 @@
       </div>
       <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
-          <h1 class="text-center text-[22px]">Shop By Light</h1>
+          <h1 class="text-center text-[22px]">{{ "Shop By Light" }}</h1>
           <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
         </div>
         <div class="flex w-full flex-wrap xs:px-5 md:px-5">
@@ -145,12 +147,12 @@
       </div>
     </div>
     <div class="my-[20px]">
-      <h1 class="text-center text-[32px] font-bold">Latest Plant</h1>
+      <h1 class="text-center text-[32px] font-bold">{{ "Latest Plant" }}</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <PlantCard :plants="plants" />
     <div class="my-[20px]">
-      <h1 class="text-center text-[32px] font-bold">Gallery</h1>
+      <h1 class="text-center text-[32px] font-bold">{{ "Gallery" }}</h1>
     </div>
     <div class="m-auto xs:px-3 sm:w-[90%] lg:w-[70%]">
       <div class="flex w-full flex-wrap xs:px-1 md:px-1">
@@ -186,7 +188,7 @@
             class="prev-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
             <img
-              src="../assets/images/icons/previous.svg"
+              src="@/assets/images/icons/previous.svg"
               width="100"
               alt="Not found"
             />
@@ -197,7 +199,7 @@
             class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
             <img
-              src="../assets/images/icons/next.svg"
+              src="@/assets/images/icons/next.svg"
               width="100"
               alt="Not found"
             />
@@ -207,7 +209,7 @@
     </div>
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="my-[50px]">
-        <h1 class="text-center text-[26px]">What our customers say</h1>
+        <h1 class="text-center text-[26px]">{{ "What our customers say" }}</h1>
       </div>
       <CustomerReview :customers="data?.customers" />
     </div>

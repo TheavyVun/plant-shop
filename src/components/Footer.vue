@@ -20,7 +20,7 @@
             <div>
               <div class="flex items-center">
                 <img
-                  src="../assets/images/icons/address.svg"
+                  src="@/assets/images/icons/address.svg"
                   width="30"
                   height="30"
                   alt="Not found"
@@ -38,7 +38,7 @@
               </div>
               <div class="my-2 flex items-center">
                 <img
-                  src="../assets/images/icons/phone.svg"
+                  src="@/assets/images/icons/phone.svg"
                   width="30"
                   height="30"
                   alt="Not found"
@@ -47,7 +47,7 @@
               </div>
               <div class="my-2 flex items-center">
                 <img
-                  src="../assets/images/icons/mail.svg"
+                  src="@/assets/images/icons/mail.svg"
                   width="30"
                   height="30"
                   alt="Not found"
