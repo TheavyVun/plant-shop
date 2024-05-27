@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto sm:w-[90%] lg:w-[70%]">
+  <div class="m-auto xs:px-5 sm:w-[90%] md:px-5 lg:w-[70%] lg:px-0">
     <div class="my-[50px] flex w-full flex-col justify-between lg:flex-row">
       <div class="w-full lg:w-[68%]">
         <h1 class="text-[22px] text-black">
