@@ -9,7 +9,20 @@
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <Filter />
     </div>
-    <PlantCard :plants="plants" />
+    <PlantCard v-if="plants.length > 0" :plants="plants" />
+    <div
+      class="m-auto flex items-center justify-center font-bold sm:w-[90%] lg:w-[70%]"
+      v-if="plants.length === 0"
+    >
+      <div class="text-center">
+        <img
+          class="w-[300px]"
+          src="https://cdn.dribbble.com/users/363634/screenshots/4200296/attachments/960005/cactus-lendit.jpg"
+          alt=""
+        />
+        Empty list 🫣
+      </div>
+    </div>
     <iframe
       class="mt-[100px] h-[350px] w-full"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.691465513618!2d144.96175371525688!3d-37.811466079756175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d7e62f05a5f%3A0x69f14f0e253266!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1589274753731!5m2!1sen!2sin"
@@ -21,7 +34,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import { useRoute } from "vue-router";
 import Filter from "../components/Filter.vue";
 import PlantCard from "../components/PlantCard.vue";
@@ -29,16 +42,26 @@ import Footer from "../components/Footer.vue";
 import { data } from "../data";
 
 const route = useRoute();
-const plantType = route.params.type;
+const plantType = ref(route.params.type);
 const plants = ref([]);
 
 onMounted(() => {
   fetchPlants();
 });
 
+watch(
+  () => route.params.type,
+  (newType) => {
+    plantType.value = newType;
+    fetchPlants();
+  },
+);
+
 const fetchPlants = async () => {
   try {
-    plants.value = data?.plants.filter((plant) => plant?.type === plantType);
+    plants.value = data?.plants.filter(
+      (plant) => plant?.type === plantType.value,
+    );
   } catch (error) {
     console.error("Error fetching plants:", error);
   }

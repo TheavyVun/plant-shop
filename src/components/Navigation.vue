@@ -99,57 +99,129 @@
     class="sticky top-0 z-[1] w-full flex-wrap items-center bg-[#004524] xs:px-3 sm:h-auto sm:px-[20px] lg:h-[54px] lg:px-[13px]"
   >
     <div class="h-full w-full flex-grow lg:flex lg:w-auto lg:items-center">
-      <div class="h-full w-full text-sm xs:mb-4 sm:mb-4 lg:mb-0 lg:flex-grow">
+      <div
+        class="flex h-full w-full items-center text-sm xs:mb-4 sm:mb-4 lg:mb-0 lg:flex-grow"
+      >
         <router-link
           to="/"
-          @click.native="scrollToTop()"
           :class="{
             'text-white': $route.path === '/' || $route.path === '/all-plants',
           }"
+          @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Home
         </router-link>
-        <router-link
-          :to="{ name: 'Plant', params: { type: type } }"
-          @click.native="scrollToTop()"
-          :class="{
-            'text-white': $route.path.startsWith('/plant/' + plantType),
-          }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
-        >
-          Plant Type
-        </router-link>
-        <router-link
-          to="/plant-by-life-style"
-          @click.native="scrollToTop()"
-          :class="{
-            'text-white': $route.path === '/plant-by-life-style',
-          }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
-        >
-          Plant By Life Style
-        </router-link>
-        <router-link
-          to="/plant-gifts"
-          @click.native="scrollToTop()"
-          :class="{ 'text-white': $route.path === '/plant-gifts' }"
-          class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
-        >
-          Plant Gifts
-        </router-link>
+        <div class="dropdown h-full pt-[15px]">
+          <div
+            :class="{
+              'text-white':
+                $route.path.startsWith('/plant/') &&
+                plantTypes.some((item) => item.type === $route.params.type),
+            }"
+            class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          >
+            Plant Type
+            <div class="dropdown-content">
+              <div class="flex w-[500px] flex-wrap">
+                <div
+                  class="w-[33%]"
+                  v-for="item in plantTypes"
+                  :key="item.type"
+                >
+                  <router-link
+                    :to="{ name: 'Plant', params: { type: item.type } }"
+                    :class="{
+                      'bg-[#ddd] text-black': $route.params.type === item.type,
+                    }"
+                    @click.native="scrollToTop()"
+                    class="text-black hover:bg-[#f0f0f0]"
+                  >
+                    {{ item.name }}
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown h-full pt-[15px]">
+          <div
+            :class="{
+              'text-white':
+                $route.path.startsWith('/plant/') &&
+                plantByLifeStyle.some(
+                  (item) => item.type === $route.params.type,
+                ),
+            }"
+            class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          >
+            Plant By Life Style
+            <div class="dropdown-content">
+              <div class="flex w-[500px] flex-wrap">
+                <div
+                  class="w-[50%]"
+                  v-for="item in plantByLifeStyle"
+                  :key="item.type"
+                >
+                  <router-link
+                    :to="{ name: 'Plant', params: { type: item.type } }"
+                    :class="{
+                      'bg-[#ddd] text-black': $route.params.type === item.type,
+                    }"
+                    @click.native="scrollToTop()"
+                    class="text-black hover:bg-[#f0f0f0]"
+                  >
+                    {{ item.name }}
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown h-full pt-[15px]">
+          <div
+            :class="{
+              'text-white':
+                $route.path.startsWith('/plant/') &&
+                plantGifts.some((item) => item.type === $route.params.type),
+            }"
+            class="block h-full cursor-pointer font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
+          >
+            Plant Gifts
+            <div class="dropdown-content">
+              <div class="flex w-[500px] flex-wrap">
+                <div
+                  class="w-[50%]"
+                  v-for="item in plantGifts"
+                  :key="item.type"
+                >
+                  <router-link
+                    :to="{ name: 'Plant', params: { type: item.type } }"
+                    :class="{
+                      'bg-[#ddd] text-black': $route.params.type === item.type,
+                    }"
+                    @click.native="scrollToTop()"
+                    class="text-black hover:bg-[#f0f0f0]"
+                  >
+                    {{ item.name }}
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <router-link
           to="/about"
-          @click.native="scrollToTop()"
           :class="{ 'text-white': $route.path === '/about' }"
+          @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           About
         </router-link>
         <router-link
           to="/contact"
-          @click.native="scrollToTop()"
           :class="{ 'text-white': $route.path === '/contact' }"
+          @click.native="scrollToTop()"
           class="block h-full pt-[15px] font-semibold text-gray-400 hover:text-white sm:px-0 lg:mt-0 lg:inline-block lg:px-5"
         >
           Contact
@@ -162,14 +234,19 @@
 <script setup>
 import { ref } from "vue";
 import { useRoute } from "vue-router";
+import { data } from "../data";
 const route = useRoute();
-
-let plantType = route.params.type ? route.params.type : "";
-let type = "Succulents Plants";
 const isMenuOpen = ref(false);
+const plantTypes = data?.plantType;
+const plantByLifeStyle = data?.plantByLifeStyle;
+const plantGifts = data?.plantGifts;
+
+let type = route.params.type ? route.params.type : "";
+
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
@@ -180,5 +257,29 @@ const scrollToTop = () => {
     0 10px 13px -6px rgba(0, 0, 0, 0.2),
     0 20px 31px 3px rgba(0, 0, 0, 0.14),
     0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 19px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
