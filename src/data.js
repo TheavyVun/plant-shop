@@ -71,32 +71,33 @@ export const data = {
   plantType: [
     {
       id: 1,
-
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
       name: "Succulents Plants",
       type: "Succulents Plants",
     },
+
     {
       id: 2,
       image:
-        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113812Flowering%20Plants?alt=media&token=bf816531-06d6-4d57-9565-120df818f71d",
-      name: "Flowering Plants",
-      type: "Flowering Plants",
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
+      name: "Medicine Plants",
+      type: "Medicine Plants",
     },
+
     {
       id: 3,
       image:
-        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113954House%20Plants?alt=media&token=feccc8ed-825a-4d3c-a85e-684d39257462",
-      name: "House Plants",
-      type: "House Plants",
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
+      name: "Tropical Plants",
+      type: "Tropical Plants",
     },
     {
       id: 4,
       image:
-        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114032Bonsai%20Plants?alt=media&token=94f083ae-868e-4b63-b87e-1b195723b774",
-      name: "Bonsai Plants",
-      type: "Bonsai Plants",
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113812Flowering%20Plants?alt=media&token=bf816531-06d6-4d57-9565-120df818f71d",
+      name: "Flowering Plants",
+      type: "Flowering Plants",
     },
     {
       id: 5,
@@ -108,23 +109,169 @@ export const data = {
     {
       id: 6,
       image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
+      name: "Outdoor Plants",
+      type: "Outdoor Plants",
+    },
+    {
+      id: 7,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010113954House%20Plants?alt=media&token=feccc8ed-825a-4d3c-a85e-684d39257462",
+      name: "House Plants",
+      type: "House Plants",
+    },
+    {
+      id: 8,
+      image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114128Hanging%20Plants?alt=media&token=7a6585d7-1ec0-438a-9df5-98707ee0c44d",
       name: "Hanging Plants",
       type: "Hanging Plants",
     },
     {
-      id: 7,
+      id: 9,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010115648Fruit%20Plants?alt=media&token=46efe0f5-dc88-4855-ada6-fd82e463a18f",
       name: "Fruit Plants",
       type: "Fruit Plants",
     },
     {
-      id: 8,
+      id: 10,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010114032Bonsai%20Plants?alt=media&token=94f083ae-868e-4b63-b87e-1b195723b774",
+      name: "Bonsai Plants",
+      type: "Bonsai Plants",
+    },
+    {
+      id: 11,
       image:
         "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
+      name: "Floor Plants",
+      type: "Floor Plants",
+    },
+    {
+      id: 12,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantLifeStyle%2F20221011%2F20221011092542Air%20Purifying%20Plants?alt=media&token=b6286333-6a3b-4c3a-891d-63d7cc39eb30",
+      name: "Farm Plants",
+      type: "Farm Plants",
+    },
+  ],
+
+  plantByLifeStyle: [
+    {
+      id: 1,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Feng Shui Plants",
+      type: "Feng Shui Plants",
+    },
+    {
+      id: 2,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Flowering Plants",
+      type: "Flowering Plants",
+    },
+    {
+      id: 3,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Zodiac Plants",
+      type: "Zodiac Plants",
+    },
+    {
+      id: 4,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Fruit Plants",
+      type: "Fruit Plants",
+    },
+    {
+      id: 5,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
       name: "Air Purifying Plants",
       type: "Air Purifying Plants",
+    },
+    {
+      id: 6,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Farm Plants",
+      type: "Farm Plants",
+    },
+    {
+      id: 7,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Plants for Beginners",
+      type: "Plants for Beginners",
+    },
+  ],
+
+  plantGifts: [
+    {
+      id: 1,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Birthday Collection",
+      type: "Birthday Collection",
+    },
+    {
+      id: 2,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Friendship Day Gifts",
+      type: "Friendship Day Gifts",
+    },
+    {
+      id: 3,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Corporate Gifts",
+      type: "Corporate Gifts",
+    },
+    {
+      id: 4,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Back to School Gifts",
+      type: "Back to School Gifts",
+    },
+    {
+      id: 5,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Sympathy Plants",
+      type: "Sympathy Plants",
+    },
+    {
+      id: 5,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Gifts for Parents",
+      type: "Gifts for Parents",
+    },
+    {
+      id: 5,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Housewarming Collection",
+      type: "Housewarming Collection",
+    },
+    {
+      id: 6,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Grandparents Day Gifts",
+      type: "Grandparents Day Gifts",
+    },
+    {
+      id: 7,
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/plantType%2F20221010%2F20221010104633Succulents%20Plants?alt=media&token=ad9641bb-a38d-417f-adac-08c249e5e4a0",
+      name: "Thank You Collection",
+      type: "Thank You Collection",
     },
   ],
 

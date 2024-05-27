@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import PlantTypeView from "../views/PlantTypeView.vue";
-import PlantByLifeStyle from "../views/PlantBytLifeStyleView.vue";
-import PlantGifts from "../views/PlantGiftsView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
 import PlantDetailsView from "../views/PlantDetailsView.vue";
@@ -15,16 +13,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomeView,
-  },
-  {
-    path: "/plant-by-life-style",
-    name: "Plant By Life Style",
-    component: PlantByLifeStyle,
-  },
-  {
-    path: "/plant-gifts",
-    name: "Plant Gifts",
-    component: PlantGifts,
   },
   {
     path: "/about",
