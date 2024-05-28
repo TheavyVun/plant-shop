@@ -137,10 +137,12 @@
           <div class="flex w-full items-center justify-between">
             <button
               class="w-[49%] rounded-full bg-green-500 py-2 text-white hover:bg-green-600"
+              @click="startOrder"
             >
               {{ "Start Order" }}
             </button>
             <button
+              @click="addToCart"
               class="w-[49%] rounded-full bg-[#2196f3] py-2 text-white hover:bg-[#4485ba]"
             >
               {{ "Add to cart" }}
@@ -198,6 +200,7 @@ import { useRoute } from "vue-router";
 import Footer from "../components/Footer.vue";
 import PlantCard from "../components/PlantCard.vue";
 import { data } from "../data";
+import { store } from "../store";
 
 const route = useRoute();
 const plants = data?.plants;
@@ -239,6 +242,10 @@ const handlePlantClick = (clickedPlant) => {
   plant.value = clickedPlant;
   currentIndex.value = 0;
   updateMainImage();
+};
+
+const addToCart = () => {
+  store.addToCart();
 };
 
 onMounted(() => {

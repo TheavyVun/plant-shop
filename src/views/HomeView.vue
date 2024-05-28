@@ -5,17 +5,17 @@
         class="green-house-image m-auto flex h-[500px] w-full flex-col items-center justify-center"
       >
         <div
-          class="rounded-md bg-[rgba(255,255,255,0.41)] px-8 py-4 text-center"
+          class="rounded-md bg-[rgba(189,189,189,0.49)] px-8 py-4 text-center"
         >
           <h1
-            class="font-bold text-black xs:text-[24px] sm:text-[24px] md:text-[36px] lg:text-[40px]"
+            class="font-bold text-white xs:text-[24px] sm:text-[24px] md:text-[36px] lg:text-[40px]"
             style="font-family: Khmer OS Muol Light"
           >
             {{ "ហាងលក់រុក្ខជាតិ" }}
           </h1>
           <br />
           <h1
-            class="tex font-bold text-black sm:text-[24px] md:text-[36px] lg:text-[40px]"
+            class="tex font-bold text-white sm:text-[24px] md:text-[36px] lg:text-[40px]"
           >
             {{ "Plant Shop" }}
           </h1>

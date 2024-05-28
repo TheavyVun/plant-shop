@@ -80,7 +80,7 @@
           alt="Not found"
         />
         <div
-          v-if="cartItems > 0"
+          v-if="cartItems"
           class="absolute right-[-6px] top-[-8px] flex h-[20px] w-[20px] items-center justify-center rounded-full bg-red-500 p-1 text-[12px] text-white"
         >
           {{ cartItems }}
@@ -242,15 +242,17 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import { data } from "../data";
+import { store } from "../store";
+
 const route = useRoute();
 const isMenuOpen = ref(false);
 const plantTypes = data?.plantType;
 const plantByLifeStyle = data?.plantByLifeStyle;
 const plantGifts = data?.plantGifts;
-const cartItems = 1;
+const cartItems = computed(() => store.cartItems);
 let type = route.params.type ? route.params.type : "";
 
 const toggleMenu = () => {
