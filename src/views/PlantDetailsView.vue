@@ -200,7 +200,7 @@ import { useRoute } from "vue-router";
 import Footer from "../components/Footer.vue";
 import PlantCard from "../components/PlantCard.vue";
 import { data } from "../data";
-import { store } from "../store";
+import { store } from "../store/addToCart";
 
 const route = useRoute();
 const plants = data?.plants;

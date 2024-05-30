@@ -243,17 +243,14 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { useRoute } from "vue-router";
 import { data } from "../data";
-import { store } from "../store";
+import { store } from "../store/addToCart";
 
-const route = useRoute();
 const isMenuOpen = ref(false);
 const plantTypes = data?.plantType;
 const plantByLifeStyle = data?.plantByLifeStyle;
 const plantGifts = data?.plantGifts;
 const cartItems = computed(() => store.cartItems);
-let type = route.params.type ? route.params.type : "";
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
