@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { data } from "../data";
+import { data } from "../data/data";
 import Filter from "../components/Filter.vue";
 import Footer from "../components/Footer.vue";
 

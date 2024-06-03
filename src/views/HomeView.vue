@@ -232,7 +232,7 @@ import ImagePreview from "../components/ImagePreview.vue";
 import PlantCard from "../components/PlantCard.vue";
 import PlantTypeCard from "../components/PlantTypeCard.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
-import { data } from "../data";
+import { data } from "../data/data";
 
 const selectedIndex = ref(0);
 const selectedImage = ref("");

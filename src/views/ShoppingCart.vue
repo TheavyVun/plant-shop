@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div v-if="cartItems.length === 0">{{ "Empty Cart" }}</div>
+        <div v-if="cartItems">{{ "Empty Cart" }}</div>
       </div>
       <div class="mt-10 w-full lg:mt-0 lg:w-[28%]">
         <h1 class="text-[22px] text-black">
@@ -96,45 +96,25 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { useStore } from "vuex";
+import { computed } from "vue";
 
-const cartItems = ref([
-  {
-    name: "Citrus Orange Variegated",
-    price: 20,
-    quantity: 1,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/greenhouse-6f31c.appspot.com/o/product%2F20230728101424A135-GG%20(1).jpg?alt=media&token=daa3cac5-11bc-4154-97f3-1bb65b75374c",
-  },
-]);
-
-const subtotal = computed(() => {
-  return cartItems.value.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0,
-  );
-});
-
-const tax = computed(() => {
-  return (subtotal.value * 10) / 100;
-});
-
-const total = computed(() => {
-  return subtotal.value + tax.value;
-});
+const store = useStore();
+const cartItems = computed(() => store.getters["cartItems"]);
+const subtotal = computed(() => store.getters.subtotal);
+const tax = computed(() => store.getters.tax);
+const total = computed(() => store.getters.total);
 
 const increaseQuantity = (index) => {
-  cartItems.value[index].quantity++;
+  store.dispatch("increaseQuantity", index);
 };
 
 const decreaseQuantity = (index) => {
-  if (cartItems.value[index].quantity > 1) {
-    cartItems.value[index].quantity--;
-  }
+  store.dispatch("decreaseQuantity", index);
 };
 
 const removeItem = (index) => {
-  cartItems.value.splice(index, 1);
+  store.dispatch("removeItemFromCart", index);
 };
 </script>
 

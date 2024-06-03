@@ -96,7 +96,7 @@
         />
       </router-link>
       <button to="/login" class="ml-1 text-[18px]">
-        {{ isLogin ? "Log out" : "Log In" }}
+        {{ "Log In" }}
       </button>
     </div>
   </div>
@@ -243,14 +243,14 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { data } from "../data";
-import { store } from "../store/addToCart";
+import { data } from "../data/data";
+import store from "../store/index";
 
 const isMenuOpen = ref(false);
 const plantTypes = data?.plantType;
 const plantByLifeStyle = data?.plantByLifeStyle;
 const plantGifts = data?.plantGifts;
-const cartItems = computed(() => store.cartItems);
+const cartItems = computed(() => store?.cartItems);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;

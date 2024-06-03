@@ -87,7 +87,7 @@
 <script setup>
 import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
-import { data } from "../data";
+import { data } from "../data/data";
 
 const customers = data?.customers;
 </script>

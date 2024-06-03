@@ -28,7 +28,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { data } from "../data";
+import { data } from "../data/data";
 
 const plantType = ref(data?.plantType || []);
 

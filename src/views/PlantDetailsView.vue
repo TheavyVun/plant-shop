@@ -142,7 +142,7 @@
               {{ "Start Order" }}
             </button>
             <button
-              @click="addToCart"
+              @click="addToCart(plant)"
               class="w-[49%] rounded-full bg-[#2196f3] py-2 text-white hover:bg-[#4485ba]"
             >
               {{ "Add to cart" }}
@@ -199,10 +199,11 @@ import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import Footer from "../components/Footer.vue";
 import PlantCard from "../components/PlantCard.vue";
-import { data } from "../data";
-import { store } from "../store/addToCart";
+import { data } from "../data/data";
+import { useStore } from "vuex";
 
 const route = useRoute();
+const store = useStore();
 const plants = data?.plants;
 const plant = ref(null);
 
@@ -244,8 +245,13 @@ const handlePlantClick = (clickedPlant) => {
   updateMainImage();
 };
 
-const addToCart = () => {
-  store.addToCart();
+// const addToCart = () => {
+//   store.dispatch("addItemToCart", plant.value); // Correctly dispatch the action
+// };
+
+const addToCart = (item) => {
+  console.log(item);
+  store.dispatch("addItemToCart", item);
 };
 
 onMounted(() => {

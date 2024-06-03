@@ -39,7 +39,7 @@ import { useRoute } from "vue-router";
 import Filter from "../components/Filter.vue";
 import PlantCard from "../components/PlantCard.vue";
 import Footer from "../components/Footer.vue";
-import { data } from "../data";
+import { data } from "../data/data";
 
 const route = useRoute();
 const plantType = ref(route.params.type);
