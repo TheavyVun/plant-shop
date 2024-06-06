@@ -3,11 +3,7 @@
     class="top-nav bg-write flex w-full flex-wrap items-center justify-between py-4 xs:px-3 sm:px-[20px] lg:px-[30px]"
   >
     <div class="mr-6 flex flex-shrink-0 items-center" to="/">
-      <img
-        class="mr-4 h-8 w-8 fill-current"
-        src="@/assets/logo.svg"
-        alt="Not found"
-      />
+      <img class="mr-4 h-8 w-8 fill-current" src="@/assets/logo.svg" alt="" />
       <span class="text-xl font-semibold tracking-tight text-black">
         {{ "Plant Shop" }}
       </span>
@@ -68,7 +64,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt="Not found"
+          alt=""
         />
       </router-link>
       <router-link to="/shopping-cart" class="relative">
@@ -77,7 +73,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt="Not found"
+          alt=""
         />
         <div
           v-if="cartItems"
@@ -92,7 +88,7 @@
           class="mx-1"
           width="25"
           height="25"
-          alt="Not found"
+          alt=""
         />
       </router-link>
       <button to="/login" class="ml-1 text-[18px]">

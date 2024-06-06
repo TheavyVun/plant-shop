@@ -12,11 +12,7 @@
           :to="'/plant-detail/' + item.id"
           @click.native="scrollToTop()"
         >
-          <img
-            class="h-[70%] w-full"
-            :src="item?.images[0]?.image"
-            alt="Not found"
-          />
+          <img class="h-[70%] w-full" :src="item?.images[0]?.image" alt="" />
           <div class="my-3 flex-col text-center text-[16px]">
             <div class="text-green-500">
               {{ "$" + item.from + " - " + "$" + item.to }}
@@ -34,7 +30,7 @@
       <img
         :src="currentSlide === 0 ? previousDisabled : previous"
         width="18"
-        alt="Not found"
+        alt=""
       />
     </button>
     <button
@@ -45,7 +41,7 @@
       <img
         :src="currentSlide === plants.length - 1 ? nextDisabled : nextBlack"
         width="18"
-        alt="Not found"
+        alt=""
       />
     </button>
   </div>

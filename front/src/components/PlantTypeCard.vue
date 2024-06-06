@@ -12,7 +12,7 @@
         <img
           class="sm:h-[150px] sm:w-[150px] lg:h-[180px] lg:w-[180px]"
           :src="plant.image"
-          alt="Not found"
+          alt=""
         />
       </router-link>
       <router-link

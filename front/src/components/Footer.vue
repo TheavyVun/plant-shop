@@ -23,7 +23,7 @@
                   src="@/assets/images/icons/address.svg"
                   width="30"
                   height="30"
-                  alt="Not found"
+                  alt=""
                 />
                 <div class="ml-4 text-[14px] text-white">
                   # 36B, Street 371, Group 5,
@@ -41,7 +41,7 @@
                   src="@/assets/images/icons/phone.svg"
                   width="30"
                   height="30"
-                  alt="Not found"
+                  alt=""
                 />
                 <div class="ml-4 text-[14px] text-white">+855 12 345 678</div>
               </div>
@@ -50,7 +50,7 @@
                   src="@/assets/images/icons/mail.svg"
                   width="30"
                   height="30"
-                  alt="Not found"
+                  alt=""
                 />
                 <div class="ml-4 text-[14px] text-white">
                   info@plantshopcambodia.com

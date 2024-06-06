@@ -77,11 +77,7 @@
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
-              <img
-                class="h-[102px] w-[108px]"
-                :src="item?.image"
-                alt="Not found"
-              />
+              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
@@ -105,11 +101,7 @@
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90] hover:text-white"
             >
-              <img
-                class="h-[102px] w-[108px]"
-                :src="item?.image"
-                alt="Not found"
-              />
+              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
@@ -133,11 +125,7 @@
               @click.native="scrollToTop()"
               class="box flex h-[196px] w-full flex-col items-center justify-center hover:bg-[#90ee90]"
             >
-              <img
-                class="h-[102px] w-[108px]"
-                :src="item?.image"
-                alt="Not found"
-              />
+              <img class="h-[102px] w-[108px]" :src="item?.image" alt="" />
               <span class="mt-3 text-center text-[18px]">
                 {{ item?.name }}
               </span>
@@ -169,7 +157,7 @@
               class="gallery h-full w-full cursor-pointer"
               :src="item?.image"
               @click="openPopup(index)"
-              alt="Not found"
+              alt=""
             />
           </div>
         </div>
@@ -187,22 +175,14 @@
             @click="prevImage"
             class="prev-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
-            <img
-              src="@/assets/images/icons/previous.svg"
-              width="100"
-              alt="Not found"
-            />
+            <img src="@/assets/images/icons/previous.svg" width="100" alt="" />
           </button>
           <button
             v-if="selectedIndex !== gallery?.length - 1"
             @click="nextImage"
             class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
           >
-            <img
-              src="@/assets/images/icons/next.svg"
-              width="100"
-              alt="Not found"
-            />
+            <img src="@/assets/images/icons/next.svg" width="100" alt="" />
           </button>
         </template>
       </ImagePreview>

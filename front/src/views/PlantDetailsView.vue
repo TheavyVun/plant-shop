@@ -9,7 +9,7 @@
             <img
               v-if="mainImage"
               :src="mainImage"
-              alt="Not found"
+              alt=""
               class="h-[506.5px] w-full rounded-xl"
             />
             <button
@@ -21,11 +21,7 @@
               }"
               class="absolute left-[10px] top-1/2 h-[30px] w-[30px] -translate-y-1/2 transform rounded-full bg-[rgba(17,17,17,0.5)] p-2 text-white shadow-md hover:bg-[rgba(17,17,17)] hover:shadow-lg"
             >
-              <img
-                src="@/assets/images/icons/previous.svg"
-                width="20"
-                alt="Not found"
-              />
+              <img src="@/assets/images/icons/previous.svg" width="20" alt="" />
             </button>
             <button
               v-if="mainImage"
@@ -37,11 +33,7 @@
               }"
               class="absolute right-[10px] top-1/2 h-[30px] w-[30px] -translate-y-1/2 transform rounded-full bg-[rgba(17,17,17,0.5)] p-2 text-white shadow-md hover:bg-[rgba(17,17,17)] hover:shadow-lg"
             >
-              <img
-                src="@/assets/images/icons/next.svg"
-                width="20"
-                alt="Not found"
-              />
+              <img src="@/assets/images/icons/next.svg" width="20" alt="" />
             </button>
           </div>
           <div
@@ -57,7 +49,7 @@
                 :src="image?.image"
                 :class="{ 'border-2 border-blue-500': currentIndex === index }"
                 class="h-[65px] w-[65px] rounded-full bg-cover bg-center object-cover duration-300 hover:scale-110"
-                alt="Not found"
+                alt=""
               />
             </div>
           </div>

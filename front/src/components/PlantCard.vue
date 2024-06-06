@@ -17,7 +17,7 @@
           <img
             class="h-full w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
             :src="plant?.images[0]?.image"
-            alt="Not found"
+            alt=""
           />
         </router-link>
         <div
