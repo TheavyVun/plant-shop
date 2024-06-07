@@ -16,7 +16,7 @@ const {
   PlantLifeStyleProduct,
   Image,
 } = require("../models/associations");
-const verifyToken = require("./auth");
+// const verifyToken = require("./auth");
 
 // Helper function to find entities by name
 const findEntityByName = async (Model, name, key) => {
@@ -106,6 +106,7 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
+    const { productName, code } = req.query
     const data = await Product.findAll({
       attributes: [
         "id",
@@ -187,6 +188,15 @@ router.get("/", async (req, res) => {
           attributes: ["name"],
         },
       ],
+      where: {
+        ...(productName && {
+          name: generateLikeClause(productName),
+        }),
+        ...(code && {
+          code: generateLikeClause(code),
+        }),
+        // To Do More
+      }
     });
     res.json(data);
   } catch (err) {
@@ -286,4 +296,19 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// ================
+// INTERNAL HELPER
+// ================
+
+/**
+ * To generate LIKE clause
+ * @param {any} fieldValue
+ * @return {object}
+ */
+function generateLikeClause(fieldValue) {
+  return { [Op.like]: `%${fieldValue}%` }
+}
+
+
+// ================
 module.exports = router;
