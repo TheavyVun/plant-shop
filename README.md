@@ -15,9 +15,13 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 - cd back
 
+## Project Setup
+
 ```sh
 npm install
 ```
+
+### Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
@@ -45,7 +49,7 @@ npm run serve
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+# Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
