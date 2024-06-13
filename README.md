@@ -13,7 +13,9 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 # Backend
 
-- cd back
+```sh
+cd back
+```
 
 ## Project Setup
 
@@ -26,10 +28,17 @@ npm install
 ```sh
 npm run dev
 ```
+# Back to plant-shop
+
+```sh
+cd ..
+```
 
 # Frontend
 
-- cd front
+```sh
+cd front
+```
 
 ## Project Setup
 
