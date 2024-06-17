@@ -1,12 +1,13 @@
-const Sequelize = require("sequelize")
-
-const lights_table = require('../config/database').define(
-    "lights",
-    {
-      name: {
-        type: Sequelize.STRING,
-      },
+module.exports = (sequelize, DataTypes) => {
+  const Light = sequelize.define(
+  "Light",
+  {
+    name: {
+      type: DataTypes.STRING,
     },
-    { tableName: "lights" }
-  )
-module.exports = lights_table
+  },
+  { tableName: "lights" }
+);
+
+  return Light;
+};

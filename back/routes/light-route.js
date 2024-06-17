@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const {
   Light,
-} = require("../models/associations");
+} = require("../models");
 
 router.get("/", async (req, res) => {
   try {

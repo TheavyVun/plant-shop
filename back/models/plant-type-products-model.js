@@ -1,15 +1,16 @@
-const Sequelize = require("sequelize")
-
-const plant_type_products_table = require('../config/database').define(
-    "plant_type_products",
-    {
-      product_id: {
-        type: Sequelize.INTEGER,
-      },
-      plant_type_id: {
-        type: Sequelize.INTEGER,
-      },
+module.exports = (sequelize, DataTypes) => {
+  const PlantTypeProduct = sequelize.define(
+  "PlantTypeProduct",
+  {
+    product_id: {
+      type: DataTypes.INTEGER,
     },
-    { tableName: "plant_type_products" }
-  )
-module.exports = plant_type_products_table
+    plant_type_id: {
+      type: DataTypes.INTEGER,
+    },
+  },
+  { tableName: "plant_type_products" }
+);
+
+  return PlantTypeProduct;
+};

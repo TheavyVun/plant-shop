@@ -5,7 +5,7 @@ import { getProducts } from '@/api/products.js'
 const store = createStore({
   state: {
     cartItems: [],
-    Products: [],
+    products: [],
   },
   mutations: {
     addToCart(state, item) {
@@ -13,7 +13,7 @@ const store = createStore({
     },
 
     setProducts(state, payload) {
-      state.Products = payload;
+      state.products = payload;
     },
 
     removeFromCart(state, index) {
@@ -54,7 +54,7 @@ const store = createStore({
   },
   getters: {
     cartItems: (state) => state.cartItems,
-    Products: (state) => state.Products,
+    products: (state) => state.products,
 
     subtotal: (state) => {
       return state.cartItems.reduce(

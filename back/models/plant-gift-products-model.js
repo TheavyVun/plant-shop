@@ -1,15 +1,34 @@
-const Sequelize = require("sequelize")
+const Sequelize = require("sequelize");
+const db = require('../config/database');
 
-const plant_gift_products_table = require('../config/database').define(
-    "plant_gift_products",
-    {
-      product_id: {
-        type: Sequelize.INTEGER,
-      },
-      plant_gift_id: {
-        type: Sequelize.INTEGER,
-      },
+const PlantGiftProduct = db.define(
+  "PlantGiftProduct",
+  {
+    product_id: {
+      type: Sequelize.INTEGER,
     },
-    { tableName: "plant_gift_products" }
-  )
-module.exports = plant_gift_products_table
+    plant_gift_id: {
+      type: Sequelize.INTEGER,
+    },
+  },
+  { tableName: "plant_gift_product" }
+);
+
+module.exports = PlantGiftProduct;
+
+module.exports = (sequelize, DataTypes) => {
+  const PlantGiftProduct = sequelize.define(
+  "PlantGiftProduct",
+  {
+    product_id: {
+      type: DataTypes.INTEGER,
+    },
+    plant_gift_id: {
+      type: DataTypes.INTEGER,
+    },
+  },
+  { tableName: "plant_gift_products" }
+);
+
+  return PlantGiftProduct;
+};

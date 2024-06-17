@@ -1,13 +1,13 @@
-const Sequelize = require("sequelize")
+module.exports = (sequelize, DataTypes) => {
+  const Customer = sequelize.define(
+  "Customer",
+  {
+    user_id: DataTypes.INTEGER,
+    phone: DataTypes.STRING,
+    address: DataTypes.STRING,
+  },
+  { tableName: "customers" }
+);
 
-const customers = require('../config/database').define(
-    "customers",
-    {
-      user_id: Sequelize.INTEGER,
-      phone: Sequelize.STRING,
-      address: Sequelize.STRING,
-    },
-    { tableName: "customers" }
-  )
-
-module.exports = customers
+  return Customer;
+};

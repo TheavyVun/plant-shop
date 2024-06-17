@@ -12,12 +12,12 @@
         >
           <div class="flex items-center justify-between">
             <div class="flex">
-              <img class="w-[100px]" :src="item.image" alt="Product Image" />
+              <img class="w-[100px]" :src="`http://localhost:3000/uploads/${item?.imageUrl}`" alt="Product Image" />
               <div class="mx-3 flex flex-col">
                 <span class="text-[16px] font-bold">
                   {{ item.name }}
                 </span>
-                <span>${{ item.price }}</span>
+                <span>{{ "$" + item?.ProductSizes[0].price + " - " + "$" + item?.ProductSizes[item?.ProductSizes?.length -1].price }}</span>
               </div>
             </div>
             <div class="flex items-center">
@@ -31,7 +31,7 @@
                   alt="Decrease"
                 />
               </button>
-              <span class="mx-1 w-auto text-center">{{ item.quantity }}</span>
+              <span class="mx-1 w-auto text-center">1</span>
               <button
                 class="mx-1 rounded-md border border-black p-2 text-black hover:border-black"
                 @click="increaseQuantity(index)"
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div v-if="cartItems">{{ "Empty Cart" }}</div>
+        <div v-if="!cartItems?.length">{{ "Empty Cart" }}</div>
       </div>
       <div class="mt-10 w-full lg:mt-0 lg:w-[28%]">
         <h1 class="text-[22px] text-black">
@@ -79,11 +79,11 @@
           <div>{{ "$" + total }}</div>
         </div>
         <div class="my-[15px] flex w-full items-center justify-between">
-          <button
-            class="w-[49%] rounded-md bg-green-500 py-2 text-white hover:bg-green-600"
+          <router-link to="/login"
+            class="w-[49%] rounded-md bg-green-500 py-2 text-white hover:bg-green-600 text-center"
           >
             Login
-          </button>
+          </router-link>
           <button
             class="w-[49%] rounded-md bg-green-500 py-2 text-white hover:bg-green-600"
           >
@@ -101,9 +101,11 @@ import { computed } from "vue";
 
 const store = useStore();
 const cartItems = computed(() => store.getters["cartItems"]);
-const subtotal = computed(() => store.getters.subtotal);
-const tax = computed(() => store.getters.tax);
-const total = computed(() => store.getters.total);
+const subtotal = 10;
+// const subtotal = computed(() => store.getters.subtotal);
+const tax = 2
+// const tax = computed(() => store.getters.tax);
+const total = 34
 
 const increaseQuantity = (index) => {
   store.dispatch("increaseQuantity", index);

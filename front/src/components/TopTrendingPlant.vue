@@ -5,17 +5,18 @@
     <div class="cards h-auto" :style="carouselStyle">
       <div
         class="card rounded-1 h-auto w-[200px] flex-col bg-slate-100 xs:m-[10px] lg:m-[15px]"
-        v-for="item in plants"
+        v-for="item in products"
         :key="item.id"
       >
         <router-link
           :to="'/plant-detail/' + item.id"
           @click.native="scrollToTop()"
         >
-          <img class="h-[70%] w-full" :src="item?.images[0]?.image" alt="" />
+          <!-- <img class="h-[70%] w-full" :src="item?.images[0]?.image" alt="" /> -->
+          <img class="h-[70%] w-full" :src="`http://localhost:3000/uploads/${item?.imageUrl}`" alt="" />
           <div class="my-3 flex-col text-center text-[16px]">
             <div class="text-green-500">
-              {{ "$" + item.from + " - " + "$" + item.to }}
+              {{ "$" + item?.ProductSizes[0].price + " - " + "$" + item?.ProductSizes[item?.ProductSizes?.length -1].price }}
             </div>
             <div class="w-full text-wrap">{{ item?.name }}</div>
           </div>
@@ -35,11 +36,11 @@
     </button>
     <button
       @click="next"
-      :disabled="currentSlide === plants.length - 1"
+      :disabled="currentSlide === products?.length - 1"
       class="next-btn flex h-full w-[70px] items-center justify-center bg-white xs:w-[50px] sm:w-[60px]"
     >
       <img
-        :src="currentSlide === plants.length - 1 ? nextDisabled : nextBlack"
+        :src="currentSlide === products?.length - 1 ? nextDisabled : nextBlack"
         width="18"
         alt=""
       />
@@ -69,6 +70,7 @@ export default {
       nextBlack,
       previousDisabled,
       nextDisabled,
+      products: []
     };
   },
   computed: {
@@ -84,7 +86,7 @@ export default {
     },
 
     next() {
-      if (this.currentSlide < this.plants.length - 1) {
+      if (this.currentSlide < this.products?.length - 1) {
         this.currentSlide++;
       }
     },
@@ -94,6 +96,10 @@ export default {
         this.currentSlide--;
       }
     },
+  },
+  async created() {
+    await this.$store.dispatch("setListProducts", {});
+    this.products = this.$store.state.products
   },
 };
 </script>

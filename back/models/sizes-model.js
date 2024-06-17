@@ -1,12 +1,13 @@
-const Sequelize = require("sequelize")
-
-const sizes_table = require('../config/database').define(
-    "sizes",
-    {
-      name: {
-        type: Sequelize.STRING,
-      },
+module.exports = (sequelize, DataTypes) => {
+  const Size = sequelize.define(
+  "Size",
+  {
+    name: {
+      type: DataTypes.STRING,
     },
-    { tableName: "sizes" }
-  )
-module.exports = sizes_table
+  },
+  { tableName: "sizes" }
+);
+
+  return Size;
+};

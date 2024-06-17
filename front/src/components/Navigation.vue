@@ -79,10 +79,10 @@
           v-if="cartItems"
           class="absolute right-[-6px] top-[-8px] flex h-[20px] w-[20px] items-center justify-center rounded-full bg-red-500 p-1 text-[12px] text-white"
         >
-          {{ cartItems }}
+          {{ cartItems?.length }}
         </div>
       </router-link>
-      <router-link to="/">
+      <router-link to="/login">
         <img
           src="@/assets/images/icons/user.svg"
           class="mx-1"
@@ -246,7 +246,7 @@ const isMenuOpen = ref(false);
 const plantTypes = data?.plantType;
 const plantByLifeStyle = data?.plantByLifeStyle;
 const plantGifts = data?.plantGifts;
-const cartItems = computed(() => store?.cartItems);
+const cartItems = computed(() => store?.state?.cartItems);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;

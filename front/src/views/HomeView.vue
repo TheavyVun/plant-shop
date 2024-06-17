@@ -59,7 +59,7 @@
       <h1 class="mt-2 text-center text-[26px]">{{ "Top Trending Plants" }}</h1>
       <div class="m-auto mt-3 w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <TopTrendingPlant :plants="plants" />
+    <TopTrendingPlant :plants="products" />
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
       <div class="shop-by-care-box w-full px-5 py-[10px] xs:px-0">
         <div class="mb-5 flex flex-col items-center justify-center">
@@ -138,7 +138,7 @@
       <h1 class="text-center text-[32px] font-bold">{{ "Latest Plant" }}</h1>
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
-    <PlantCard :plants="plants" />
+    <PlantCard :plants="products" />
     <div class="my-[20px]">
       <h1 class="text-center text-[32px] font-bold">{{ "Gallery" }}</h1>
     </div>
@@ -166,7 +166,7 @@
         :isVisible="isPopupVisible"
         :imageSrc="selectedImage"
         :currentIndex="selectedIndex"
-        :totalImages="gallery.length"
+        :totalImages="gallery?.length"
         @close="closePopup"
       >
         <template v-slot:buttons>
@@ -205,7 +205,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed, onMounted } from "vue";
 import CustomerReview from "../components/CustomerReview.vue";
 import Footer from "../components/Footer.vue";
 import ImagePreview from "../components/ImagePreview.vue";
@@ -213,13 +213,15 @@ import PlantCard from "../components/PlantCard.vue";
 import PlantTypeCard from "../components/PlantTypeCard.vue";
 import TopTrendingPlant from "../components/TopTrendingPlant.vue";
 import { data } from "../data/data";
+import store from "../store/index";
 
 const selectedIndex = ref(0);
 const selectedImage = ref("");
 const isPopupVisible = ref(false);
 
-const plants = ref(data?.plants || []);
+// const plants = ref([]);
 const gallery = ref(data?.gallery || []);
+const products = computed(() => store?.state?.products);
 
 const openPopup = (index) => {
   selectedIndex.value = index;
@@ -246,6 +248,9 @@ const prevImage = () => {
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
+onMounted(() => {
+  store.dispatch("setListProducts", {});
+});
 </script>
 
 <style scoped lang="scss">

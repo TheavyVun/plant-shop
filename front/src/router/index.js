@@ -7,7 +7,10 @@ import PlantDetailsView from "../views/PlantDetailsView.vue";
 import AllPlantsView from "../views/AllPlantsView.vue";
 import ShoppingCart from "../views/ShoppingCart.vue";
 import NotFound from "../components/NotFound.vue";
+// import Login from "../views/Login.vue";
 import Login from "../views/Login.vue";
+import Register from "../views/RegisterView.vue";
+import ForgotPW from "../views/ForgotView.vue";
 
 const routes = [
   {
@@ -49,6 +52,16 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
+  },
+  {
+    path: "/forgot",
+    name: "Forgot",
+    component: ForgotPW,
   },
   {
     path: "/:pathMatch(.*)*",

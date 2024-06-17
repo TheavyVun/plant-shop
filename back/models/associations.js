@@ -1,23 +1,27 @@
-const User = require("./users-model");
-const Customer = require("./customers-model");
-const Product = require("./products-model");
-const Image = require("./images-model");
-const Care = require("./cares-model");
-const ProductCare = require("./product-cares-model");
-const Light = require("./lights-model");
-const ProductLight = require("./product-lights-model");
-const Size = require("./sizes-model");
-const ProductSize = require("./product-sizes-model");
-const PlantType = require("./plant-types-model");
-const PlantTypeProduct = require("./plant-type-products-model");
-const PlantGift = require("./plant-gifts-model");
-const PlantGiftProduct = require("./plant-gift-products-model");
-const PlantLifeStyle = require("./plant-life-styles-model");
-const PlantLifeStyleProduct = require("./plant-life-style-products-model");
-const PlantRoom = require("./plant-rooms-model");
-const PlantRoomProduct = require("./plant-room-products-model");
+module.exports = (sequelize, DataTypes, models) => {
+  const {
+    User,
+    Product,
+    Care,
+    Customer,
+    Image,
+    Light,
+    Size,
+    PlantGift,
+    PlantType,
+    PlantLifeStyle,
+    PlantRoom,
+    ProductCare,
+    ProductLight,
+    ProductSize,
+    PlantTypeProduct,
+    PlantGiftProduct,
+    PlantLifeStyleProduct,
+    PlantRoomProduct,
+    Category,
+    ProductCategory,
+  } = models;
 
-// User - Customer Association
 User.hasOne(Customer, { foreignKey: "user_id" });
 Customer.belongsTo(User, { foreignKey: "user_id" });
 
@@ -34,8 +38,8 @@ Light.hasMany(ProductLight, { foreignKey: "light_id" });
 ProductLight.belongsTo(Light, { foreignKey: "light_id" });
 
 // Size - ProductSize Association
-Size.hasMany(ProductSize, { foreignKey: "size_id" });
-ProductSize.belongsTo(Size, { foreignKey: "size_id" });
+Size.hasMany(ProductSize, { foreignKey: "size_id", as: "size" });
+ProductSize.belongsTo(Size, { foreignKey: "size_id", as: "size" });
 
 // PlantType - PlantTypeProduct Association
 PlantType.hasMany(PlantTypeProduct, { foreignKey: "plant_type_id" });
@@ -117,51 +121,32 @@ PlantLifeStyleProduct.belongsTo(Product, {
   as: "PlantLifeStyles",
 });
 
+// Product - ProductCategory Association
+Product.hasMany(ProductCategory, {
+  foreignKey: "product_id",
+  as: "ProductCategories",
+});
+ProductCategory.belongsTo(Product, {
+  foreignKey: "product_id",
+  as: "ProductCategories",
+});
+// Category - ProductCategory Association
+Category.hasMany(ProductCategory, {
+  foreignKey: "category_id",
+});
+ProductCategory.belongsTo(Category, {
+  foreignKey: "category_id",
+});
+
+// Product - Care Association
+Care.hasMany(Product, { foreignKey: "care_id" });
+Product.belongsTo(Care, { foreignKey: "care_id" });
+
+// Product - Light Association
+Light.hasMany(Product, { foreignKey: "light_id" });
+Product.belongsTo(Light, { foreignKey: "light_id" });
+
 // Product - PlantRoomProduct Association
 Product.hasMany(PlantRoomProduct, { foreignKey: "product_id" });
 PlantRoomProduct.belongsTo(Product, { foreignKey: "product_id" });
-
-// Sync all models
-const syncModels = async () => {
-  await User.sync();
-  await Customer.sync();
-  await Product.sync();
-  await Image.sync();
-  await Care.sync();
-  await ProductCare.sync();
-  await Light.sync();
-  await ProductLight.sync();
-  await Size.sync();
-  await ProductSize.sync();
-  await PlantType.sync();
-  await PlantTypeProduct.sync();
-  await PlantGift.sync();
-  await PlantGiftProduct.sync();
-  await PlantLifeStyle.sync();
-  await PlantLifeStyleProduct.sync();
-  await PlantRoom.sync();
-  await PlantRoomProduct.sync();
-};
-
-syncModels();
-
-module.exports = {
-  User,
-  Customer,
-  Product,
-  Image,
-  Care,
-  ProductCare,
-  Light,
-  ProductLight,
-  Size,
-  ProductSize,
-  PlantType,
-  PlantTypeProduct,
-  PlantGift,
-  PlantGiftProduct,
-  PlantLifeStyle,
-  PlantLifeStyleProduct,
-  PlantRoom,
-  PlantRoomProduct,
 };

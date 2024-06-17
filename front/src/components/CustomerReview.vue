@@ -57,7 +57,7 @@
       <img src="@/assets/images/icons/previous.svg" width="100" alt="" />
     </button>
     <button
-      v-if="currentSlide != customers.length - 1"
+      v-if="currentSlide != customers?.length - 1"
       @click="next"
       class="next-btn h-[30px] w-[30px] rounded-full bg-slate-600 p-2"
     >
@@ -90,12 +90,12 @@ export default {
   },
   methods: {
     isLongComment(comment) {
-      return comment.split(" ").length > 100;
+      return comment.split(" ")?.length > 100;
     },
 
     truncatedComment(comment) {
       const words = comment.split(" ");
-      return words.slice(0, 100).join(" ") + (words.length > 100 ? "..." : "");
+      return words.slice(0, 100).join(" ") + (words?.length > 100 ? "..." : "");
     },
 
     toggleTextExpansion(customerId) {
@@ -132,7 +132,7 @@ export default {
     },
 
     next() {
-      if (this.currentSlide < this.customers.length - 1) {
+      if (this.currentSlide < this.customers?.length - 1) {
         this.currentSlide++;
       }
     },

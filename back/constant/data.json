@@ -4,53 +4,17 @@
             "name": "Polyscias balfouriana",
             "code": "A001",
             "description": "plant Detail",
-            "imageUrl": "Polyscias_balfouriana.jpg",
+            "imageUrl": "Polyscias_balfouriana1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
-              { "name": "MEDIUM", "price": 5 },
-              { "name": "LARGE", "price": 8 }
+              { "name": "MEDIUM", "price": 5 }
             ],
-            "ProductCares": [
-              { "name": "ADVANCE" },
-              { "name": "EASY" },
-              { "name": "MODERATE" }
-            ],
-            "ProductLights": [
-              { "name": "DIRECT LIGHT" },
-              { "name": "INDIRECT LIGHT" },
-              { "name": "LOW LIGHT" }
-            ],
-            "PlantTypes": [
-              { "name": "MEDICINE PLANTS" },
+            "productCares": "MODERATE",
+            "productLights": "DIRECT LIGHT",
+            "Categories": [
               { "name": "SUCCULENTS PLANTS" },
-              { "name": "FARM PLANTS" },
-              { "name": "FLOOR PLANTS" },
-              { "name": "BONSAI PLANTS" },
-              { "name": "FRUIT PLANTS" },
-              { "name": "HANGING PLANTS" },
-              { "name": "HOUSE PLANTS" },
-              { "name": "OUTDOOR PLANTS" },
-              { "name": "RARE PLANTS" },
-              { "name": "FLOWERING PLANTS" },
-              { "name": "TROPICAL PLANTS" }
-            ],
-            "PlantGifts": [
-              { "name": "BIRTHDAY COLLECTION" },
-              { "name": "FRIENDSHIP DAY GIFTS" },
-              { "name": "CORPORATE GIFTS" },
-              { "name": "BACK TO SCHOOL GIFTS" },
               { "name": "SYMPATHY PLANTS" },
               { "name": "GIFTS FOR PARENTS" },
-              { "name": "HOUSEWARMING COLLECTION" },
-              { "name": "GRANDPARENTS DAY GIFTS" },
-              { "name": "THANK YOU COLLECTION" }
-            ],
-            "PlantLifeStyles": [
-              { "name": "FENG SHUI PLANTS" },
-              { "name": "FARM PLANTS" },
-              { "name": "FRUIT PLANTS" },
-              { "name": "FLOWERING PLANTS" },
-              { "name": "PLANTS FOR BEGINNERS" },
               { "name": "AIR PURIFYING PLANTS" },
               { "name": "ZODIAC PLANTS" }
             ],
@@ -66,22 +30,14 @@
             "name": "Calathea roseopicta",
             "code": "A002",
             "description": "plant Detail",
-            "imageUrl": "Calathea_roseopicta.jpg",
+            "imageUrl": "Calathea_roseopicta1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
-              { "name": "ADVANCE" },
-              { "name": "EASY" },
-              { "name": "MODERATE" }
-            ],
-            "ProductLights": [
-              { "name": "DIRECT LIGHT" },
-              { "name": "INDIRECT LIGHT" },
-              { "name": "LOW LIGHT" }
-            ],
+            "productCares": "EASY",
+            "productLights": "INDIRECT LIGHT",
             "PlantTypes": [
               { "name": "MEDICINE PLANTS" },
               { "name": "SUCCULENTS PLANTS" },
@@ -128,22 +84,14 @@
             "name": "Gymnocalycium baldianum",
             "code": "A003",
             "description": "plant Detail",
-            "imageUrl": "Gymnocalycium_baldianum.jpg",
+            "imageUrl": "Gymnocalycium_baldianum1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
-              { "name": "ADVANCE" },
-              { "name": "EASY" },
-              { "name": "MODERATE" }
-            ],
-            "ProductLights": [
-              { "name": "DIRECT LIGHT" },
-              { "name": "INDIRECT LIGHT" },
-              { "name": "LOW LIGHT" }
-            ],
+            "productCares": "ADVANCE",
+            "productLights": "LOW LIGHT",
             "PlantTypes": [
               { "name": "MEDICINE PLANTS" },
               { "name": "SUCCULENTS PLANTS" },
@@ -190,18 +138,18 @@
             "name": "Pink rain lily",
             "code": "A004",
             "description": "plant Detail",
-            "imageUrl": "Pink_rain_lily.jpg",
+            "imageUrl": "Pink_rain_lily1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -252,18 +200,18 @@
             "name": "Abana plant",
             "code": "A005",
             "description": "plant Detail",
-            "imageUrl": "Abana_plant.jpg",
+            "imageUrl": "Abana_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -314,18 +262,18 @@
             "name": "Desert candy",
             "code": "A006",
             "description": "plant Detail",
-            "imageUrl": "Desert_candy.jpg",
+            "imageUrl": "Desert_candy1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -376,18 +324,18 @@
             "name": "Pine tree",
             "code": "A007",
             "description": "plant Detail",
-            "imageUrl": "Pine_tree.jpg",
+            "imageUrl": "Pine_tree1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -438,18 +386,18 @@
             "name": "Ruby camellia",
             "code": "A008",
             "description": "plant Detail",
-            "imageUrl": "Ruby_camellia.jpg",
+            "imageUrl": "Ruby_camellia1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -500,18 +448,18 @@
             "name": "Seven miniature",
             "code": "A009",
             "description": "plant Detail",
-            "imageUrl": "Seven_miniature.jpg",
+            "imageUrl": "Seven_miniature1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -562,18 +510,18 @@
             "name": "Baghstore plant",
             "code": "A010",
             "description": "plant Detail",
-            "imageUrl": "Baghstore_plant.jpg",
+            "imageUrl": "Baghstore_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -624,18 +572,18 @@
             "name": "Delight plant",
             "code": "A011",
             "description": "plant Detail",
-            "imageUrl": "Delight_plant.jpg",
+            "imageUrl": "Delight_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -686,18 +634,18 @@
             "name": "Hardwood plant",
             "code": "A012",
             "description": "plant Detail",
-            "imageUrl": "Hardwood_plant.jpg",
+            "imageUrl": "Hardwood_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -748,18 +696,18 @@
             "name": "Purifying plant",
             "code": "A013",
             "description": "plant Detail",
-            "imageUrl": "Purifying_plant.jpg",
+            "imageUrl": "Purifying_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -810,18 +758,18 @@
             "name": "Salisbury plant",
             "code": "A014",
             "description": "plant Detail",
-            "imageUrl": "Salisbury_plant.jpg",
+            "imageUrl": "Salisbury_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -872,18 +820,18 @@
             "name": "Flora flo",
             "code": "A015",
             "description": "plant Detail",
-            "imageUrl": "Flora_flo.jpg",
+            "imageUrl": "Flora_flo1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -934,18 +882,18 @@
             "name": "Kolab flo",
             "code": "A016",
             "description": "plant Detail",
-            "imageUrl": "Kolab_flo.jpg",
+            "imageUrl": "Kolab_flo1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -996,18 +944,18 @@
             "name": "Males flo",
             "code": "A017",
             "description": "plant Detail",
-            "imageUrl": "Males_flo.jpg",
+            "imageUrl": "Malis_flo1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1047,29 +995,29 @@
               { "name": "ZODIAC PLANTS" }
             ],
             "ProductImages": [
-              { "name": "Males_flo1.jpg" },
-              { "name": "Males_flo2.jpg" },
-              { "name": "Males_flo3.jpg" },
-              { "name": "Males_flo4.jpg" },
-              { "name": "Males_flo5.jpg" }
+              { "name": "Malis_flo1.jpg" },
+              { "name": "Malis_flo2.jpg" },
+              { "name": "Malis_flo3.jpg" },
+              { "name": "Malis_flo4.jpg" },
+              { "name": "Malis_flo5.jpg" }
             ]
         },
         {
             "name": "Napa flo",
             "code": "A018",
             "description": "plant Detail",
-            "imageUrl": "Napa_flo.jpg",
+            "imageUrl": "Napa_flo1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1120,18 +1068,18 @@
             "name": "Orkide flo",
             "code": "A019",
             "description": "plant Detail",
-            "imageUrl": "Orkide_flo.jpg",
+            "imageUrl": "Orkide_flo1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1182,18 +1130,18 @@
             "name": "Basket plant",
             "code": "A020",
             "description": "plant Detail",
-            "imageUrl": "Basket_plant.jpg",
+            "imageUrl": "Basket_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1244,18 +1192,18 @@
             "name": "Seagrass plant",
             "code": "A021",
             "description": "plant Detail",
-            "imageUrl": "Seagrass_plant.jpg",
+            "imageUrl": "Seagrass_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1306,18 +1254,18 @@
             "name": "Vertical plant",
             "code": "A022",
             "description": "plant Detail",
-            "imageUrl": "Vertical_plant.jpg",
+            "imageUrl": "Vertical_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1368,18 +1316,18 @@
             "name": "Waitro plant",
             "code": "A023",
             "description": "plant Detail",
-            "imageUrl": "Waitro_plant.jpg",
+            "imageUrl": "Waitro_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1430,18 +1378,18 @@
             "name": "Cactus plant",
             "code": "A024",
             "description": "plant Detail",
-            "imageUrl": "Cactus_plant.jpg",
+            "imageUrl": "Cactus_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1492,18 +1440,18 @@
             "name": "Costa indoor",
             "code": "A025",
             "description": "plant Detail",
-            "imageUrl": "Costa_indoor.jpg",
+            "imageUrl": "Costa_indoor1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1554,18 +1502,18 @@
             "name": "heart leaves",
             "code": "A026",
             "description": "plant Detail",
-            "imageUrl": "heart_leaves.jpg",
+            "imageUrl": "heart_leaves1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1616,18 +1564,18 @@
             "name": "Oasis plant",
             "code": "A027",
             "description": "plant Detail",
-            "imageUrl": "Oasis_plant.jpg",
+            "imageUrl": "Oasis_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1678,18 +1626,18 @@
             "name": "Stamen Stem",
             "code": "A028",
             "description": "plant Detail",
-            "imageUrl": "Stamen_Stem.jpg",
+            "imageUrl": "Stamen_Stem1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1740,18 +1688,18 @@
             "name": "Anthurium plant",
             "code": "A029",
             "description": "plant Detail",
-            "imageUrl": "Anthurium_plant.jpg",
+            "imageUrl": "Anthurium_plant1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1802,18 +1750,18 @@
             "name": "Philodendron billietiae",
             "code": "A030",
             "description": "plant Detail",
-            "imageUrl": "Philodendron_billietiae.jpg",
+            "imageUrl": "Philodendron_billietiae1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1864,18 +1812,18 @@
             "name": "Syngonium butterfly",
             "code": "A031",
             "description": "plant Detail",
-            "imageUrl": "Syngonium_butterfly.jpg",
+            "imageUrl": "Syngonium_butterfly1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1926,18 +1874,18 @@
             "name": "Syngonium godzilla",
             "code": "A032",
             "description": "plant Detail",
-            "imageUrl": "Syngonium_godzilla.jpg",
+            "imageUrl": "Syngonium_godzilla1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }
@@ -1988,18 +1936,18 @@
             "name": "Philodendron brandtianum",
             "code": "A033",
             "description": "plant Detail",
-            "imageUrl": "Philodendron_brandtianum.jpg",
+            "imageUrl": "Philodendron_brandtianum1.jpg",
             "ProductSizes": [
               { "name": "SMALL", "price": 3 },
               { "name": "MEDIUM", "price": 5 },
               { "name": "LARGE", "price": 8 }
             ],
-            "ProductCares": [
+            "productCares": [
               { "name": "ADVANCE" },
               { "name": "EASY" },
               { "name": "MODERATE" }
             ],
-            "ProductLights": [
+            "productLights": [
               { "name": "DIRECT LIGHT" },
               { "name": "INDIRECT LIGHT" },
               { "name": "LOW LIGHT" }

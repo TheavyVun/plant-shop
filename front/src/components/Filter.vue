@@ -19,6 +19,7 @@
         <label for="price ">Price</label>
         <select
           v-model="filters.price"
+          @change="FilterChanged"
           class="my-2 w-full rounded-lg bg-[#ececec] p-3 text-[#676767]"
           id="price"
         >
@@ -33,6 +34,7 @@
         <label for="care-level">Care Level</label>
         <select
           v-model="filters.careLevel"
+          @change="FilterChanged"
           class="my-2 w-full rounded-lg bg-[#ececec] p-3 text-[#676767]"
           id="care-level"
         >
@@ -68,7 +70,7 @@
           <option value="large">Large</option>
         </select>
       </div>
-      <div
+      <!-- <div
         class="flex justify-between px-3 xs:w-full sm:w-full md:w-[50%] lg:w-[33%]"
       >
         <button
@@ -85,7 +87,7 @@
         >
           Filter
         </button>
-      </div>
+      </div> -->
     </div>
   </form>
 </template>
@@ -124,6 +126,9 @@ export default {
         size: "",
       };
     },
+    FilterChanged(val) {
+      this.$emit('change', this.filters)
+    }
   },
 };
 </script>

@@ -21,11 +21,18 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted } from "vue";
 import { data } from "../data/data";
 import Filter from "../components/Filter.vue";
 import Footer from "../components/Footer.vue";
+import store from "../store/index";
 
-const plants = data?.plants;
+// const plants = data?.plants;
+const plants = computed(() => store?.state?.products);
+
+onMounted(() => {
+  store.dispatch("setListProducts", {});
+});
 </script>
 
 <style scoped></style>

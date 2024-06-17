@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const userTable = require("../models/associations").User;
+// const User = require("../models/associations").User;
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const vertifyToken = require("./auth");
 const fs = require("fs");
+const {
+  User,
+} = require("../models");
 
 const multer = require("multer");
 let newFile = "";
@@ -30,14 +33,14 @@ router.post("/", async (req, res) => {
       res.status(400).send("Something went wrong!");
     }
     req.body.profile = "avatar.png";
-    await userTable.create(req.body);
+    await User.create(req.body);
     res.send("data posted");
   });
 });
 
 // update user-role
 router.patch("/:id", async (req, res) => {
-  await userTable.update(
+  await User.update(
     {
       role: req.body.role,
     },
@@ -49,7 +52,7 @@ router.patch("/:id", async (req, res) => {
 });
 // update user profile
 router.patch("/userprofile/:id", async (req, res) => {
-  await userTable.update(
+  await User.update(
     {
       bgreward: req.body.bgreward,
       titlereward: req.body.titlereward,
@@ -64,7 +67,7 @@ router.patch("/userprofile/:id", async (req, res) => {
 // update user-profile image
 router.patch("/profile/:id", async (req, res) => {
   // get user to get old profile name to delete from uploads folder
-  const user = await userTable.findAll({
+  const user = await User.findAll({
     where: {
       id: req.params.id,
     },
@@ -83,7 +86,7 @@ router.patch("/profile/:id", async (req, res) => {
       res.status(400).send("Something went wrong!");
     }
     req.body.profile = newFile;
-    await userTable.update(
+    await User.update(
       {
         profile: req.body.profile,
       },
@@ -96,8 +99,9 @@ router.patch("/profile/:id", async (req, res) => {
 });
 
 // get users
-router.get("/", vertifyToken, async (req, res) => {
-  const alldata = await userTable.findAll({
+// router.get("/", vertifyToken, async (req, res) => {
+router.get("/", async (req, res) => {
+  const alldata = await User.findAll({
     attributes: {
       exclude: ["password"],
     },
@@ -106,8 +110,8 @@ router.get("/", vertifyToken, async (req, res) => {
 });
 
 // get user
-router.get("/:id", vertifyToken, async (req, res) => {
-  const user = await userTable.findAll({
+router.get("/:id", async (req, res) => {
+  const user = await User.findAll({
     attributes: {
       exclude: ["password"],
     },
@@ -120,7 +124,7 @@ router.get("/:id", vertifyToken, async (req, res) => {
 // login with email password
 router.post("/login", async (req, res) => {
   // check if user exists by email
-  const user = await userTable.findAll({
+  const user = await User.findAll({
     where: {
       email: req.body.email,
     },
@@ -156,7 +160,7 @@ async function verifyPassword(password, user) {
 
 // delete user
 router.delete("/:id", vertifyToken, (req, res) => {
-  userTable.destroy({
+  User.destroy({
     where: {
       id: req.params.id,
     },

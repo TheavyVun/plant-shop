@@ -1,21 +1,17 @@
 const express = require("express");
 const router = express.Router();
+const { sequelize } = require('../models');
 const {
   Product,
-  PlantGift,
-  PlantLifeStyle,
-  PlantType,
   Care,
   Light,
   Size,
   ProductSize,
-  ProductCare,
-  ProductLight,
-  PlantTypeProduct,
-  PlantGiftProduct,
-  PlantLifeStyleProduct,
   Image,
-} = require("../models/associations");
+  Category,
+  ProductCategory,
+} = require("../models");
+const { Op } = require("sequelize");
 // const verifyToken = require("./auth");
 
 // Helper function to find entities by name
@@ -31,6 +27,11 @@ const mapEntities = async (items, Model, key) => {
   );
 };
 
+const findIDByName = async (Model, name) => {
+  const entity = await Model.findOne({ where: { name } });
+  return entity ? entity.id : null
+};
+
 router.post("/", async (req, res) => {
   try {
     const { items } = req.body;
@@ -41,12 +42,10 @@ router.post("/", async (req, res) => {
           code,
           description,
           imageUrl,
-          PlantGifts,
-          PlantLifeStyles,
-          PlantTypes,
-          ProductCares,
+          Categories,
+          productCares,
+          productLights,
           ProductImages,
-          ProductLights,
           ProductSizes,
         }) => {
           return {
@@ -54,24 +53,14 @@ router.post("/", async (req, res) => {
             code,
             description,
             image_url: imageUrl,
-            PlantGifts: await mapEntities(
-              PlantGifts,
-              PlantGift,
-              "plant_gift_id"
+            care_id: await findIDByName(Care, productCares),
+            light_id: await findIDByName(Light, productLights),
+            ProductCategories: await mapEntities(
+              Categories,
+              Category,
+              "category_id"
             ),
-            PlantLifeStyles: await mapEntities(
-              PlantLifeStyles,
-              PlantLifeStyle,
-              "plant_life_style_id"
-            ),
-            PlantTypes: await mapEntities(
-              PlantTypes,
-              PlantType,
-              "plant_type_id"
-            ),
-            ProductCares: await mapEntities(ProductCares, Care, "care_id"),
             ProductImages,
-            ProductLights: await mapEntities(ProductLights, Light, "light_id"),
             ProductSizes: await Promise.all(
               ProductSizes.map(async ({ name, price }) => {
                 const { size_id } = await findEntityByName(
@@ -90,11 +79,7 @@ router.post("/", async (req, res) => {
     const data = await Product.bulkCreate(payload, {
       include: [
         "ProductSizes",
-        "ProductCares",
-        "ProductLights",
-        "PlantTypes",
-        "PlantGifts",
-        "PlantLifeStyles",
+        "ProductCategories",
         "ProductImages",
       ],
     });
@@ -106,13 +91,14 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const { productName, code } = req.query
+    const { productName, code, size, care, light, category, isSortByAZ } = req.query
     const data = await Product.findAll({
       attributes: [
         "id",
         "name",
         "code",
         "description",
+        "care_id",
         ["image_url", "imageUrl"],
       ],
       include: [
@@ -123,61 +109,26 @@ router.get("/", async (req, res) => {
           include: [
             {
               model: Size,
+              as: "size",
               attributes: ["name"],
             },
           ],
         },
         {
-          model: ProductCare,
-          as: "ProductCares",
-          attributes: ['id'],
-          include: [
-            {
-              model: Care,
-              attributes: ["name"],
-            },
-          ],
+          model: Care,
+          attributes: ['name'],
         },
         {
-          model: ProductLight,
-          as: "ProductLights",
-          attributes: ['id'],
-          include: [
-            {
-              model: Light,
-              attributes: ["name"],
-            },
-          ],
+          model: Light,
+          attributes: ['name'],
         },
         {
-          model: PlantTypeProduct,
-          as: "PlantTypes",
+          model: ProductCategory,
+          as: "ProductCategories",
           attributes: ['id'],
           include: [
             {
-              model: PlantType,
-              attributes: ["name"],
-            },
-          ],
-        },
-        {
-          model: PlantGiftProduct,
-          as: "PlantGifts",
-          attributes: ['id'],
-          include: [
-            {
-              model: PlantGift,
-              attributes: ["name"],
-            },
-          ],
-        },
-        {
-          model: PlantLifeStyleProduct,
-          as: "PlantLifeStyles",
-          attributes: ['id'],
-          include: [
-            {
-              model: PlantLifeStyle,
+              model: Category,
               attributes: ["name"],
             },
           ],
@@ -195,8 +146,22 @@ router.get("/", async (req, res) => {
         ...(code && {
           code: generateLikeClause(code),
         }),
-        // To Do More
-      }
+        ...(care && {
+          '$Care.name$': care,
+        }),
+        ...(light && {
+          '$Light.name$': light,
+        }),
+        ...(size && {
+          '$ProductSizes->size.name$': size,
+        }),
+        ...(category && {
+          '$ProductCategories->Category.name$': category,
+        }),
+      },
+      // order: [
+      //   (isSortByAZ && ['name', 'DESC']),
+      // ]
     });
     res.json(data);
   } catch (err) {
@@ -214,6 +179,7 @@ router.get("/:id", async (req, res) => {
         "name",
         "code",
         "description",
+        "care_id",
         ["image_url", "imageUrl"],
       ],
       include: [
@@ -224,61 +190,26 @@ router.get("/:id", async (req, res) => {
           include: [
             {
               model: Size,
+              as: "size",
               attributes: ["name"],
             },
           ],
         },
         {
-          model: ProductCare,
-          as: "ProductCares",
-          attributes: ['id'],
-          include: [
-            {
-              model: Care,
-              attributes: ["name"],
-            },
-          ],
+          model: Care,
+          attributes: ['name'],
         },
         {
-          model: ProductLight,
-          as: "ProductLights",
-          attributes: ['id'],
-          include: [
-            {
-              model: Light,
-              attributes: ["name"],
-            },
-          ],
+          model: Light,
+          attributes: ['name'],
         },
         {
-          model: PlantTypeProduct,
-          as: "PlantTypes",
+          model: ProductCategory,
+          as: "ProductCategories",
           attributes: ['id'],
           include: [
             {
-              model: PlantType,
-              attributes: ["name"],
-            },
-          ],
-        },
-        {
-          model: PlantGiftProduct,
-          as: "PlantGifts",
-          attributes: ['id'],
-          include: [
-            {
-              model: PlantGift,
-              attributes: ["name"],
-            },
-          ],
-        },
-        {
-          model: PlantLifeStyleProduct,
-          as: "PlantLifeStyles",
-          attributes: ['id'],
-          include: [
-            {
-              model: PlantLifeStyle,
+              model: Category,
               attributes: ["name"],
             },
           ],

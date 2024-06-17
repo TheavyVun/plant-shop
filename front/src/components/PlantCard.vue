@@ -16,14 +16,14 @@
         >
           <img
             class="h-full w-full transform transition duration-300 ease-in-out hover:scale-[1.12]"
-            :src="plant?.images[0]?.image"
+            :src="`http://localhost:3000/uploads/${plant?.imageUrl}`"
             alt=""
           />
         </router-link>
         <div
           class="absolute bottom-[25px] flex items-center justify-center rounded-2xl bg-green-500 px-3 py-1 text-[16px] text-white sm:px-[10px]"
         >
-          {{ "$" + plant?.from + " - " + "$" + plant?.to }}
+          {{ "$" + plant?.ProductSizes[0].price + " - " + "$" + plant?.ProductSizes[plant?.ProductSizes?.length -1].price }}
         </div>
         <router-link
           :to="'/plant-detail/' + plant?.id"
@@ -37,23 +37,30 @@
   </div>
 </template>
 
-<script setup>
-import { defineEmits } from "vue";
-
-const props = defineProps({
-  plants: {
-    type: Array,
-    required: true,
+<script>
+export default {
+  props: {
+    plants: {
+      type: Array,
+      required: true
+    }
   },
-});
+  components: {
+  },
+  data() {
+    return {
+      products: []
+    };
+  },
+  methods: {
+    handleClick(plant) {
+      this.$emit("plant-click", plant)
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0)
+    }
 
-const emit = defineEmits(["plant-click"]);
-const handleClick = (plant) => {
-  emit("plant-click", plant);
-};
-
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
+  },
 };
 </script>
 

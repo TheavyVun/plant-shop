@@ -1,12 +1,13 @@
-const Sequelize = require("sequelize")
-
-const cares_table = require('../config/database').define(
-    "cares",
-    {
-      name: {
-        type: Sequelize.STRING,
-      },
+module.exports = (sequelize, DataTypes) => {
+  const Care = sequelize.define(
+  "Care",
+  {
+    name: {
+      type: DataTypes.STRING,
     },
-    { tableName: "cares" }
-  )
-module.exports = cares_table
+  },
+  { tableName: "cares" }
+);
+
+  return Care;
+};

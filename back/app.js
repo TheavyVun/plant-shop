@@ -9,9 +9,7 @@ const productRoute = require("./routes/product-route");
 const sizeRoute = require("./routes/size-route");
 const careRoute = require("./routes/care-route");
 const lightRoute = require("./routes/light-route");
-const plantTypeRoute = require("./routes/plant-type-route");
-const plantGiftRoute = require("./routes/plant-gift-route");
-const plantLifeStyleRoute = require("./routes/plant-life-style-route");
+const categoryRoute = require("./routes/category-route");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -31,9 +29,7 @@ app.use("/product", productRoute);
 app.use("/size", sizeRoute);
 app.use("/care", careRoute);
 app.use("/light", lightRoute);
-app.use("/plant-type", plantTypeRoute);
-app.use("/plant-gift", plantGiftRoute);
-app.use("/plant-life-style", plantLifeStyleRoute);
+app.use("/category", categoryRoute);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

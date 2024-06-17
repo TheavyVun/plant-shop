@@ -1,21 +1,28 @@
-const Sequelize = require("sequelize")
-
-const products_table = require('../config/database').define(
-    "products",
-    {
-      name: {
-        type: Sequelize.STRING,
-      },
-      code: {
-        type: Sequelize.STRING,
-      },
-      description: {
-        type: Sequelize.STRING,
-      },
-      image_url: {
-        type: Sequelize.STRING,
-      },
+module.exports = (sequelize, DataTypes) => {
+  const Product = sequelize.define(
+  "Product",
+  {
+    name: {
+      type: DataTypes.STRING,
     },
-    { tableName: "products" }
-  )
-module.exports = products_table
+    code: {
+      type: DataTypes.STRING,
+    },
+    description: {
+      type: DataTypes.STRING,
+    },
+    image_url: {
+      type: DataTypes.STRING,
+    },
+    care_id: {
+      type: DataTypes.INTEGER
+    },
+    light_id: {
+      type: DataTypes.INTEGER
+    }
+  },
+  { tableName: "products" }
+);
+
+  return Product;
+};

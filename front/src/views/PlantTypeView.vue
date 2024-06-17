@@ -7,12 +7,12 @@
       <div class="m-auto w-[80px] border-b-[3px] border-green-600"></div>
     </div>
     <div class="m-auto sm:w-[90%] lg:w-[70%]">
-      <Filter />
+      <Filter @change="onFilter" />
     </div>
-    <PlantCard v-if="plants.length > 0" :plants="plants" />
+    <PlantCard v-if="plants.length > 0" :plants="products" />
     <div
       class="m-auto flex items-center justify-center font-bold sm:w-[90%] lg:w-[70%]"
-      v-if="plants.length === 0"
+      v-if="products.length === 0"
     >
       <div class="text-center">
         <img
@@ -33,37 +33,87 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted, watch } from "vue";
-import { useRoute } from "vue-router";
+<script>
+// import { ref, onMounted, watch } from "vue";
+// import { useRoute } from "vue-router";
 import Filter from "../components/Filter.vue";
 import PlantCard from "../components/PlantCard.vue";
 import Footer from "../components/Footer.vue";
 import { data } from "../data/data";
 
-const route = useRoute();
-const plantType = ref(route.params.type);
-const plants = ref([]);
+// const route = useRoute();
+// const plantType = ref(route.params.type);
+// const plants = ref([]);
 
-onMounted(() => {
-  fetchPlants();
-});
+// onMounted(() => {
+//   fetchPlants();
+// });
 
-watch(
-  () => route.params.type,
-  (newType) => {
-    plantType.value = newType;
-    fetchPlants();
+// watch(
+//   () => route.params.type,
+//   (newType) => {
+//     plantType.value = newType;
+//     fetchPlants();
+//   },
+// );
+
+// const fetchPlants = async () => {
+//   try {
+//     plants.value = data?.plants.filter(
+//       (plant) => plant?.type === plantType.value,
+//     );
+//   } catch (error) {
+//     console.error("Error fetching plants:", error);
+//   }
+// };
+
+// import axios from "../../axios-http";
+// import LoadingShow from "./../animations/LoadingShow.vue";
+// import encryptData from "../../helper/encryptData";
+export default {
+  mounted() {
   },
-);
+  computed: {
+    plantType() {
+      this.type = this.$route?.params.type
+      return this.$route?.params.type
+    }
+  },
+  components: {
+    Filter,
+    PlantCard,
+    Footer,
+  },
+  data() {
+    return {
+      data,
+      plants: data?.plants,
+      products: [],
+      type: '',
+      filterItems: {},
+    };
+  },
+  methods: {
+    async onFilter(val) {
+      this.filterItems = val
+      this.loadData(this.$route?.params.type)
+    },
+    async loadData(val) {
+      const filter = {
+        ...(this.filterItems.careLevel && {care: this.filterItems.careLevel}),
+        ...(this.filterItems.light && {light: this.filterItems.light}),
+      }
+      await this.$store.dispatch("setListProducts", { category: val, ...filter})
+      this.products = this.$store.state.products
+    }
+  },
 
-const fetchPlants = async () => {
-  try {
-    plants.value = data?.plants.filter(
-      (plant) => plant?.type === plantType.value,
-    );
-  } catch (error) {
-    console.error("Error fetching plants:", error);
+  async created() {
+  },
+  watch: {
+    async type(val) {
+      this.loadData(val)
+    }
   }
 };
 </script>
