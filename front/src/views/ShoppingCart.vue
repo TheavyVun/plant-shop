@@ -12,12 +12,22 @@
         >
           <div class="flex items-center justify-between">
             <div class="flex">
-              <img class="w-[100px]" :src="`http://localhost:3000/uploads/${item?.imageUrl}`" alt="Product Image" />
+              <img
+                class="w-[100px]"
+                :src="`http://localhost:3000/uploads/${item?.imageUrl}`"
+                alt="Product Image"
+              />
               <div class="mx-3 flex flex-col">
                 <span class="text-[16px] font-bold">
                   {{ item.name }}
                 </span>
-                <span>{{ "$" + item?.ProductSizes[0].price + " - " + "$" + item?.ProductSizes[item?.ProductSizes?.length -1].price }}</span>
+                <span>{{
+                  "$" +
+                  item?.ProductSizes[0].price +
+                  " - " +
+                  "$" +
+                  item?.ProductSizes[item?.ProductSizes?.length - 1].price
+                }}</span>
               </div>
             </div>
             <div class="flex items-center">
@@ -79,8 +89,9 @@
           <div>{{ "$" + total }}</div>
         </div>
         <div class="my-[15px] flex w-full items-center justify-between">
-          <router-link to="/login"
-            class="w-[49%] rounded-md bg-green-500 py-2 text-white hover:bg-green-600 text-center"
+          <router-link
+            to="/login"
+            class="w-[49%] rounded-md bg-green-500 py-2 text-center text-white hover:bg-green-600"
           >
             Login
           </router-link>
@@ -103,9 +114,9 @@ const store = useStore();
 const cartItems = computed(() => store.getters["cartItems"]);
 const subtotal = 10;
 // const subtotal = computed(() => store.getters.subtotal);
-const tax = 2
+const tax = 2;
 // const tax = computed(() => store.getters.tax);
-const total = 34
+const total = 34;
 
 const increaseQuantity = (index) => {
   store.dispatch("increaseQuantity", index);

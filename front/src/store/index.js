@@ -1,6 +1,5 @@
-// src/store/index.js
 import { createStore } from "vuex";
-import { getProducts } from '@/api/products.js'
+import { getProducts } from "@/api/products.js";
 
 const store = createStore({
   state: {
@@ -43,9 +42,9 @@ const store = createStore({
     },
 
     async setListProducts({ commit }, params) {
-      const data = await getProducts(params)
-      commit('setProducts', data)
-      return data
+      const data = await getProducts(params);
+      commit("setProducts", data);
+      return data;
     },
 
     removeItemFromCart({ commit }, index) {

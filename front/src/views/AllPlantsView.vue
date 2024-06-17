@@ -21,8 +21,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from "vue";
-import { data } from "../data/data";
+import { computed, onMounted } from "vue";
 import Filter from "../components/Filter.vue";
 import Footer from "../components/Footer.vue";
 import store from "../store/index";

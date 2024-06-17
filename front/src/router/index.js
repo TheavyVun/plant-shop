@@ -7,7 +7,6 @@ import PlantDetailsView from "../views/PlantDetailsView.vue";
 import AllPlantsView from "../views/AllPlantsView.vue";
 import ShoppingCart from "../views/ShoppingCart.vue";
 import NotFound from "../components/NotFound.vue";
-// import Login from "../views/Login.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/RegisterView.vue";
 import ForgotPW from "../views/ForgotView.vue";
@@ -74,14 +73,12 @@ const router = createRouter({
   routes,
 });
 
-// Global Guard Example
 router.beforeEach((to, from, next) => {
   if (to.name !== "login" && !isAuthenticated()) next({ name: "login" });
   else next();
 });
 
 function isAuthenticated() {
-  // Implement your authentication logic here
   return true;
 }
 

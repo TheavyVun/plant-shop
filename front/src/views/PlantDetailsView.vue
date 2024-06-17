@@ -71,7 +71,13 @@
             <div class="my-[18px] flex items-center">
               <div class="mr-2 text-[16px]">{{ "Price:" }}</div>
               <div class="text-[16px] text-green-500">
-                {{ "$" + plant?.ProductSizes[0].price + " - " + "$" + plant?.ProductSizes[plant?.ProductSizes?.length -1].price }}
+                {{
+                  "$" +
+                  plant?.ProductSizes[0].price +
+                  " - " +
+                  "$" +
+                  plant?.ProductSizes[plant?.ProductSizes?.length - 1].price
+                }}
               </div>
             </div>
           </div>
@@ -147,11 +153,7 @@
       </div>
       <div class="my-[50px]">
         <h1 class="xs:px-3 md:px-3 lg:px-0">{{ "Benefits:" }}</h1>
-        <div
-          class="flex-col"
-          v-for="(item, index) in benefits"
-          :key="item"
-        >
+        <div class="flex-col" v-for="(item, index) in benefits" :key="item">
           <div class="my-[20px] flex-col xs:px-3 md:px-3 lg:px-0">
             <h1 class="mb-[20px]">
               {{ index + 1 + "." }} {{ item?.title + ":" }}
@@ -191,15 +193,16 @@ import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import Footer from "../components/Footer.vue";
 import PlantCard from "../components/PlantCard.vue";
-import { data } from "../data/data";
 import { useStore } from "vuex";
-import { getProductById } from '@/api/products.js'
+import { getProductById } from "@/api/products.js";
 
 const route = useRoute();
 const store = useStore();
 const plants = store?.state?.products;
 const plant = ref(null);
-const description = ref('is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.');
+const description = ref(
+  "is an industrial crop whose stems and fruits are about the size of an elongated apple, whose fruit can be processed into chocolate. As for planting, it does not select the soil like durian or other crops. For planting, easy to care for, resistant to the surrounding environment. And the growing season is up to 60 years after the first day of planting, and after three months the harvest will begin to grow the next crop.",
+);
 const benefits = ref([
   {
     title: "Antioxidant properties",
@@ -211,7 +214,7 @@ const benefits = ref([
     description:
       "Flavonoids can be used to help reduce the formation of free radicals. However, as we are constantly facing free radicals, it is also important to fight the pre-existing damage caused by them. Cocoa plays a role in fighting inflammation caused by free radical damage. The flavonoids in cocoa stimulate parts of the immune system that help capture and destroy cells that are harmful to health. ",
   },
-])
+]);
 const growAndCare = ref([
   {
     title: "Sunlight",
@@ -233,13 +236,17 @@ const growAndCare = ref([
     description:
       "Cocoa trees grow in hot and humid climates and need a lot of rain. To grow cocoa trees, you need to choose a well-drained, well-lit place and a good soil pH for growing cocoa is between 6.0 and 7.0. ",
   },
-])
+]);
 
 const currentIndex = ref(0);
 const mainImage = ref(null);
 
 const updateMainImage = () => {
-  if (plant.value && plant.value.ProductImages && plant.value.ProductImages?.length > 0) {
+  if (
+    plant.value &&
+    plant.value.ProductImages &&
+    plant.value.ProductImages?.length > 0
+  ) {
     mainImage.value = `http://localhost:3000/uploads/${plant.value.ProductImages[currentIndex.value].name}`;
   }
 };
@@ -273,10 +280,6 @@ const handlePlantClick = (clickedPlant) => {
   updateMainImage();
 };
 
-// const addToCart = () => {
-//   store.dispatch("addItemToCart", plant.value); // Correctly dispatch the action
-// };
-
 const addToCart = (item) => {
   console.log(item);
   store.dispatch("addItemToCart", item);
@@ -284,7 +287,7 @@ const addToCart = (item) => {
 
 onMounted(async () => {
   const id = route.params.id - 1;
-  const data = await getProductById(route.params.id)
+  const data = await getProductById(route.params.id);
   plant.value = data;
   updateMainImage();
 });

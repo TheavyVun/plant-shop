@@ -219,7 +219,6 @@ const selectedIndex = ref(0);
 const selectedImage = ref("");
 const isPopupVisible = ref(false);
 
-// const plants = ref([]);
 const gallery = ref(data?.gallery || []);
 const products = computed(() => store?.state?.products);
 

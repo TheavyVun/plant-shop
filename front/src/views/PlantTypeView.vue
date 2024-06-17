@@ -34,50 +34,18 @@
 </template>
 
 <script>
-// import { ref, onMounted, watch } from "vue";
-// import { useRoute } from "vue-router";
 import Filter from "../components/Filter.vue";
 import PlantCard from "../components/PlantCard.vue";
 import Footer from "../components/Footer.vue";
 import { data } from "../data/data";
 
-// const route = useRoute();
-// const plantType = ref(route.params.type);
-// const plants = ref([]);
-
-// onMounted(() => {
-//   fetchPlants();
-// });
-
-// watch(
-//   () => route.params.type,
-//   (newType) => {
-//     plantType.value = newType;
-//     fetchPlants();
-//   },
-// );
-
-// const fetchPlants = async () => {
-//   try {
-//     plants.value = data?.plants.filter(
-//       (plant) => plant?.type === plantType.value,
-//     );
-//   } catch (error) {
-//     console.error("Error fetching plants:", error);
-//   }
-// };
-
-// import axios from "../../axios-http";
-// import LoadingShow from "./../animations/LoadingShow.vue";
-// import encryptData from "../../helper/encryptData";
 export default {
-  mounted() {
-  },
+  mounted() {},
   computed: {
     plantType() {
-      this.type = this.$route?.params.type
-      return this.$route?.params.type
-    }
+      this.type = this.$route?.params.type;
+      return this.$route?.params.type;
+    },
   },
   components: {
     Filter,
@@ -89,32 +57,34 @@ export default {
       data,
       plants: data?.plants,
       products: [],
-      type: '',
+      type: "",
       filterItems: {},
     };
   },
   methods: {
     async onFilter(val) {
-      this.filterItems = val
-      this.loadData(this.$route?.params.type)
+      this.filterItems = val;
+      this.loadData(this.$route?.params.type);
     },
     async loadData(val) {
       const filter = {
-        ...(this.filterItems.careLevel && {care: this.filterItems.careLevel}),
-        ...(this.filterItems.light && {light: this.filterItems.light}),
-      }
-      await this.$store.dispatch("setListProducts", { category: val, ...filter})
-      this.products = this.$store.state.products
-    }
+        ...(this.filterItems.careLevel && { care: this.filterItems.careLevel }),
+        ...(this.filterItems.light && { light: this.filterItems.light }),
+      };
+      await this.$store.dispatch("setListProducts", {
+        category: val,
+        ...filter,
+      });
+      this.products = this.$store.state.products;
+    },
   },
 
-  async created() {
-  },
+  async created() {},
   watch: {
     async type(val) {
-      this.loadData(val)
-    }
-  }
+      this.loadData(val);
+    },
+  },
 };
 </script>
 
