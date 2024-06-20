@@ -26,7 +26,6 @@ import Filter from "../components/Filter.vue";
 import Footer from "../components/Footer.vue";
 import store from "../store/index";
 
-// const plants = data?.plants;
 const plants = computed(() => store?.state?.products);
 
 onMounted(() => {

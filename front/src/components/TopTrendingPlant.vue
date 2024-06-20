@@ -13,10 +13,20 @@
           @click.native="scrollToTop()"
         >
           <!-- <img class="h-[70%] w-full" :src="item?.images[0]?.image" alt="" /> -->
-          <img class="h-[70%] w-full" :src="`http://localhost:3000/uploads/${item?.imageUrl}`" alt="" />
+          <img
+            class="h-[70%] w-full"
+            :src="`http://localhost:3000/uploads/${item?.imageUrl}`"
+            alt=""
+          />
           <div class="my-3 flex-col text-center text-[16px]">
             <div class="text-green-500">
-              {{ "$" + item?.ProductSizes[0].price + " - " + "$" + item?.ProductSizes[item?.ProductSizes?.length -1].price }}
+              {{
+                "$" +
+                item?.ProductSizes[0].price +
+                " - " +
+                "$" +
+                item?.ProductSizes[item?.ProductSizes?.length - 1].price
+              }}
             </div>
             <div class="w-full text-wrap">{{ item?.name }}</div>
           </div>
@@ -70,7 +80,7 @@ export default {
       nextBlack,
       previousDisabled,
       nextDisabled,
-      products: []
+      products: [],
     };
   },
   computed: {
@@ -99,7 +109,7 @@ export default {
   },
   async created() {
     await this.$store.dispatch("setListProducts", {});
-    this.products = this.$store.state.products
+    this.products = this.$store.state.products;
   },
 };
 </script>

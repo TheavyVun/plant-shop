@@ -23,7 +23,13 @@
         <div
           class="absolute bottom-[25px] flex items-center justify-center rounded-2xl bg-green-500 px-3 py-1 text-[16px] text-white sm:px-[10px]"
         >
-          {{ "$" + plant?.ProductSizes[0].price + " - " + "$" + plant?.ProductSizes[plant?.ProductSizes?.length -1].price }}
+          {{
+            "$" +
+            plant?.ProductSizes[0].price +
+            " - " +
+            "$" +
+            plant?.ProductSizes[plant?.ProductSizes?.length - 1].price
+          }}
         </div>
         <router-link
           :to="'/plant-detail/' + plant?.id"
@@ -42,24 +48,22 @@ export default {
   props: {
     plants: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
-  components: {
-  },
+  components: {},
   data() {
     return {
-      products: []
+      products: [],
     };
   },
   methods: {
     handleClick(plant) {
-      this.$emit("plant-click", plant)
+      this.$emit("plant-click", plant);
     },
     scrollToTop() {
-      window.scrollTo(0, 0)
-    }
-
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>

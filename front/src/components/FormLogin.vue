@@ -1,60 +1,46 @@
 <template>
-  <section class="z-[100] fixed left-0 top-0 w-full h-full bg-white">
-    <div class="flex items-center h-full">
-      <div class="w-[50%] h-100">
-        <img
-          src="../assets/plant.jpg"
-          alt="logo"
-          class="width-[80%] m-auto"
-        />
+  <section class="fixed left-0 top-0 z-[100] h-full w-full bg-white">
+    <div class="flex h-full items-center">
+      <div class="h-100 w-[50%]">
+        <img src="../assets/plant.jpg" alt="logo" class="width-[80%] m-auto" />
       </div>
-      <div class="rounded w-[50%] m-auto">
-        <div class="p-5 bg-[#F5F5F5] rounded w-[70%] m-auto">
-          <img
-            src="../assets/user.png"
-            alt="logo"
-            class="w-[50px] m-auto"
-          />
+      <div class="m-auto w-[50%] rounded">
+        <div class="m-auto w-[70%] rounded bg-[#F5F5F5] p-5">
+          <img src="../assets/user.png" alt="logo" class="m-auto w-[50px]" />
 
           <div class="relative mt-4">
             <div class="relative mt-4">
-              <label
-                class="block text-label text-gray-700 text-lg mb-1 flex"
-                for="password"
-              >
-                Email <span class="text-red-600 ml-2">*</span>
+              <label class="mb-1 block text-lg text-gray-700" for="password">
+                Email <span class="ml-2 text-red-600">*</span>
               </label>
               <input
                 v-model="email"
                 @change="is_not_fill_email = false"
-                :class="{ 'bg-red-100 border-red-400': is_not_fill_email }"
-                class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-primary focus:shadow-outline focus:outline-[#22bbea]"
+                :class="{ 'border-red-400 bg-red-100': is_not_fill_email }"
+                class="focus:outline-primary focus:shadow-outline w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 focus:outline-[#22bbea]"
                 id="email"
                 type="email"
                 placeholder="Email..."
               />
             </div>
-            
+
             <div class="relative mt-4">
-              <label
-                class="block text-label text-gray-700 text-lg mb-1 flex"
-                for="password"
-              >
-                Password <span class="text-red-600 ml-2">*</span>
+              <label class="mb-1 block text-lg text-gray-700" for="password">
+                Password <span class="ml-2 text-red-600">*</span>
               </label>
               <input
                 :type="showpassword"
                 @change="is_not_fill_password = false"
                 @input="isInValid = false"
-                :class="{ 'bg-red-100 border-red-400': is_not_fill_password }"
-                class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-primary focus:shadow-outline focus:outline-[#22bbea]"
+                :class="{ 'border-red-400 bg-red-100': is_not_fill_password }"
+                class="focus:outline-primary focus:shadow-outline w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 focus:outline-[#22bbea]"
                 id="password"
                 placeholder="Password..."
               />
               <svg
                 v-if="isInValid"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 absolute top-[40px] right-3 text-red-500"
+                class="absolute right-3 top-[40px] h-5 w-5 text-red-500"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -68,7 +54,7 @@
                 v-else-if="showpassword == 'password'"
                 @click="showPW"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 absolute top-[40px] right-3 text-gray-400 hover:cursor-pointer"
+                class="absolute right-3 top-[40px] h-5 w-5 text-gray-400 hover:cursor-pointer"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -83,7 +69,7 @@
                 v-else
                 @click="showPW"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 absolute top-[40px] right-3 text-gray-400 hover:cursor-pointer"
+                class="absolute right-3 top-[40px] h-5 w-5 text-gray-400 hover:cursor-pointer"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -101,24 +87,27 @@
           </div>
           <router-link
             to="/forgot"
-            class="text-blue-600 text-label hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out"
+            class="text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
           >
             Forget Password
           </router-link>
           <!-- <router-link to="/product"> -->
           <button
             value="Login"
-            class="bg-[#4CC552] text-white py-2 w-full rounded focus:outline-primary focus:shadow-outline mt-4 text-[1.2rem]"
+            class="focus:outline-primary focus:shadow-outline mt-4 w-full rounded bg-[#4CC552] py-2 text-[1.2rem] text-white"
             @click="userLogin()"
           >
             Login
           </button>
           <!-- </router-link> -->
 
-          <p class="text-gray-800 mt-6 text-center">
+          <p class="mt-6 text-center text-gray-800">
             Don't have an account?
-            <router-link to="/register" class="text-blue-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out"
-            >Register</router-link>
+            <router-link
+              to="/register"
+              class="text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
+              >Register</router-link
+            >
           </p>
         </div>
       </div>
@@ -126,7 +115,7 @@
   </section>
 </template>
 <script>
-import { login } from '@/api/user.js'
+import { login } from "@/api/user.js";
 export default {
   data() {
     return {
@@ -142,7 +131,7 @@ export default {
   },
   methods: {
     userLogin() {
-      this.$router.push('/')
+      this.$router.push("/");
     },
     showPW() {
       if (this.showpassword == "password") {
@@ -170,8 +159,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.text-label {
-  margin-right: 85%;
-}
-</style>
+<style scoped></style>

@@ -113,10 +113,9 @@ import { computed } from "vue";
 const store = useStore();
 const cartItems = computed(() => store.getters["cartItems"]);
 const subtotal = 10;
-// const subtotal = computed(() => store.getters.subtotal);
-const tax = 2;
-// const tax = computed(() => store.getters.tax);
-const total = 34;
+const subtotal = computed(() => store.getters.subtotal);
+const tax = computed(() => store.getters.tax);
+const total = computed(() => store.getters.total);
 
 const increaseQuantity = (index) => {
   store.dispatch("increaseQuantity", index);

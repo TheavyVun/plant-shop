@@ -70,7 +70,7 @@
           <option value="large">Large</option>
         </select>
       </div>
-      <!-- <div
+      <div
         class="flex justify-between px-3 xs:w-full sm:w-full md:w-[50%] lg:w-[33%]"
       >
         <button
@@ -80,14 +80,14 @@
         >
           Clear
         </button>
-        <button
+        <!-- <button
           type="submit"
           @click="onSubmit()"
           class="my-2 mt-8 w-[48%] rounded-lg bg-green-500 p-[10px] text-white hover:bg-green-600"
         >
           Filter
-        </button>
-      </div> -->
+        </button> -->
+      </div>
     </div>
   </form>
 </template>
@@ -127,8 +127,8 @@ export default {
       };
     },
     FilterChanged(val) {
-      this.$emit('change', this.filters)
-    }
+      this.$emit("change", this.filters);
+    },
   },
 };
 </script>
